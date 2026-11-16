@@ -12,7 +12,7 @@
     "extraArgs": []
   },
   "workspace": {
-    "sourcePath": "/home/brunner56/plugins/protecting-your-energy",
+    "sourcePath": ".",
     "setupMode": "copy",
     "preserve": "on-failure"
   },

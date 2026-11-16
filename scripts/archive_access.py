@@ -21,7 +21,7 @@ sys.dont_write_bytecode = True
 
 # Callers may load this helper by file location, without its directory on
 # sys.path. Load the verified sibling directly rather than searching imports.
-CANONICAL_HELPER_DIR = Path.home() / 'plugins/protecting-your-energy/scripts'
+CANONICAL_HELPER_DIR = Path(__file__).resolve().parent
 _display_path = CANONICAL_HELPER_DIR / 'archive_display.py'
 if _display_path.resolve().parent != CANONICAL_HELPER_DIR.resolve():
     raise ImportError('archive display module is outside helper directory')
@@ -35,13 +35,21 @@ display_result = _display_module.display_result
 redact_text = _display_module.redact_text
 del _display_bytes
 
-DEFAULT_CONFIG = Path.home() / 'brain-data/upar-dip/derived/protect-your-energy/config.json'
-TOOLING = Path.home() / 'brain-data/upar-dip/tooling/retrieval'
+_legacy_config = Path.home() / 'brain-data/upar-dip/derived/protect-your-energy/config.json'
+_portable_config = Path(os.environ.get('XDG_CONFIG_HOME') or str(Path.home() / '.config')).expanduser() / 'protecting-your-energy/config.json'
+DEFAULT_CONFIG = Path(os.environ.get('PYE_ARCHIVE_ACCESS_CONFIG') or str(_portable_config if _portable_config.exists() or not _legacy_config.exists() else _legacy_config)).expanduser()
+_bundled_tooling = CANONICAL_HELPER_DIR.parent / 'components/archive-retrieval'
+_legacy_tooling = Path.home() / 'brain-data/upar-dip/tooling/retrieval'
+TOOLING = Path(os.environ.get('PYE_RETRIEVAL_TOOLING') or (_bundled_tooling if _bundled_tooling.is_dir() else _legacy_tooling)).expanduser()
 BLOCKED = ('.sealed', '.sanitized', '.seal-', 'request-only', 'request_only', '.request-only', 'quarantine', 'credentials', '.staging')
 MARKERS = ('.sealing-in-progress', '.request-only', 'REQUEST_ONLY', '.sealed')
 NATIVE_ROLE_POLICY_SHA = '06cd7454467212a9e6e69f188d3d94b658a05d8e137a6fefb7258af71d582e3f'
 ORIGINAL_RESOLVER = TOOLING / 'discord_capture_resolver.py'
-ORIGINAL_RESOLVER_SHA = '409abf482adb9fa3d68865c049730a3c3e1ada002fc641b22b2daab11bb61207'
+if TOOLING.resolve() == _bundled_tooling.resolve():
+    _retrieval_integrity = json.loads((CANONICAL_HELPER_DIR.parent / 'assets/module-integrity.json').read_text())
+    ORIGINAL_RESOLVER_SHA = _retrieval_integrity['components/archive-retrieval/discord_capture_resolver.py']
+else:
+    ORIGINAL_RESOLVER_SHA = os.environ.get('PYE_ORIGINAL_RESOLVER_SHA256', '409abf482adb9fa3d68865c049730a3c3e1ada002fc641b22b2daab11bb61207')
 NOTE_CAPTURE_READER = Path(__file__).with_name('note_capture_reader.py')
 NOTE_CAPTURE_READER_SHA = '14ddd190bf0b096ceaa3707fb39a5c9b0f61b4267ad108071090b9c2bd6b7334'
 KNOWLEDGE_BOOTSTRAP = "import runpy,sys; from pathlib import Path; helper=sys.argv[1]; sys.path.insert(0,str(Path(helper).parent)); sys.argv=sys.argv[1:]; runpy.run_path(helper,run_name='__main__')"
@@ -1665,7 +1673,7 @@ def _discord_original_context(st: dict, args, data: dict, p: Path, source_hash: 
     mod = importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
     excluded_ids.update(mod.EXCLUDED_IDS); names = mod.EXCLUDED_NAMES
     target_row = messages[target]
-    semantic_spec = importlib.util.spec_from_file_location('semantic_exclusions', CANONICAL_HELPER_DIR / 'semantic_retrieve.py')
+    semantic_spec = importlib.util.spec_from_file_location('semantic_exclusions', CANONICAL_HELPER_DIR / 'semantic_retrieve_portable.py')
     semantic_mod = importlib.util.module_from_spec(semantic_spec); semantic_spec.loader.exec_module(semantic_mod)
     if semantic_mod.excluded(target_row): raise ValueError('target excluded from display; no context returned')
     if args.version and semantic_mod.version(target_row) != args.version: raise ValueError('original message version differs from lead')

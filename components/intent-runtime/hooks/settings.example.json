@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 /absolute/path/to/hooks/prompt_uplift_hook.py",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

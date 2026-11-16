@@ -13,8 +13,8 @@ import types
 import json
 
 sys.dont_write_bytecode = True
-NATIVE_SHA = '224064965aed00cb6dec46aa3ba177a0f9a2b07986894075c9236a3b509576b8'
-COMPILER_SHA = 'e01fc29bed81249357ab3f54d70ab7521319274e1a8b6c7c09c3b824b4b8da89'
+NATIVE_SHA = json.loads((Path(__file__).resolve().parents[1] / 'assets/module-integrity.json').read_text())['scripts/native_context.py']
+COMPILER_SHA = json.loads((Path(__file__).resolve().parents[1] / 'assets/module-integrity.json').read_text())['scripts/continuation.py']
 TOTAL_PREFIX_LIMIT = 256 * 1024 * 1024
 THREAD_PREFIX_LIMIT = 128 * 1024 * 1024
 SCAN_ROW_LIMIT = 8 * 1024 * 1024

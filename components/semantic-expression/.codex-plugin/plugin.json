@@ -1,0 +1,14 @@
+{
+  "name": "semantic-expression",
+  "version": "0.2.0",
+  "description": "Express rough thinking coherently and bring relevant earlier reasoning into the present conversation.",
+  "skills": "./skills/",
+  "hooks": "./hooks/hooks.json",
+  "interface": {
+    "displayName": "Semantic Expression",
+    "shortDescription": "Say the thought clearly, with its meaning intact.",
+    "defaultPrompt": [
+      "Make this coherent for its audience while preserving what I mean."
+    ]
+  }
+}

@@ -15,7 +15,7 @@ import sys
 import types
 
 sys.dont_write_bytecode = True
-COMPILER_SHA = '8040727c721b5f68805789580c17cc967341a5546ac6c3ddca483de5c861f83a'
+COMPILER_SHA = json.loads((Path(__file__).resolve().parents[1] / 'assets/module-integrity.json').read_text())['scripts/continuation.py']
 INPUT_LIMIT = 256 * 1024
 OUTPUT_LIMIT = 1024 * 1024
 

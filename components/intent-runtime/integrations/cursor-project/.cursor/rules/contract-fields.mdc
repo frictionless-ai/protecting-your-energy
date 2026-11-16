@@ -1,0 +1,13 @@
+---
+description: Engineer payload is the contract only
+---
+
+The prompt-engineer subagent receives the ExecutionContract and, when
+the caller set one, `target_model`. It never receives conversation
+history, `user_message`, or a raw transcript.
+
+The executor receives `compiled_prompt` and `execution_hints` only.
+
+Render `irreversible_or_external_actions` and `previous_failures` when
+present. Put assumptions in their own non-normative section, not under
+Done when.

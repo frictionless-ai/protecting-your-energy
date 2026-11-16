@@ -10,7 +10,7 @@ import time
 import types
 
 
-NATIVE_CONTEXT_SHA = '224064965aed00cb6dec46aa3ba177a0f9a2b07986894075c9236a3b509576b8'
+NATIVE_CONTEXT_SHA = json.loads((Path(__file__).resolve().parents[1] / 'assets/module-integrity.json').read_text())['scripts/native_context.py']
 MAX_RECORDS = 1
 TEXT_LIMIT = 128 * 1024
 READ_DEADLINE_SECONDS = 30

@@ -28,6 +28,12 @@ do not load skills solely to demonstrate activity.
    relevant skills, plugin commands, agent roles and tools. Prefer project-owned
    runbooks and skills, then maintained domain workflows. Compare applicability,
    prerequisites, authority and expected outputs; a keyword match is insufficient.
+   Consult the bundled [component inventory](../../COMPONENTS.md) for retained
+   local workflows beyond the host's direct skill list. Read applicable optional
+   skill guidance in place, resolving its paths from its component root and its
+   roles through the active host's available agents. Keep component-specific
+   hooks, providers and installers subject to their actual activation and
+   authorization requirements. Reading guidance requires no host reinstallation.
 3. Read the chosen entrypoint before using it, then load only the references needed
    now. Reuse compatible workflows already in context. Honor current user scope,
    permissions and project constraints when a generic recipe differs. An explicit

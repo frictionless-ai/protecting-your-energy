@@ -10,8 +10,8 @@ import re
 import sys
 
 sys.dont_write_bytecode = True
-WORKFLOW_SHA = 'ac08971c649fa637a9a10fd69723d30d7f681e7f3baa1812aba98da9c5c4bc7a'
-MEANING_SHA = '0dafabb4333dcdcc8b069d3324f37de7df05f002c8f9889b56710093c3d1f519'
+WORKFLOW_SHA = json.loads((Path(__file__).resolve().parents[1] / 'assets/module-integrity.json').read_text())['scripts/continuation_workflow.py']
+MEANING_SHA = json.loads((Path(__file__).resolve().parents[1] / 'assets/module-integrity.json').read_text())['scripts/meaning_contract.py']
 INPUT_LIMIT = 262144
 VALIDATION_CODES = frozenset(('stage-string-schema-invalid', 'stage-list-schema-invalid',
     'stage-object-keys-invalid', 'provisional-plan-memory-schema-invalid',

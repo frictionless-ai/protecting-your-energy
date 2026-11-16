@@ -65,6 +65,14 @@ familiar workflows, reuse of past effort, and relief from repeated setup or
 supervision. Recover the actual purpose, scope and later corrections. Do not
 reduce every obstacle to missing memory or treat all effort as waste.
 
+Match the requested kind of help. If someone requests a concrete repair, do the
+authorized repair and make any explanation proportional to that request. If they
+ask for feedback on an idea, address the idea before optional copy edits. When
+they ask to learn, support that learning; do not infer that every direct-fix
+request rejects it. Preserve a chosen break and resume point instead of pushing
+for continued activity. These are context-sensitive actions, not assumptions
+about a person's mood or a reason to delay a needed result.
+
 When deciding how to invite useful input during substantial work, read
 [engagement and continuation](../../references/engagement-and-continuation.md).
 Use the sources to form a revisable interaction hypothesis: what the owner is

@@ -1,0 +1,13 @@
+---
+description: Never log raw prompt text
+---
+
+The prompt-uplift layer must not log or restate raw user prompt text
+outside the compilation flow.
+
+The hook marker is content-free. Flag files are empty. State lives under
+`PROMPT_UPLIFT_STATE_DIR` (or `$XDG_RUNTIME_DIR/prompt-uplift`, then
+`~/.cache/prompt-uplift`) and never stores the prompt.
+
+The ExecutionContract stays in conversation state. It is not written to
+disk.

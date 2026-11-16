@@ -7,9 +7,13 @@ another agent is orientation; it does not replace original episode reading.
 
 ## Resolve the shared paths
 
-The local configuration is
-`~/brain-data/upar-dip/derived/protect-your-energy/config.json`. Read only the
-fields needed for the task. `owner_archive` is an alias; resolve it to the mounted
+Select local configuration with `--config` or `PYE_ARCHIVE_ACCESS_CONFIG`.
+The portable default is
+`${XDG_CONFIG_HOME:-~/.config}/protecting-your-energy/config.json`.
+An existing legacy configuration under
+`~/brain-data/upar-dip/derived/protect-your-energy/config.json` remains supported
+when the portable file is absent. Read only the fields needed for the task.
+`owner_archive` is an alias; resolve it to the mounted
 archive before using source locators. `current_work` names private derived
 outputs. `reasoning_model` and evidence guides are revisable leads, not original
 source evidence. Follow the current request's source restrictions even if the
@@ -22,8 +26,8 @@ configuration on each invocation. These paths make the route reusable across
 sessions on this host; they do not synchronize a different host or mount a disk.
 
 ```sh
-python3 /home/brunner56/plugins/protecting-your-energy/scripts/archive_access.py status
-python3 /home/brunner56/plugins/protecting-your-energy/scripts/archive_access.py query \
+python3 "${PYE_PLUGIN_ROOT}/scripts/archive_access.py" status
+python3 "${PYE_PLUGIN_ROOT}/scripts/archive_access.py" query \
   --query 'starting point' --query 'time signature' \
   --year 2026 --platform discord --limit 5 --budget 20
 ```
@@ -262,7 +266,7 @@ explicitly caller-qualified. Recheck its helper/common pins before use.
 A UPAR conversation ID can be handed to the bounded original-locator route:
 
 ```sh
-python3 /home/brunner56/plugins/protecting-your-energy/scripts/archive_access.py resolve \
+python3 "${PYE_PLUGIN_ROOT}/scripts/archive_access.py" resolve \
   --conversation-id urn:upar:conversation:ACTUAL_ID --platform discord --budget 10
 ```
 
@@ -276,7 +280,7 @@ If resolution is slow or incomplete, use the actual original subtree and a
 small distinctive phrase or file name. Avoid an unbounded whole-archive scan:
 
 ```sh
-python3 /home/brunner56/plugins/protecting-your-energy/scripts/archive_access.py query \
+python3 "${PYE_PLUGIN_ROOT}/scripts/archive_access.py" query \
   --mode paths --source-prefix archive/originals/discord/discord_exports/openkotor_discord_msgs \
   --query 'shared direction' --limit 3 --budget 5
 ```
@@ -290,7 +294,7 @@ No hit, a skipped large source or an expired budget is not exhaustive absence.
 Once a real Discord message ID and path are known, obtain a small exact window:
 
 ```sh
-python3 /home/brunner56/plugins/protecting-your-energy/scripts/archive_access.py hydrate \
+python3 "${PYE_PLUGIN_ROOT}/scripts/archive_access.py" hydrate \
   --source 'archive/originals/discord/ACTUAL_EXPORT.json' \
   --message-id ACTUAL_MESSAGE_ID --context 3 --max-chars 8000 \
   --version VERSION_HASH_FROM_LEAD --source-sha256 SOURCE_HASH_FROM_LEAD

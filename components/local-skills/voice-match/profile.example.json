@@ -1,0 +1,17 @@
+{
+  "registers": {
+    "internal": {
+      "max_em_dash_per_10k": null,
+      "max_median_sentence_words": null,
+      "forbid_conclusion_section": false,
+      "forbid_top_tldr": false
+    },
+    "public": {
+      "require_no_deslop_hits": false
+    },
+    "portfolio": {
+      "max_first_person_per_1k": null,
+      "max_em_dash_per_10k": null
+    }
+  }
+}

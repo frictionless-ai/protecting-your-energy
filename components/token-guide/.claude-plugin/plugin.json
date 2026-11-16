@@ -1,0 +1,7 @@
+{
+  "name": "token-guide",
+  "version": "0.4.0",
+  "description": "Quiet advisory guidance for avoidable agent-session cost. Never denies a tool call.",
+  "author": {"name": "Local developer"},
+  "license": "MIT"
+}

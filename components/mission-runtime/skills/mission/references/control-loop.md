@@ -1,0 +1,163 @@
+# The Persistent Control Loop
+
+Run this closed loop until the stopping policy fires. It is a control system,
+not a linear prompt chain: every cycle can reorder, add, or retire work.
+
+## Contents
+
+- [Stages](#stages)
+- [Prioritization](#prioritization)
+- [Parallelism and conflict control](#parallelism-and-conflict-control)
+- [Turns while work is in flight](#turns-while-work-is-in-flight)
+- [Stall detection](#stall-detection)
+- [Context management](#context-management)
+- [Budgets](#budgets)
+
+## Stages
+
+1. **Interpret** — load `.mission/mission.md` (or create it via the
+   intent-contract reference on the first cycle). The contract is the fixed
+   point; progress is rewritten in state.md. Plans change, the mission does
+   not. A crash recovers from the ledgers, not from a plan remembered in
+   the transcript. Mid-mission user directives enter through the amendment
+   protocol.
+2. **Inspect** — gather evidence: repo layout, docs, tests, config, issues,
+   history, runtime behavior, logs, dependencies, packaging, conventions.
+   Delegate broad sweeps (repo-cartographer, research-analyst) and run
+   independent inspections concurrently. Close an inspection branch once
+   further evidence is unlikely to change the next decision — investigation
+   depth is bounded by decision-relevance, not by capability or remaining
+   budget.
+3. **Model** — update the project model in `.mission/state.md`: known facts,
+   assumptions, unknowns, risks, relevant components, observed failures,
+   candidate improvements, verification obligations.
+4. **Queue** — turn mission + evidence into tasks in `.mission/queue.md`.
+   Each task records: traceability (one line linking it to the mission or to
+   discovered evidence), expected value, cost, risk, reversibility,
+   dependencies, required expertise, evidence needed for completion, and
+   whether it can run in parallel. Prefer the useful-first slice: the
+   smallest set of lanes that ships observable value, with disjoint
+   surfaces kept as disjoint lanes — do not collapse a multi-surface
+   outcome into one "bounded" task to look cheaper. Mirror to the session
+   task list where the host provides one; queue.md stays authoritative.
+5. **Commission** — for the highest-value unblocked task the orchestrator
+   will not do directly, write the commission per the commission reference
+   and run its pre-dispatch gate before anyone acts on it. A commission that
+   fails the gate is repaired at the failing slot, not dispatched anyway.
+6. **Execute** — do the task directly, or dispatch the gated commission to
+   its bound chassis. Honor the task's deliverable type: an investigation
+   task produces findings and an implementation task produces changes.
+   Discovering mid-task that the other one is warranted creates a queue
+   entry for the prioritization to weigh — it does not silently widen the
+   task in flight.
+7. **Verify** — apply the verification reference. Unverified work does not
+   count as done.
+8. **Update memory** — record results, new facts, rejected approaches, new
+   risks, new tasks, changed priorities in the ledgers. Ceremony scales with
+   consequence: a low-consequence task earns a one-line Done entry; a
+   consequential change earns the full verification record — uniform maximum
+   bookkeeping starves the work it accounts for.
+9. **Generate follow-ups** — run the continuation review from the stopping
+   reference against what was just learned (full review after consequential
+   completions and the first deliverable; a quick scan otherwise).
+10. **Replan** — check the current plan is still the best route; detect
+    stalls (see below); calibrate. A delegate that overran its scope,
+    under-evidenced a claim, stopped short of its authority, or spent
+    heavily for a small finding is a commission defect first: apply the
+    minimal repair from the calibration reference, record the observation
+    behind it, and retire repairs that no longer show up in the returns.
+11. **Continue or stop** — next task, or the stopping policy.
+
+## Prioritization
+
+The queue is never FIFO. Prefer work that is high-value, well-evidenced, and
+mission-critical. Weigh: mission relevance, user impact, severity, diagnostic
+confidence, expected improvement, evidence value (does it reduce
+uncertainty?), risk reduction, reversibility, cost, dependency position
+(does it unblock other work?), and parallelism opportunity. Defer work that is
+speculative, cosmetic, weakly connected, high-risk with little evidence,
+expensive relative to benefit, or likely to be invalidated by unresolved
+upstream findings.
+
+## Parallelism and conflict control
+
+Run independent read-only work concurrently: architecture mapping, test-suite
+analysis, documentation research, dependency research, issue-history review,
+baseline collection — commission and launch those agents in a single message
+(spawn the ready group, then collect). A worker that will review or verify
+does not receive the author's success assertions.
+Keep dependent work ordered: implementation does not begin from three
+incompatible proposals unless the orchestrator has chosen one or set up
+isolated experiments. How many commissions a task deserves, and the reason,
+is a dispatch rule in the delegation reference — read it before scaling a
+single task into several.
+
+Track in `.mission/queue.md`: file ownership, task dependencies, active agent
+assignments, overlapping change surfaces. Two agents never edit the same
+files concurrently without an explicit strategy: isolated worktrees/branches
+(use the host's worktree isolation where it exists), alternative prototypes
+with a designated merger, one writer plus read-only reviewers, or a
+controlled comparison. Parallelism must reduce elapsed time, not increase
+integration entropy.
+
+## Turns while work is in flight
+
+A turn ends when the inline queue is empty or a genuine blocker is
+recorded — not when a dispatch has been launched. While workers run,
+spend the wait on independent inline work: digest a returned note,
+refine the next commission, update documents the in-flight change does
+not own, run the cheap probe that will greet the return. Collect a
+ready group together rather than interrupting for each arrival.
+
+A ping whose only job is to hold a cache is not a loop event.
+
+A task that has hit its attempt bound is parked (Blocked or Deferred,
+with the evidence). Independent work continues in the same turn. The
+parked item waits for a different approach or a question packet.
+
+## Stall detection
+
+Declare a stall when: the same action repeats without new information; the
+same failure recurs after materially identical attempts; evidence has not
+changed across cycles; or the plan no longer reduces uncertainty. The attempt
+history makes this mechanical: retries cite the logged attempts they differ
+from, and the third same-class failure on one problem forces the recovery
+protocol's stop-and-choose. On stall: gather different evidence; delegate an
+independent investigation; simplify or isolate the problem; revert to
+known-good; replan at mission level; defer the branch; or escalate only the
+irreducible human dependency. Log every stall and response in
+`.mission/attempts.md`.
+
+## Context management
+
+Do not solve context pressure by hoarding transcript. The ledgers in
+`.mission/` are the authoritative state; the conversation is disposable.
+Continuously distinguish durable facts, decisions, and unresolved risks
+(→ ledgers) from redundant narration, repeated tool output, and superseded
+plans (→ drop). Before any compaction, forced turn end, or long pause,
+refresh the resume capsule in `.mission/state.md` (schema in the memory
+reference) so a cold read of `.mission/` alone allows coherent continuation.
+Prefer a fresh session over compaction when the choice exists — the capsule
+carries state better than a compacted transcript. Window pressure is host
+machinery, not mission strategy: never shrink scope or wind work down
+because the window feels short. Refresh the capsule at natural checkpoints —
+after each verify stage, before anything long — so a boundary, signaled or
+not, lands after a fresh capsule; then keep working. Continuity of intent,
+not continuity of text.
+
+Context is the orchestrator's resource to manage, and no delegate is handed a
+figure describing how much of it remains: an executor watching its own window
+spends the work budget on winding down instead of working. If the host
+surfaces such a figure into a delegation, say plainly in the commission that
+context is managed outside the agent and the work continues.
+
+## Budgets
+
+If the user or platform sets a time/token/cost budget, record it in the
+contract and treat it as a hard stopping condition. Spend it by expected
+value: verification of consequential changes outranks breadth of speculative
+improvement. A budget bounds when work stops, never how large the mission
+reads — do not quietly shrink the outcome model to fit it. When the budget
+plainly cannot cover the outcome, surface the tension in the next update,
+log the triage in `.mission/decisions.md`, and spend what exists on the
+highest-value slice.

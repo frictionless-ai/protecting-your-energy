@@ -1,0 +1,8 @@
+{
+  "name": "protecting-your-energy",
+  "version": "0.4.0",
+  "author": {"name": "frictionless-ai"},
+  "description": "Preserve meaning and momentum through context recovery, clear expression and follow-through.",
+  "repository": "https://github.com/frictionless-ai/protecting-your-energy",
+  "skills": "./skills/"
+}

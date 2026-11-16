@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "hooks": {
+    "beforeSubmitPrompt": [
+      {
+        "matcher": "UserPromptSubmit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 .cursor/hooks/prompt_uplift_hook.py"
+          }
+        ]
+      }
+    ]
+  }
+}

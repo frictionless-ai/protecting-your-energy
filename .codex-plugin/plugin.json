@@ -1,16 +1,17 @@
 {
   "name": "protecting-your-energy",
-  "version": "0.3.2",
-  "description": "Recover reasoning, express it clearly, choose useful work and surface relevant opportunities while preserving continuity.",
+  "version": "0.4.0",
+  "description": "Preserve meaning and momentum through context recovery, clear expression and follow-through.",
   "author": {
-    "name": "Local developer"
+    "name": "frictionless-ai"
   },
   "skills": "./skills/",
+  "hooks": "./hooks/codex.json",
   "interface": {
     "displayName": "Protect Your Energy",
-    "shortDescription": "Turn accumulated thinking into useful next results.",
-    "longDescription": "Reclaim ideas, express them for the current audience, choose the next action, reassess overruns and notice verified opportunities. Keep evidence and resumption state private.",
-    "developerName": "Local developer",
+    "shortDescription": "Keep the energy to explain an idea and get it done.",
+    "longDescription": "Recover earlier explanations, preserve the user's meaning and corrections, and carry requested work through investigation, iteration and checking.",
+    "developerName": "frictionless-ai",
     "category": "Productivity",
     "capabilities": [],
     "defaultPrompt": [

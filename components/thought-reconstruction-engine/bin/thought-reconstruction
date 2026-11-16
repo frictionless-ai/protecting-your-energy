@@ -1,0 +1,42 @@
+#!/usr/bin/python3
+"""Installed command for the private configured library."""
+import os
+from pathlib import Path
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from tr_engine.library import main
+
+portable_config = Path(os.environ.get('XDG_CONFIG_HOME') or Path.home()/'.config') / 'protecting-your-energy/thought-reconstruction.json'
+legacy_config = Path.home() / 'brain-data/upar-dip/derived/thought-reconstruction/config.json'
+default_config = portable_config if portable_config.exists() or not legacy_config.exists() else legacy_config
+config = str(Path(os.environ.get('THOUGHT_RECONSTRUCTION_CONFIG') or default_config).expanduser())
+args = sys.argv[1:]
+action = args.pop(0) if args else 'verify'
+action = {'rebuild':'build'}.get(action, action)
+if action == 'reclaim':
+    from tr_engine.reclaim import main as reclaim_main
+    raise SystemExit(reclaim_main(['--config', config] + args))
+if action not in ('build','verify','query','task','merge-plan','flag-report'):
+    raise SystemExit('usage: thought-reconstruction {reclaim TEXT [options]|rebuild [--spend]|merge-plan|flag-report|verify|query [--with-context] TEXT|task ID}')
+if args in (['--help'], ['-h']):
+    raise SystemExit(main([action, '--help']))
+if action in ('merge-plan', 'flag-report') and args:
+    raise SystemExit('usage: thought-reconstruction ' + action)
+argv = [action, '--config', config]
+if '--with-context' in args:
+    # Context turns are other speakers' words; query shows them only on request.
+    if action != 'query':
+        raise SystemExit('--with-context applies only to query')
+    args = [a for a in args if a != '--with-context']
+    argv.append('--with-context')
+if action == 'build':
+    # Without --spend a receipt cache miss fails the build instead of calling the provider.
+    if any(a != '--spend' for a in args):
+        raise SystemExit('usage: thought-reconstruction rebuild [--spend]')
+    argv += ['--spend'] if args else []
+if action in ('query','task'):
+    if not args:
+        raise SystemExit('provide search text or a thought ID')
+    argv += ['--text' if action == 'query' else '--id', ' '.join(args)]
+raise SystemExit(main(argv))

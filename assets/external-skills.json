@@ -1,0 +1,4045 @@
+{
+  "description": "Installed external skill sources recorded during local consolidation. These projects retain their own installation, license and update requirements.",
+  "sources": [
+    {
+      "repository": "https://github.com/GoogleChrome/modern-web-guidance.git",
+      "skills": [
+        {
+          "name": "chrome-extensions",
+          "path": "skills/chrome-extensions/SKILL.md",
+          "content_hash": "70ae21f9bbccb4d97c2748dffcc227f9ed07c6cf"
+        },
+        {
+          "name": "modern-web-guidance",
+          "path": "skills/modern-web-guidance/SKILL.md",
+          "content_hash": "f36692bc081465b920c16c5801415f2f0627146c"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/K-Dense-AI/scientific-agent-skills.git",
+      "skills": [
+        {
+          "name": "13c-metabolic-flux",
+          "path": "skills/13c-metabolic-flux/SKILL.md",
+          "content_hash": "a38bb268e9585963d2e8e0eac62c8085cbfc6886"
+        },
+        {
+          "name": "adaptyv",
+          "path": "skills/adaptyv/SKILL.md",
+          "content_hash": "d849ea618ba9a4e49843794c75c14d8d5245687e"
+        },
+        {
+          "name": "aeon",
+          "path": "skills/aeon/SKILL.md",
+          "content_hash": "4cce1063a14400094c240a973ed70e2ef15889ae"
+        },
+        {
+          "name": "alphagenome",
+          "path": "skills/alphagenome/SKILL.md",
+          "content_hash": "c84c772f4e8e1f09f15de2a3f953e73a0501b569"
+        },
+        {
+          "name": "analytical-method-validation",
+          "path": "skills/analytical-method-validation/SKILL.md",
+          "content_hash": "4b8ea6e215ab3bc17469340345275b54861b559f"
+        },
+        {
+          "name": "anndata",
+          "path": "skills/anndata/SKILL.md",
+          "content_hash": "20e5cbae892443db5b1e7f6e44e5ebe1848a72e2"
+        },
+        {
+          "name": "arbor",
+          "path": "skills/arbor/SKILL.md",
+          "content_hash": "eac719629edd8df483c5061e0acfaa763d317d9c"
+        },
+        {
+          "name": "arboreto",
+          "path": "skills/arboreto/SKILL.md",
+          "content_hash": "b794d2ad7ab0d83e520bae563e242809669deb66"
+        },
+        {
+          "name": "astropy",
+          "path": "skills/astropy/SKILL.md",
+          "content_hash": "fdecbcd876f0492da1e7c539735a7ce4fc9d253e"
+        },
+        {
+          "name": "autoskill",
+          "path": "skills/autoskill/SKILL.md",
+          "content_hash": "aac5a358ceb78ff74872c61c1e6971b16bc95219"
+        },
+        {
+          "name": "benchling-integration",
+          "path": "skills/benchling-integration/SKILL.md",
+          "content_hash": "10ca4f6f7dcf28fcb54967dc63a7f545500f998d"
+        },
+        {
+          "name": "bgpt-paper-search",
+          "path": "skills/bgpt-paper-search/SKILL.md",
+          "content_hash": "aa62a7ea06d15a37b3915027abcc8790fb89efc4"
+        },
+        {
+          "name": "bids",
+          "path": "skills/bids/SKILL.md",
+          "content_hash": "a93cb18528b960ddb91122aad4ef47bf4bc30a86"
+        },
+        {
+          "name": "biopython",
+          "path": "skills/biopython/SKILL.md",
+          "content_hash": "ce3c62754519fc87c2a26279b97fc4dd958e2da8"
+        },
+        {
+          "name": "bioservices",
+          "path": "skills/bioservices/SKILL.md",
+          "content_hash": "2a615c81b522ab503bcd1564702d2404e5006ca5"
+        },
+        {
+          "name": "bulk-rnaseq",
+          "path": "skills/bulk-rnaseq/SKILL.md",
+          "content_hash": "c236cf85b07184ddb9cca999b1040f27b166ebbf"
+        },
+        {
+          "name": "cantera",
+          "path": "skills/cantera/SKILL.md",
+          "content_hash": "4882030876788b67c81c3d24f1fa2c2e4042cfe3"
+        },
+        {
+          "name": "cellprofiler",
+          "path": "skills/cellprofiler/SKILL.md",
+          "content_hash": "0c67f3a9ceb1bfea8e076dbddc50189245de1308"
+        },
+        {
+          "name": "cellxgene-census",
+          "path": "skills/cellxgene-census/SKILL.md",
+          "content_hash": "d990c5ef2bfe956ca30872e060872e0ed7c81263"
+        },
+        {
+          "name": "cirq",
+          "path": "skills/cirq/SKILL.md",
+          "content_hash": "84ebcd0d15f6a27f56c50647b9194983531270e6"
+        },
+        {
+          "name": "citation-management",
+          "path": "skills/citation-management/SKILL.md",
+          "content_hash": "e838e1d0c96096867587bc116f2eec0ff925cbce"
+        },
+        {
+          "name": "clinical-decision-support",
+          "path": "skills/clinical-decision-support/SKILL.md",
+          "content_hash": "e3bc3f55352f384f454bee6b110be17082edf613"
+        },
+        {
+          "name": "clinical-reports",
+          "path": "skills/clinical-reports/SKILL.md",
+          "content_hash": "2fc4e647865008c3c16b0a2789c479bc3ae0fa47"
+        },
+        {
+          "name": "cobrapy",
+          "path": "skills/cobrapy/SKILL.md",
+          "content_hash": "eb30956411b8b0a4d00c89665bad802b3cbdfcdb"
+        },
+        {
+          "name": "consciousness-council",
+          "path": "skills/consciousness-council/SKILL.md",
+          "content_hash": "64fac4ebb49855f80e0bd69c24abbd327f7a2cd0"
+        },
+        {
+          "name": "dask",
+          "path": "skills/dask/SKILL.md",
+          "content_hash": "1a7f379e9d89cda144f0fcfe2742f172a465f753"
+        },
+        {
+          "name": "database-lookup",
+          "path": "skills/database-lookup/SKILL.md",
+          "content_hash": "6795e5bb67c0af0d1574aa06a1bc572dd7f9b981"
+        },
+        {
+          "name": "datalad",
+          "path": "skills/datalad/SKILL.md",
+          "content_hash": "1102d4700a2c1e78288264bd6a0d9b388037d1bd"
+        },
+        {
+          "name": "datamol",
+          "path": "skills/datamol/SKILL.md",
+          "content_hash": "6154b4d9e1c6ae8e390132a54b71d666ef8cf78e"
+        },
+        {
+          "name": "deepchem",
+          "path": "skills/deepchem/SKILL.md",
+          "content_hash": "7214ae6422dc10dd86a55a2940d067cd5f743c01"
+        },
+        {
+          "name": "deepspot-m",
+          "path": "skills/deepspot-m/SKILL.md",
+          "content_hash": "d5a533a5cb8d897bec67acb887a790d2a0bb01cf"
+        },
+        {
+          "name": "deeptools",
+          "path": "skills/deeptools/SKILL.md",
+          "content_hash": "e532f28440d27cdce1cd32dac121d2f7de0ba2aa"
+        },
+        {
+          "name": "depmap",
+          "path": "skills/depmap/SKILL.md",
+          "content_hash": "1c4a75650ad6499b17175f0ccfc6c32310f8d152"
+        },
+        {
+          "name": "dhdna-profiler",
+          "path": "skills/dhdna-profiler/SKILL.md",
+          "content_hash": "19c3e196b13b2cfca3654f52e7046ccb90ecba4b"
+        },
+        {
+          "name": "diffdock",
+          "path": "skills/diffdock/SKILL.md",
+          "content_hash": "5be4c5019206cc3adb4af314a43b672c3736dce0"
+        },
+        {
+          "name": "dnanexus-integration",
+          "path": "skills/dnanexus-integration/SKILL.md",
+          "content_hash": "e81f4d414d086084bcb15ac0e9a6ff63f72e554c"
+        },
+        {
+          "name": "esm",
+          "path": "skills/esm/SKILL.md",
+          "content_hash": "a161e5a2591b95679f6b4c1db8aa998f8437b934"
+        },
+        {
+          "name": "etetoolkit",
+          "path": "skills/etetoolkit/SKILL.md",
+          "content_hash": "b0999ed6213cfd01acb2bbb08b8bc2acff0a6d82"
+        },
+        {
+          "name": "exa-search",
+          "path": "skills/exa-search/SKILL.md",
+          "content_hash": "627aca7a8aff551205a744bee5cf4a0278a526d8"
+        },
+        {
+          "name": "experimental-design",
+          "path": "skills/experimental-design/SKILL.md",
+          "content_hash": "c4bc6dfbccdcc8452d6ea8ab9d7ce4e47b11f8b3"
+        },
+        {
+          "name": "exploratory-data-analysis",
+          "path": "skills/exploratory-data-analysis/SKILL.md",
+          "content_hash": "05078b0b57ce5387f8883e6ae1273f11f8329115"
+        },
+        {
+          "name": "fictiv",
+          "path": "skills/fictiv/SKILL.md",
+          "content_hash": "86ad95ddc6fffc3e675f60f7fc42ba05caeb3d2e"
+        },
+        {
+          "name": "flowio",
+          "path": "skills/flowio/SKILL.md",
+          "content_hash": "e64970cc483908c2db9e50fda48e7e87ecaa4145"
+        },
+        {
+          "name": "flowkit",
+          "path": "skills/flowkit/SKILL.md",
+          "content_hash": "95b7192cf0f49904036c19048490b4212e56a864"
+        },
+        {
+          "name": "fluidsim",
+          "path": "skills/fluidsim/SKILL.md",
+          "content_hash": "188564cb01df00e7760873010d7aff19bae377ff"
+        },
+        {
+          "name": "folklore-variant-evidence",
+          "path": "skills/folklore-variant-evidence/SKILL.md",
+          "content_hash": "9f4f9425f37543a5c09360df881c1832854504bc"
+        },
+        {
+          "name": "generate-image",
+          "path": "skills/generate-image/SKILL.md",
+          "content_hash": "0d7d7a6e71395e7a67d4458fc80c7b542e64ab4e"
+        },
+        {
+          "name": "geniml",
+          "path": "skills/geniml/SKILL.md",
+          "content_hash": "40a02873f8e826a380d0074227e6d2f15572645b"
+        },
+        {
+          "name": "genomic-coordinates",
+          "path": "skills/genomic-coordinates/SKILL.md",
+          "content_hash": "7eae514a4b7f93b6cb788cc1ba482dd46e9d0b48"
+        },
+        {
+          "name": "genomic-intelligence",
+          "path": "skills/genomic-intelligence/SKILL.md",
+          "content_hash": "7a044f48ddf9656cc0fb68634969d0ef3ed095e6"
+        },
+        {
+          "name": "geomaster",
+          "path": "skills/geomaster/SKILL.md",
+          "content_hash": "15cd3a40b1875657c76055cca596982362535718"
+        },
+        {
+          "name": "geopandas",
+          "path": "skills/geopandas/SKILL.md",
+          "content_hash": "9ec557fa1430dcc3d58f8567e7e46bd28d2d1502"
+        },
+        {
+          "name": "get-available-resources",
+          "path": "skills/get-available-resources/SKILL.md",
+          "content_hash": "453a1104846c6e1c2a89a961682278621e4d3108"
+        },
+        {
+          "name": "gget",
+          "path": "skills/gget/SKILL.md",
+          "content_hash": "89f6dc784c8737bba3311ea6a2878cb668cb5b0c"
+        },
+        {
+          "name": "ginkgo-cloud-lab",
+          "path": "skills/ginkgo-cloud-lab/SKILL.md",
+          "content_hash": "2f900e12c82d223c63fa8968aa39eeb8eb2d9059"
+        },
+        {
+          "name": "glycoengineering",
+          "path": "skills/glycoengineering/SKILL.md",
+          "content_hash": "5f020183ebc81740ade6367607dfc7b24f319a98"
+        },
+        {
+          "name": "gtars",
+          "path": "skills/gtars/SKILL.md",
+          "content_hash": "2506cc25b2abc0d89d1da5120dbfc3e95088f4d7"
+        },
+        {
+          "name": "histolab",
+          "path": "skills/histolab/SKILL.md",
+          "content_hash": "2e58534e47512cdbacb3c2b18e8a166242553098"
+        },
+        {
+          "name": "hugging-science",
+          "path": "skills/hugging-science/SKILL.md",
+          "content_hash": "0433febd40f44f505b1c0e057cd5823921f71cae"
+        },
+        {
+          "name": "hypogenic",
+          "path": "skills/hypogenic/SKILL.md",
+          "content_hash": "4840d72e02cbf1ac3cedfa2d91949550c45f8b53"
+        },
+        {
+          "name": "hypothesis-generation",
+          "path": "skills/hypothesis-generation/SKILL.md",
+          "content_hash": "4ad4a8776adf382204473a26d3b9967541409e85"
+        },
+        {
+          "name": "imaging-data-commons",
+          "path": "skills/imaging-data-commons/SKILL.md",
+          "content_hash": "ff55531fc91076780067d5e0f4b2acffa582bd53"
+        },
+        {
+          "name": "infographics",
+          "path": "skills/infographics/SKILL.md",
+          "content_hash": "a80e8e2d7c9db4faa4a97cefbaf8654ff177e9fc"
+        },
+        {
+          "name": "iso-standards-readiness",
+          "path": "skills/iso-standards-readiness/SKILL.md",
+          "content_hash": "935fe342b90bd9ae5c6dca11dcac388acabbe7ba"
+        },
+        {
+          "name": "lab-hardware-cad",
+          "path": "skills/lab-hardware-cad/SKILL.md",
+          "content_hash": "efc1c883a6123b00b9f1bbee5f519a39f099fde1"
+        },
+        {
+          "name": "labarchive-integration",
+          "path": "skills/labarchive-integration/SKILL.md",
+          "content_hash": "2d59d7a99d1369e5e55486c2dfa0e458e7a27af8"
+        },
+        {
+          "name": "lamindb",
+          "path": "skills/lamindb/SKILL.md",
+          "content_hash": "9c3aed40f7ed0e3f62c98d5e9e3458a319119a30"
+        },
+        {
+          "name": "latchbio-integration",
+          "path": "skills/latchbio-integration/SKILL.md",
+          "content_hash": "cdf3abccd099533fa3911f0d48d5d797dac32d10"
+        },
+        {
+          "name": "latex-posters",
+          "path": "skills/latex-posters/SKILL.md",
+          "content_hash": "a0d235bbfb885af07cbf70e40cc58504d2a392c9"
+        },
+        {
+          "name": "liteparse",
+          "path": "skills/liteparse/SKILL.md",
+          "content_hash": "59a85c5672492a479f7780ac1d4c96ae2dc4f1d6"
+        },
+        {
+          "name": "literature-review",
+          "path": "skills/literature-review/SKILL.md",
+          "content_hash": "abbd5cd9f06e1fb4fae66345a4df790cc34d2ad8"
+        },
+        {
+          "name": "mageck",
+          "path": "skills/mageck/SKILL.md",
+          "content_hash": "c1a230f425f5c8459b570ae1e54f613d5341d95d"
+        },
+        {
+          "name": "marine-carbonate-chemistry",
+          "path": "skills/marine-carbonate-chemistry/SKILL.md",
+          "content_hash": "12405bb8f2fa931e256806843f461495d3afef2f"
+        },
+        {
+          "name": "markdown-mermaid-writing",
+          "path": "skills/markdown-mermaid-writing/SKILL.md",
+          "content_hash": "d508ec54bda898c0b850cfee89c1db4622121b43"
+        },
+        {
+          "name": "market-research-reports",
+          "path": "skills/market-research-reports/SKILL.md",
+          "content_hash": "72e48d55eb064ffa80b0fdd0edc4fd7256afad45"
+        },
+        {
+          "name": "markitdown",
+          "path": "skills/markitdown/SKILL.md",
+          "content_hash": "7d881600bf4569374b505d3dd70ded616cafde19"
+        },
+        {
+          "name": "matchms",
+          "path": "skills/matchms/SKILL.md",
+          "content_hash": "5ffba43974a741911f3c4b85b58eeb884f7404fc"
+        },
+        {
+          "name": "matlab",
+          "path": "skills/matlab/SKILL.md",
+          "content_hash": "4e385b35df275a2fb73873612f02e9ab64f25e4f"
+        },
+        {
+          "name": "matplotlib",
+          "path": "skills/matplotlib/SKILL.md",
+          "content_hash": "5878841efa26086ca904f5532fe057fdb20885e1"
+        },
+        {
+          "name": "medchem",
+          "path": "skills/medchem/SKILL.md",
+          "content_hash": "dac63274f9dcd22018425cdf3bb6d94577bc9e18"
+        },
+        {
+          "name": "modal",
+          "path": "skills/modal/SKILL.md",
+          "content_hash": "84e0c59da4d1da7ecd47a375f4655286f03c2cfc"
+        },
+        {
+          "name": "molecular-dynamics",
+          "path": "skills/molecular-dynamics/SKILL.md",
+          "content_hash": "4adc8c1c4b7e88661bc34f0c72d3c1b0c5b2f7ff"
+        },
+        {
+          "name": "molfeat",
+          "path": "skills/molfeat/SKILL.md",
+          "content_hash": "a4e302b684a9038f11a8ac18170b82284495630a"
+        },
+        {
+          "name": "ncats-arax",
+          "path": "skills/ncats-arax/SKILL.md",
+          "content_hash": "a654f3f06e01ca6a9a510e42e6a881acec86881c"
+        },
+        {
+          "name": "networkx",
+          "path": "skills/networkx/SKILL.md",
+          "content_hash": "0b8c72bafa3ed7b870a1ce0d0f8b23eac11b52ca"
+        },
+        {
+          "name": "neurokit2",
+          "path": "skills/neurokit2/SKILL.md",
+          "content_hash": "dd0874d879002f1efcf38de2390a14359ce61105"
+        },
+        {
+          "name": "neuropixels-analysis",
+          "path": "skills/neuropixels-analysis/SKILL.md",
+          "content_hash": "cb1093e6a68b789dc4d91e337a7347b7be239c6b"
+        },
+        {
+          "name": "nextflow",
+          "path": "skills/nextflow/SKILL.md",
+          "content_hash": "7db04133e61f17f5d839eeba9ef026575a87d2a7"
+        },
+        {
+          "name": "nmrglue",
+          "path": "skills/nmrglue/SKILL.md",
+          "content_hash": "a4e56f5cb99ec6e8dcdaf0e41d47705641fb41be"
+        },
+        {
+          "name": "nwb-conversion",
+          "path": "skills/nwb-conversion/SKILL.md",
+          "content_hash": "c9401ef8b02bdcabb87d139227f5cc1909a535ef"
+        },
+        {
+          "name": "omero-integration",
+          "path": "skills/omero-integration/SKILL.md",
+          "content_hash": "95fa3c90eb6daeecca9f6c67fb9986741eeac44c"
+        },
+        {
+          "name": "onekgpd",
+          "path": "skills/onekgpd/SKILL.md",
+          "content_hash": "441fcb1664919263a14538c287217cee48527368"
+        },
+        {
+          "name": "ontology-term-resolution",
+          "path": "skills/ontology-term-resolution/SKILL.md",
+          "content_hash": "77506d5d5652fd13599961b4bf61ab0fdf42439e"
+        },
+        {
+          "name": "open-notebook",
+          "path": "skills/open-notebook/SKILL.md",
+          "content_hash": "a08a2b48758589018d86ee5a38e8ff3c63a1b971"
+        },
+        {
+          "name": "openpiv",
+          "path": "skills/openpiv/SKILL.md",
+          "content_hash": "966e50cef294d5f4e388c33a8155b6c2e5ac289e"
+        },
+        {
+          "name": "opentrons-integration",
+          "path": "skills/opentrons-integration/SKILL.md",
+          "content_hash": "e337e1229e7f567aeb8867a4ebee7c5e17437ce1"
+        },
+        {
+          "name": "optimize-for-gpu",
+          "path": "skills/optimize-for-gpu/SKILL.md",
+          "content_hash": "d826dc294214e11a1b89759a77bea57527867e58"
+        },
+        {
+          "name": "pacsomatic",
+          "path": "skills/pacsomatic/SKILL.md",
+          "content_hash": "508cf74540a2dd397d1b01b7cde1042bbbb58d9d"
+        },
+        {
+          "name": "paper-lookup",
+          "path": "skills/paper-lookup/SKILL.md",
+          "content_hash": "4bcb431dc0046ed25fbadc6cbca861d0a71af310"
+        },
+        {
+          "name": "paperclip",
+          "path": "skills/paperclip/SKILL.md",
+          "content_hash": "c267437b95f1ae25515cdc8222a6dd39a8b5f844"
+        },
+        {
+          "name": "paperzilla",
+          "path": "skills/paperzilla/SKILL.md",
+          "content_hash": "329b42f47378b464db6c1bb272d64f60316128ff"
+        },
+        {
+          "name": "parallel-web",
+          "path": "skills/parallel-web/SKILL.md",
+          "content_hash": "6cd9f21e44c02d550715145d93db2a7cba688ac8"
+        },
+        {
+          "name": "pathml",
+          "path": "skills/pathml/SKILL.md",
+          "content_hash": "4b2909caffe95820fbcd3dc6c1066438b479ad4f"
+        },
+        {
+          "name": "pathogen-variant-surveillance",
+          "path": "skills/pathogen-variant-surveillance/SKILL.md",
+          "content_hash": "eb4c338e7edffe55fac07932f42bb517de7cd8bf"
+        },
+        {
+          "name": "pathway-enrichment",
+          "path": "skills/pathway-enrichment/SKILL.md",
+          "content_hash": "0869d5e5db25ffa410e2907a5e0a2623319a83fb"
+        },
+        {
+          "name": "peer-review",
+          "path": "skills/peer-review/SKILL.md",
+          "content_hash": "c490df78961197e52fd2f1649853e62568b429ca"
+        },
+        {
+          "name": "pennylane",
+          "path": "skills/pennylane/SKILL.md",
+          "content_hash": "36dae94999e42fcaa7bee7bd2e503287a342396e"
+        },
+        {
+          "name": "phylogenetics",
+          "path": "skills/phylogenetics/SKILL.md",
+          "content_hash": "28bdeba2d091247153b5f3d3eebd481a2bdff6bc"
+        },
+        {
+          "name": "pi-agent",
+          "path": "skills/pi-agent/SKILL.md",
+          "content_hash": "d58e366037de652756b9ca8159abdfa7b79e1486"
+        },
+        {
+          "name": "pkpd-modeling",
+          "path": "skills/pkpd-modeling/SKILL.md",
+          "content_hash": "4ec596ff914e3208adae69d8ea2ecbb9311d8600"
+        },
+        {
+          "name": "polars",
+          "path": "skills/polars/SKILL.md",
+          "content_hash": "f7ce6ef388aa9764de240bd602efb1208a92a754"
+        },
+        {
+          "name": "polars-bio",
+          "path": "skills/polars-bio/SKILL.md",
+          "content_hash": "44e308eb8f1fe50db5525bd5bab85b340b60551c"
+        },
+        {
+          "name": "pptx-posters",
+          "path": "skills/pptx-posters/SKILL.md",
+          "content_hash": "d96c387e0776d6a31597cdd52632ffee35e445ec"
+        },
+        {
+          "name": "primekg",
+          "path": "skills/primekg/SKILL.md",
+          "content_hash": "8b6e5568895bf618b1c953e026fa74afbaca81ea"
+        },
+        {
+          "name": "primer-design",
+          "path": "skills/primer-design/SKILL.md",
+          "content_hash": "66bf14604fe81141cf0e011792778c48f34c7284"
+        },
+        {
+          "name": "protocolsio-integration",
+          "path": "skills/protocolsio-integration/SKILL.md",
+          "content_hash": "98d06800252f1f2dbf89b63510a37d118b1d7fb8"
+        },
+        {
+          "name": "pufferlib",
+          "path": "skills/pufferlib/SKILL.md",
+          "content_hash": "e615784aed12baad6dc22f582f22e95f5961024a"
+        },
+        {
+          "name": "pybamm",
+          "path": "skills/pybamm/SKILL.md",
+          "content_hash": "87f95705de5861000cceaacf03406c49a931beaa"
+        },
+        {
+          "name": "pycalphad",
+          "path": "skills/pycalphad/SKILL.md",
+          "content_hash": "0b03485f11bced2ea966fc05cd467cad616d3623"
+        },
+        {
+          "name": "pydeseq2",
+          "path": "skills/pydeseq2/SKILL.md",
+          "content_hash": "6073e24b7a84d55a316a37d7dd24eb7a7536c351"
+        },
+        {
+          "name": "pydicom",
+          "path": "skills/pydicom/SKILL.md",
+          "content_hash": "220789004bb668cfd9f2d1cd81099876291f7f13"
+        },
+        {
+          "name": "pyhealth",
+          "path": "skills/pyhealth/SKILL.md",
+          "content_hash": "737f376ee0f147c7e6f571aa60b35cc8f2fdb995"
+        },
+        {
+          "name": "pylabrobot",
+          "path": "skills/pylabrobot/SKILL.md",
+          "content_hash": "b4ad44ec473996844ab5190170250f612130f27f"
+        },
+        {
+          "name": "pymatgen",
+          "path": "skills/pymatgen/SKILL.md",
+          "content_hash": "14aabcdf0a78bac0b37b9a97724aa60e1256067d"
+        },
+        {
+          "name": "pymc",
+          "path": "skills/pymc/SKILL.md",
+          "content_hash": "77cbb1dd10b5fc08d1f98ac2e05e13358cb2bdca"
+        },
+        {
+          "name": "pymoo",
+          "path": "skills/pymoo/SKILL.md",
+          "content_hash": "2a06177adf0649ee603cea9790d2a4d3aa62d0ec"
+        },
+        {
+          "name": "pyopenms",
+          "path": "skills/pyopenms/SKILL.md",
+          "content_hash": "da22aa9435b5ace9a0840edb6f57e59cc9e30354"
+        },
+        {
+          "name": "pysam",
+          "path": "skills/pysam/SKILL.md",
+          "content_hash": "98bfbd9efeb61a65268153fe0e6712f138633c0f"
+        },
+        {
+          "name": "pytdc",
+          "path": "skills/pytdc/SKILL.md",
+          "content_hash": "58ad9e3798030a282671d7cde8f6b1eb52fc5ba1"
+        },
+        {
+          "name": "pytorch-lightning",
+          "path": "skills/pytorch-lightning/SKILL.md",
+          "content_hash": "96de643634a688a0a42c998f016dd2239cc25cff"
+        },
+        {
+          "name": "pyzotero",
+          "path": "skills/pyzotero/SKILL.md",
+          "content_hash": "08c3fdc15be293b5643f94bac18a5f2ecec09d37"
+        },
+        {
+          "name": "qiime2-amplicon",
+          "path": "skills/qiime2-amplicon/SKILL.md",
+          "content_hash": "218d1353d559dc8a5e93d34456e7ce2898d99e79"
+        },
+        {
+          "name": "qiskit",
+          "path": "skills/qiskit/SKILL.md",
+          "content_hash": "df671f0ec3739353ef26aeddecffe7d262ed4df5"
+        },
+        {
+          "name": "qutip",
+          "path": "skills/qutip/SKILL.md",
+          "content_hash": "586afa0e75117e9455b38846381b2a4e97fd6ab5"
+        },
+        {
+          "name": "rdkit",
+          "path": "skills/rdkit/SKILL.md",
+          "content_hash": "cd3e6a79f23b110309a6f920dc6d3fc2764cee0a"
+        },
+        {
+          "name": "relion",
+          "path": "skills/relion/SKILL.md",
+          "content_hash": "114019d5e589685ff898a090a076a21516f56525"
+        },
+        {
+          "name": "relsa-severity-assessment",
+          "path": "skills/relsa-severity-assessment/SKILL.md",
+          "content_hash": "7223fd441a34f2dd28bd2c7143a7cec7b7ef715c"
+        },
+        {
+          "name": "research-grants",
+          "path": "skills/research-grants/SKILL.md",
+          "content_hash": "d373fc8e8a4b4f78c005c90aae2f6b571e507a24"
+        },
+        {
+          "name": "research-lookup",
+          "path": "skills/research-lookup/SKILL.md",
+          "content_hash": "0ec47fa24a3455b95e19a8573fae996a1d6aebc9"
+        },
+        {
+          "name": "rowan",
+          "path": "skills/rowan/SKILL.md",
+          "content_hash": "192d8a347e8f44337daddd118bde77ff0a720008"
+        },
+        {
+          "name": "scanpy",
+          "path": "skills/scanpy/SKILL.md",
+          "content_hash": "87385e8b7ea86d2fbde3412f2ad8cca0c5da1e16"
+        },
+        {
+          "name": "scholar-evaluation",
+          "path": "skills/scholar-evaluation/SKILL.md",
+          "content_hash": "00b4700b074bb28147b24bf6c8ea18ebc043dff4"
+        },
+        {
+          "name": "scientific-brainstorming",
+          "path": "skills/scientific-brainstorming/SKILL.md",
+          "content_hash": "79691529803f49d952985de98a30f67861b19007"
+        },
+        {
+          "name": "scientific-critical-thinking",
+          "path": "skills/scientific-critical-thinking/SKILL.md",
+          "content_hash": "a658236e69d700577a095bccf8d87fe7391bd22d"
+        },
+        {
+          "name": "scientific-schematics",
+          "path": "skills/scientific-schematics/SKILL.md",
+          "content_hash": "3d8fc9ae59255cb576721698a0e88fe82d672596"
+        },
+        {
+          "name": "scientific-slides",
+          "path": "skills/scientific-slides/SKILL.md",
+          "content_hash": "f869d3ccf27fa9ea3aba731ec58ff70a23c074c4"
+        },
+        {
+          "name": "scientific-visualization",
+          "path": "skills/scientific-visualization/SKILL.md",
+          "content_hash": "292eaa2adb46c1ee678f090efec7780c50b91419"
+        },
+        {
+          "name": "scientific-writing",
+          "path": "skills/scientific-writing/SKILL.md",
+          "content_hash": "2fb90f9b84226432129a2cbd999857cc6eb98018"
+        },
+        {
+          "name": "scikit-bio",
+          "path": "skills/scikit-bio/SKILL.md",
+          "content_hash": "dfa464cdc93fc42cf1744a979508c9724d3d78da"
+        },
+        {
+          "name": "scikit-learn",
+          "path": "skills/scikit-learn/SKILL.md",
+          "content_hash": "864a5d3dc115c9b45b2b120da6f519f684276ddc"
+        },
+        {
+          "name": "scikit-survival",
+          "path": "skills/scikit-survival/SKILL.md",
+          "content_hash": "72bfb55036e631e04cc64accf76a15451d2a0c81"
+        },
+        {
+          "name": "scvelo",
+          "path": "skills/scvelo/SKILL.md",
+          "content_hash": "5e6d4f0ae5d0797bfbdf9172ab328b195b135555"
+        },
+        {
+          "name": "scvi-tools",
+          "path": "skills/scvi-tools/SKILL.md",
+          "content_hash": "dee5442bc103532aafaea88d2aafd0d681484b6e"
+        },
+        {
+          "name": "seaborn",
+          "path": "skills/seaborn/SKILL.md",
+          "content_hash": "0013bbb60d4b21e7203f3739c96f4a40db15f086"
+        },
+        {
+          "name": "shap",
+          "path": "skills/shap/SKILL.md",
+          "content_hash": "6bff165ee8d997a948ca4e88ccdc10b58f9e4a20"
+        },
+        {
+          "name": "simpy",
+          "path": "skills/simpy/SKILL.md",
+          "content_hash": "a2a476f4b3226691eb22c4bc1b9a8a13340c119c"
+        },
+        {
+          "name": "stable-baselines3",
+          "path": "skills/stable-baselines3/SKILL.md",
+          "content_hash": "bd7ded709b3585269840fd0aa6b25b6b1d53091c"
+        },
+        {
+          "name": "statistical-analysis",
+          "path": "skills/statistical-analysis/SKILL.md",
+          "content_hash": "d952f1decb93143a120f963d95fdd210a8a681d1"
+        },
+        {
+          "name": "statistical-power",
+          "path": "skills/statistical-power/SKILL.md",
+          "content_hash": "a40da7de71f939c5f7f134c776894f8080b63792"
+        },
+        {
+          "name": "statsmodels",
+          "path": "skills/statsmodels/SKILL.md",
+          "content_hash": "af8508891ba878efa76f91b26677e416b46c5f29"
+        },
+        {
+          "name": "sympy",
+          "path": "skills/sympy/SKILL.md",
+          "content_hash": "6905f43603d98b572f2cd8d80b305b5e4b4ba0dc"
+        },
+        {
+          "name": "tamarind",
+          "path": "skills/tamarind/SKILL.md",
+          "content_hash": "9e6e2b9816e36379247880d10c1e53c3eaa0c9a4"
+        },
+        {
+          "name": "tellurium",
+          "path": "skills/tellurium/SKILL.md",
+          "content_hash": "de128ff792bd49b869f826bacc774968da48d90c"
+        },
+        {
+          "name": "tiledbvcf",
+          "path": "skills/tiledbvcf/SKILL.md",
+          "content_hash": "d17312dd0336c9c6c91992c366840a418f61d33b"
+        },
+        {
+          "name": "timesfm-forecasting",
+          "path": "skills/timesfm-forecasting/SKILL.md",
+          "content_hash": "cffdea2ad3a9ee0e6cb482812d67d335edb60ca0"
+        },
+        {
+          "name": "torch-geometric",
+          "path": "skills/torch-geometric/SKILL.md",
+          "content_hash": "5272619aaef1f1f6b65cc8f4ef64c7c2eabe130a"
+        },
+        {
+          "name": "torchdrug",
+          "path": "skills/torchdrug/SKILL.md",
+          "content_hash": "1b2d85ae73d397fc86e9a7c69a17c7246de0d1d6"
+        },
+        {
+          "name": "transformers",
+          "path": "skills/transformers/SKILL.md",
+          "content_hash": "5d20c4c3519dfd14d390c87535362e861c06a56b"
+        },
+        {
+          "name": "treatment-plans",
+          "path": "skills/treatment-plans/SKILL.md",
+          "content_hash": "cffbf40aede04f86446f61b75bb7080a8d13dd45"
+        },
+        {
+          "name": "umap-learn",
+          "path": "skills/umap-learn/SKILL.md",
+          "content_hash": "18d50838d712bfc6099ab3cb9170a9abfcfecf79"
+        },
+        {
+          "name": "uncertainty-and-units",
+          "path": "skills/uncertainty-and-units/SKILL.md",
+          "content_hash": "283ed83bd1093ab0c0e3b8e70ba761626a5776f3"
+        },
+        {
+          "name": "usfiscaldata",
+          "path": "skills/usfiscaldata/SKILL.md",
+          "content_hash": "466650dd78b9b3810f4d57b60f8b5e5f202256e7"
+        },
+        {
+          "name": "vaex",
+          "path": "skills/vaex/SKILL.md",
+          "content_hash": "958951bb61db9a3ef1efc24ac4580296b65584da"
+        },
+        {
+          "name": "venue-templates",
+          "path": "skills/venue-templates/SKILL.md",
+          "content_hash": "e37898509c0088ae6cea1fee4c94896a3f470668"
+        },
+        {
+          "name": "waypoint-bio",
+          "path": "skills/waypoint-bio/SKILL.md",
+          "content_hash": "1f950911fab3e0aa85cd5879b69e1875b6f62d8b"
+        },
+        {
+          "name": "what-if-oracle",
+          "path": "skills/what-if-oracle/SKILL.md",
+          "content_hash": "36a62e3d06848937adf19c6cd0007498d871eed1"
+        },
+        {
+          "name": "zarr-python",
+          "path": "skills/zarr-python/SKILL.md",
+          "content_hash": "cc4a8462541df9fe2f2d3690366a990eca4ba528"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/Leonxlnx/taste-skill.git",
+      "skills": [
+        {
+          "name": "design-taste-frontend",
+          "path": "skills/taste-skill/SKILL.md",
+          "content_hash": "8305962bcc68fb293a2202705ed615513c9535cd"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/MengTo/Skills.git",
+      "skills": [
+        {
+          "name": "design-first-ui-prompting",
+          "path": "agent-skills/ui/design-first-ui-prompting/SKILL.md",
+          "content_hash": "0c441662b69061ae4247db718e4b3fbb62f1d5e4"
+        },
+        {
+          "name": "landing-page",
+          "path": "agent-skills/web-design/landing-page/SKILL.md",
+          "content_hash": "366d826c8032e02c08bfc1e3f7987be95bbafff9"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/OpenRouterTeam/skills.git",
+      "skills": [
+        {
+          "name": "openrouter-typescript-sdk",
+          "path": "skills/openrouter-typescript-sdk/SKILL.md",
+          "content_hash": "ad4a590ddaa69ef9dc295a300a76bd451cab650a"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/PrototyperAI/prototyper-ui.git",
+      "skills": [
+        {
+          "name": "build-primitive",
+          "path": "apps/docs/skill/build-primitive/SKILL.md",
+          "content_hash": "ff01f1389158f6072bdd8c896e2d4fc62f393cb3"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/Superfuture/design-review.git",
+      "skills": [
+        {
+          "name": "design-review",
+          "path": "design-review/skills/design-review/SKILL.md",
+          "content_hash": "f4be6d4c87ff298eac04f07dce594e80941f4bcb"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/addyosmani/agent-skills.git",
+      "skills": [
+        {
+          "name": "frontend-ui-engineering",
+          "path": "skills/frontend-ui-engineering/SKILL.md",
+          "content_hash": "39280620a66bfaf39ebe0aa032b8568c65f2b247"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/anthropics/skills.git",
+      "skills": [
+        {
+          "name": "algorithmic-art",
+          "path": "skills/algorithmic-art/SKILL.md",
+          "content_hash": "4aef6bcad51d058ec32b1acb9da436851863e56e"
+        },
+        {
+          "name": "frontend-design",
+          "path": "skills/frontend-design/SKILL.md",
+          "content_hash": "d79e2a5bb4df4a386c2adcdd9ab8709bba28c3f6"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/ast-grep/agent-skill.git",
+      "skills": [
+        {
+          "name": "ast-grep",
+          "path": "ast-grep/skills/ast-grep/SKILL.md",
+          "content_hash": "ef60f77564e2d47d0cba25a809daa3af8f0c469b"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/ayghri/i-have-adhd.git",
+      "skills": [
+        {
+          "name": "i-have-adhd",
+          "path": "skills/i-have-adhd/SKILL.md",
+          "content_hash": "871e88cbe9b167670c170c53c8173c68609a2ae9"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/blader/humanizer.git",
+      "skills": [
+        {
+          "name": "humanizer",
+          "path": "SKILL.md",
+          "content_hash": "8c307f367c91bd974002f10f2be2965d642c13df"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/caffeinelabs/skills.git",
+      "skills": [
+        {
+          "name": "connector-googlecalendar",
+          "path": "skills/connector-googlecalendar/SKILL.md",
+          "content_hash": "24e7c56c7260451f9aca0737e4f25ddd5ae17b30"
+        },
+        {
+          "name": "connector-googledrive",
+          "path": "skills/connector-googledrive/SKILL.md",
+          "content_hash": "458824b097cd85f85a43e634f97cfeac7796899e"
+        },
+        {
+          "name": "connector-googlemail",
+          "path": "skills/connector-googlemail/SKILL.md",
+          "content_hash": "9ea0938966b0289d65cbc20539b4a335b6fc9267"
+        },
+        {
+          "name": "connector-quickbooks",
+          "path": "skills/connector-quickbooks/SKILL.md",
+          "content_hash": "35f1c60afbada724532adb776010c96f9fb599f7"
+        },
+        {
+          "name": "connector-slack",
+          "path": "skills/connector-slack/SKILL.md",
+          "content_hash": "af86836375f721237570258e3b1400571803fede"
+        },
+        {
+          "name": "connector-spotify",
+          "path": "skills/connector-spotify/SKILL.md",
+          "content_hash": "2c5f186f138f95d8ce899924e8894c45095a2b70"
+        },
+        {
+          "name": "connector-tmdb",
+          "path": "skills/connector-tmdb/SKILL.md",
+          "content_hash": "a048d55ab3544e6bd18bd2c06a838473799eed6b"
+        },
+        {
+          "name": "connector-twilio",
+          "path": "skills/connector-twilio/SKILL.md",
+          "content_hash": "67e66c606a3be5a557cb57531f5d741c459d9a32"
+        },
+        {
+          "name": "connector-weatherapi",
+          "path": "skills/connector-weatherapi/SKILL.md",
+          "content_hash": "fb7ba58f0c96dd023498a99b8ba3b9cadcad9846"
+        },
+        {
+          "name": "connector-x",
+          "path": "skills/connector-x/SKILL.md",
+          "content_hash": "c0100d62ec2c4523d5860da73286aeda51d285bb"
+        },
+        {
+          "name": "extension-authorization",
+          "path": "skills/extension-authorization/SKILL.md",
+          "content_hash": "3efd5162b012c60e8641f7458e8ff87c5a3cc0e7"
+        },
+        {
+          "name": "extension-camera",
+          "path": "skills/extension-camera/SKILL.md",
+          "content_hash": "b984d64c314767e31d618fa22ee20305a0d1ade0"
+        },
+        {
+          "name": "extension-core-infrastructure",
+          "path": "skills/extension-core-infrastructure/SKILL.md",
+          "content_hash": "ba12596249b3c00b6e5c1be01d08e318337310c2"
+        },
+        {
+          "name": "extension-email",
+          "path": "skills/extension-email/SKILL.md",
+          "content_hash": "19e1150b33a3fcff840bd8f611e90817178a856d"
+        },
+        {
+          "name": "extension-email-calendar-events",
+          "path": "skills/extension-email-calendar-events/SKILL.md",
+          "content_hash": "a25c2a736d7ed20d6471cced317352d43a7de863"
+        },
+        {
+          "name": "extension-email-marketing",
+          "path": "skills/extension-email-marketing/SKILL.md",
+          "content_hash": "ed9057605e4eb12cdbe88ec7527e0ca5d810c37b"
+        },
+        {
+          "name": "extension-email-raw",
+          "path": "skills/extension-email-raw/SKILL.md",
+          "content_hash": "d4bb43932d9a596ac9f1c24a03517c37fa4442af"
+        },
+        {
+          "name": "extension-email-verification",
+          "path": "skills/extension-email-verification/SKILL.md",
+          "content_hash": "8fe02f15b160a3b50277d045de9dfcb861d7c5dc"
+        },
+        {
+          "name": "extension-http-endpoints",
+          "path": "skills/extension-http-endpoints/SKILL.md",
+          "content_hash": "e7dbb4ea61867329335d12311d34032f8446380a"
+        },
+        {
+          "name": "extension-http-outcalls",
+          "path": "skills/extension-http-outcalls/SKILL.md",
+          "content_hash": "419610bfccdddc295aa46304589cea53c922f65b"
+        },
+        {
+          "name": "extension-inference",
+          "path": "skills/extension-inference/SKILL.md",
+          "content_hash": "b19b29d9fcc48493c40234da45f24385ac5469c7"
+        },
+        {
+          "name": "extension-invite-links",
+          "path": "skills/extension-invite-links/SKILL.md",
+          "content_hash": "3b8cd0dde3f3d259b040df049d35244eb52a24ac"
+        },
+        {
+          "name": "extension-object-storage",
+          "path": "skills/extension-object-storage/SKILL.md",
+          "content_hash": "33aa173fbaf3103ca7c85396909acc9d8b141f79"
+        },
+        {
+          "name": "extension-openai",
+          "path": "skills/extension-openai/SKILL.md",
+          "content_hash": "2ebe14b8f11bbda96a8324115e2ba84763e70f70"
+        },
+        {
+          "name": "extension-oql",
+          "path": "skills/extension-oql/SKILL.md",
+          "content_hash": "93f14e5456da8fec1dd1b2cd5f2b832851c5a783"
+        },
+        {
+          "name": "extension-posting-to-x",
+          "path": "skills/extension-posting-to-x/SKILL.md",
+          "content_hash": "c73cc2643767fa1d86448550701e7f362a5d587d"
+        },
+        {
+          "name": "extension-qr-code",
+          "path": "skills/extension-qr-code/SKILL.md",
+          "content_hash": "38c842e983182188cfff59f7cb2af82ea02182fd"
+        },
+        {
+          "name": "extension-querying-oql",
+          "path": "skills/extension-querying-oql/SKILL.md",
+          "content_hash": "47e8645b5f9e9e4bf4c890e6c8b2556db93d19a0"
+        },
+        {
+          "name": "extension-stripe",
+          "path": "skills/extension-stripe/SKILL.md",
+          "content_hash": "10d406662f7d4927dd56bbdcd213f2d17d0ea5bc"
+        },
+        {
+          "name": "extension-user-approval",
+          "path": "skills/extension-user-approval/SKILL.md",
+          "content_hash": "d45ad7f5a76ccf42149732e258ef2636886dc394"
+        },
+        {
+          "name": "migrating-motoko-actors",
+          "path": "skills/migrating-motoko-actors/SKILL.md",
+          "content_hash": "7f9f16f68f05f92b5371d884b7cfddf8bc9b6164"
+        },
+        {
+          "name": "migrating-to-moc-2",
+          "path": "skills/migrating-to-moc-2/SKILL.md",
+          "content_hash": "57a47dffd7278d2d03b1996c97505754ec7b4e31"
+        },
+        {
+          "name": "mops-cli",
+          "path": "skills/mops-cli/SKILL.md",
+          "content_hash": "a83101e370603e40a9b9e4f24e9666ea24a14ca5"
+        },
+        {
+          "name": "reviewing-motoko",
+          "path": "skills/reviewing-motoko/SKILL.md",
+          "content_hash": "cd2f646f18b01ba54cb352147df1ff6959c592ef"
+        },
+        {
+          "name": "troubleshooting-motoko-migrations",
+          "path": "skills/troubleshooting-motoko-migrations/SKILL.md",
+          "content_hash": "616a97f563a4decc6cd631a466cb9644a47437a3"
+        },
+        {
+          "name": "writing-motoko",
+          "path": "skills/writing-motoko/SKILL.md",
+          "content_hash": "b797650b9f4bc23f555f724be252afe21f2fd1ab"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/cathrynlavery/diagram-design.git",
+      "skills": [
+        {
+          "name": "diagram-design",
+          "path": "skills/diagram-design/SKILL.md",
+          "content_hash": "c08bd09cdf53ddd0475e91cb17114be8e38dc640"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/cloudflare/skills.git",
+      "skills": [
+        {
+          "name": "agents-sdk",
+          "path": "skills/agents-sdk/SKILL.md",
+          "content_hash": "fe7c98385541543a62abf65090654fcbc181c8b7"
+        },
+        {
+          "name": "cloudflare",
+          "path": "skills/cloudflare/SKILL.md",
+          "content_hash": "a92bec38b7b5ff5e634b509c7ff3c289d9d61290"
+        },
+        {
+          "name": "cloudflare-email-service",
+          "path": "skills/cloudflare-email-service/SKILL.md",
+          "content_hash": "af7bd16246149247d4b699382d951dc376491bac"
+        },
+        {
+          "name": "cloudflare-one",
+          "path": "skills/cloudflare-one/SKILL.md",
+          "content_hash": "c692b9ddaf8ac60485b758a22100be27e4ec782e"
+        },
+        {
+          "name": "cloudflare-one-migrations",
+          "path": "skills/cloudflare-one-migrations/SKILL.md",
+          "content_hash": "6ab7a1f3220dae699b5cb1325ec86b952ccf6a3e"
+        },
+        {
+          "name": "durable-objects",
+          "path": "skills/durable-objects/SKILL.md",
+          "content_hash": "72810f48414f2e68d0aa65a8895f749c959dea91"
+        },
+        {
+          "name": "sandbox-sdk",
+          "path": "skills/sandbox-sdk/SKILL.md",
+          "content_hash": "4d90eab74b6f49050c92b95ba635bc99c41671e9"
+        },
+        {
+          "name": "turnstile-spin",
+          "path": "skills/turnstile-spin/SKILL.md",
+          "content_hash": "8f135e415060480d73aeb8f0170c3e9cfb31c3ec"
+        },
+        {
+          "name": "web-perf",
+          "path": "skills/web-perf/SKILL.md",
+          "content_hash": "e8e8c50ca6abf0849a4d9d69c1bed8b98b5d7411"
+        },
+        {
+          "name": "workers-best-practices",
+          "path": "skills/workers-best-practices/SKILL.md",
+          "content_hash": "7dd384e79c76d3e388dfe53e12e93642679ff1fd"
+        },
+        {
+          "name": "wrangler",
+          "path": "skills/wrangler/SKILL.md",
+          "content_hash": "45cc198b2aad3f06e8abf91333f55fbe7579f659"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/designed-by-ai/skills.git",
+      "skills": [
+        {
+          "name": "design-mobile-apps",
+          "path": "skills/design-mobile-apps/SKILL.md",
+          "content_hash": "de45daba70cc32f70edae5460a72cbaa0fa63bb3"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/firecrawl/cli.git",
+      "skills": [
+        {
+          "name": "firecrawl",
+          "path": "firecrawl-cli/SKILL.md",
+          "content_hash": "2a3e136db203316e2c477ff030a665bc57bf6769"
+        },
+        {
+          "name": "firecrawl-agent",
+          "path": "firecrawl-agent/SKILL.md",
+          "content_hash": "b5972ad13d2012e0955f24e2a827c2a29b2c660d"
+        },
+        {
+          "name": "firecrawl-crawl",
+          "path": "firecrawl-crawl/SKILL.md",
+          "content_hash": "19bce21f5282b9cb05cab4eb18c3eb03320f7ffe"
+        },
+        {
+          "name": "firecrawl-download",
+          "path": "firecrawl-download/SKILL.md",
+          "content_hash": "72cb858405657604c26ba2b475077bece2dd71d9"
+        },
+        {
+          "name": "firecrawl-interact",
+          "path": "firecrawl-interact/SKILL.md",
+          "content_hash": "d8e1c2ab5e08b8b53e0672a2e91db6cd10aae473"
+        },
+        {
+          "name": "firecrawl-map",
+          "path": "firecrawl-map/SKILL.md",
+          "content_hash": "813ca82cb8ceb8154db84c2283fc9410ea03fdc8"
+        },
+        {
+          "name": "firecrawl-monitor",
+          "path": "firecrawl-monitor/SKILL.md",
+          "content_hash": "3b67b1ce6ae2fbcc7d89aedb03333b81324265cb"
+        },
+        {
+          "name": "firecrawl-parse",
+          "path": "firecrawl-parse/SKILL.md",
+          "content_hash": "08002a7145c72111951ce45eefd0450fe53d869a"
+        },
+        {
+          "name": "firecrawl-scrape",
+          "path": "firecrawl-scrape/SKILL.md",
+          "content_hash": "25dbaedc6bf048d1fb79fdb5598a6a70805bde44"
+        },
+        {
+          "name": "firecrawl-search",
+          "path": "firecrawl-search/SKILL.md",
+          "content_hash": "fb574b9b1d2f194a11f0c7bf10d9de9b819b674a"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/firecrawl/firecrawl-workflows.git",
+      "skills": [
+        {
+          "name": "firecrawl-company-directories",
+          "path": "firecrawl-company-directories/SKILL.md",
+          "content_hash": "01dcc1fbd0741400e52f496e5190eba22104a96f"
+        },
+        {
+          "name": "firecrawl-competitive-intel",
+          "path": "firecrawl-competitive-intel/SKILL.md",
+          "content_hash": "621cf8bfc72aa294a8cab334652a7b4bab6f9797"
+        },
+        {
+          "name": "firecrawl-dashboard-reporting",
+          "path": "firecrawl-dashboard-reporting/SKILL.md",
+          "content_hash": "f9c206253379edfcdf8c97b33cbb69312e6c466f"
+        },
+        {
+          "name": "firecrawl-deep-research",
+          "path": "firecrawl-deep-research/SKILL.md",
+          "content_hash": "c36ab693dde6e4a7ad6d1fdf517425fa0312cadb"
+        },
+        {
+          "name": "firecrawl-demo-walkthrough",
+          "path": "firecrawl-demo-walkthrough/SKILL.md",
+          "content_hash": "590a69155c6e905c964d9b7d9f7fb55935331fb5"
+        },
+        {
+          "name": "firecrawl-knowledge-base",
+          "path": "firecrawl-knowledge-base/SKILL.md",
+          "content_hash": "1f01565aef29a2de4786291008e071137809f25c"
+        },
+        {
+          "name": "firecrawl-knowledge-ingest",
+          "path": "firecrawl-knowledge-ingest/SKILL.md",
+          "content_hash": "ad5c7bb10919121f371534a43ab3c35d2f4408e0"
+        },
+        {
+          "name": "firecrawl-lead-gen",
+          "path": "firecrawl-lead-gen/SKILL.md",
+          "content_hash": "3353f42ad183225b80077350813bb0e0aa82100e"
+        },
+        {
+          "name": "firecrawl-lead-research",
+          "path": "firecrawl-lead-research/SKILL.md",
+          "content_hash": "166a7ca070bf043e81874afa72665037a9feaa2a"
+        },
+        {
+          "name": "firecrawl-market-research",
+          "path": "firecrawl-market-research/SKILL.md",
+          "content_hash": "016ee912e6a3327b1b9e419dac4f339fee7d9a24"
+        },
+        {
+          "name": "firecrawl-qa",
+          "path": "firecrawl-qa/SKILL.md",
+          "content_hash": "e63645c4bf63689f995286d981f0aaaed002fc36"
+        },
+        {
+          "name": "firecrawl-research-papers",
+          "path": "firecrawl-research-papers/SKILL.md",
+          "content_hash": "e5eb417518493dd0f49763b36b6f34fafa7f84d9"
+        },
+        {
+          "name": "firecrawl-seo-audit",
+          "path": "firecrawl-seo-audit/SKILL.md",
+          "content_hash": "5337ce43a057826ef50661eb2c4752d7a1e06cc2"
+        },
+        {
+          "name": "firecrawl-shop",
+          "path": "firecrawl-shop/SKILL.md",
+          "content_hash": "84377c5a5ef7d99aba80654b12fdc724a7c8850f"
+        },
+        {
+          "name": "firecrawl-website-design-clone",
+          "path": "firecrawl-website-design-clone/SKILL.md",
+          "content_hash": "96b5aff11578c55d52562bde396e8b79dcb5f901"
+        },
+        {
+          "name": "firecrawl-workflows",
+          "path": "firecrawl-workflows/SKILL.md",
+          "content_hash": "13817bbdc5a2c12793f7ddc33704ed6e8af7f391"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/firecrawl/skills.git",
+      "skills": [
+        {
+          "name": "firecrawl-build",
+          "path": "firecrawl-build/SKILL.md",
+          "content_hash": "d661681ff19c9b509ba0bd89b7fb95f8e4cb6e12"
+        },
+        {
+          "name": "firecrawl-build-interact",
+          "path": "firecrawl-build-interact/SKILL.md",
+          "content_hash": "1bee70db795f496782dc397f96536024e738893e"
+        },
+        {
+          "name": "firecrawl-build-onboarding",
+          "path": "firecrawl-build-onboarding/SKILL.md",
+          "content_hash": "594f49bb8986967d9a5f99697fd486d83a2415fe"
+        },
+        {
+          "name": "firecrawl-build-scrape",
+          "path": "firecrawl-build-scrape/SKILL.md",
+          "content_hash": "5e584239f6726773a76c9be15980a5599c25497d"
+        },
+        {
+          "name": "firecrawl-build-search",
+          "path": "firecrawl-build-search/SKILL.md",
+          "content_hash": "15559e34455d90acb2007273e9232666e5c0adb4"
+        },
+        {
+          "name": "firecrawl-developer-index",
+          "path": "firecrawl-developer-index/SKILL.md",
+          "content_hash": "df3abec986133ea915cbf3e21205c0abcb9aa3eb"
+        },
+        {
+          "name": "firecrawl-research-index",
+          "path": "firecrawl-research-index/SKILL.md",
+          "content_hash": "f1849a71f64a0159bfecb1da116ac7e210e3dd78"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills.git",
+      "skills": [
+        {
+          "name": "ai-behavior-trees-utility-ai",
+          "path": "skills/disciplines/ai-behavior-trees-utility-ai/SKILL.md",
+          "content_hash": "a6a2496894b819aad8f7ad4bbdbc6e1f0594873e"
+        },
+        {
+          "name": "audio-design",
+          "path": "skills/disciplines/audio-design/SKILL.md",
+          "content_hash": "972177960ddfc25d04ff0878e016b8fae6394732"
+        },
+        {
+          "name": "bevy-ecs",
+          "path": "skills/other-engines/bevy-ecs/SKILL.md",
+          "content_hash": "aab2637122060e7951725f6dbea379e59d3ca3ea"
+        },
+        {
+          "name": "camera-systems",
+          "path": "skills/disciplines/camera-systems/SKILL.md",
+          "content_hash": "8d91a4b822661f89678dbf57e43047c670f7fd11"
+        },
+        {
+          "name": "card-game",
+          "path": "skills/genres/card-game/SKILL.md",
+          "content_hash": "e704e079af96cf2cf880e3ec98452949ec439957"
+        },
+        {
+          "name": "create-game-assets",
+          "path": "skills/disciplines/create-game-assets/SKILL.md",
+          "content_hash": "75c20076a125f07ba5763c4d9c1be32f2ad470bf"
+        },
+        {
+          "name": "defold-core",
+          "path": "skills/other-engines/defold-core/SKILL.md",
+          "content_hash": "547bbf735403bbadab2a2452eda964949b158cb4"
+        },
+        {
+          "name": "dialogue-systems",
+          "path": "skills/disciplines/dialogue-systems/SKILL.md",
+          "content_hash": "861f326ab43340220ec0c41bb6d270503d04390e"
+        },
+        {
+          "name": "ebitengine-game",
+          "path": "skills/ebitengine/ebitengine-game/SKILL.md",
+          "content_hash": "73d285c14224a1831d4ec523a4e82a8749ebafae"
+        },
+        {
+          "name": "fps-shooter",
+          "path": "skills/genres/fps-shooter/SKILL.md",
+          "content_hash": "e0552997e80c24667330951f23de0587a276eba6"
+        },
+        {
+          "name": "game-ai",
+          "path": "skills/disciplines/game-ai/SKILL.md",
+          "content_hash": "ad92e1ff558a8ec51109e4bfd6dfe415e766621f"
+        },
+        {
+          "name": "game-feel",
+          "path": "skills/disciplines/game-feel/SKILL.md",
+          "content_hash": "7a1eb41bdf2fce7adeadb4b97efa8241fb9c7f98"
+        },
+        {
+          "name": "game-jam",
+          "path": "skills/workflows/game-jam/SKILL.md",
+          "content_hash": "b150e668f39397b7445adcdddbfc159add278c1d"
+        },
+        {
+          "name": "game-ui-ux",
+          "path": "skills/disciplines/game-ui-ux/SKILL.md",
+          "content_hash": "7161502a894f8ba3b7671fdb73cff77e74add930"
+        },
+        {
+          "name": "godot-2d-movement",
+          "path": "skills/godot/godot-2d-movement/SKILL.md",
+          "content_hash": "3bfdda93d0cbd4d0e9efc816cc610601a51b3073"
+        },
+        {
+          "name": "godot-3d-essentials",
+          "path": "skills/godot/godot-3d-essentials/SKILL.md",
+          "content_hash": "42e87f18d75c0b96343eea6aee3997a925a8646c"
+        },
+        {
+          "name": "godot-animation",
+          "path": "skills/godot/godot-animation/SKILL.md",
+          "content_hash": "8594deb059af585bd9a10f3a21761dcb8eb18e6e"
+        },
+        {
+          "name": "godot-audio",
+          "path": "skills/godot/godot-audio/SKILL.md",
+          "content_hash": "7ace408d2a6823d6b600f6d7ba41926878877119"
+        },
+        {
+          "name": "godot-csharp",
+          "path": "skills/godot/godot-csharp/SKILL.md",
+          "content_hash": "4b85cfcbb6a533a39facb790fabdbbb74e3aa4e0"
+        },
+        {
+          "name": "godot-export",
+          "path": "skills/godot/godot-export/SKILL.md",
+          "content_hash": "ee2f82e13eb21de9e4f0a4a8362ea5d6b9ee154f"
+        },
+        {
+          "name": "godot-gdscript",
+          "path": "skills/godot/godot-gdscript/SKILL.md",
+          "content_hash": "6d6feb627eb221d4e65341abc5c79ddaacfb4463"
+        },
+        {
+          "name": "godot-gdscript-headless-testing",
+          "path": "skills/godot/godot-gdscript-headless-testing/SKILL.md",
+          "content_hash": "da569cc98e8bccee432c8bc1118090b8764b4c47"
+        },
+        {
+          "name": "godot-multiplayer",
+          "path": "skills/godot/godot-multiplayer/SKILL.md",
+          "content_hash": "e75cec1f6ae6facdf44377bb9131bd8eff4c6d5c"
+        },
+        {
+          "name": "godot-nodes-scenes",
+          "path": "skills/godot/godot-nodes-scenes/SKILL.md",
+          "content_hash": "f0301d6d9a52172164b59ea835072c596ad6be13"
+        },
+        {
+          "name": "godot-physics",
+          "path": "skills/godot/godot-physics/SKILL.md",
+          "content_hash": "382cea5f74f2d76efffd0cbdfb0f049cb25a176e"
+        },
+        {
+          "name": "godot-resources",
+          "path": "skills/godot/godot-resources/SKILL.md",
+          "content_hash": "23bf115d46b0c30c9f3ee0ac758351a52ae35b03"
+        },
+        {
+          "name": "godot-shaders",
+          "path": "skills/godot/godot-shaders/SKILL.md",
+          "content_hash": "8334af6c735b5b876830fa3e2d4d76d26e1bc7d8"
+        },
+        {
+          "name": "godot-signals-groups",
+          "path": "skills/godot/godot-signals-groups/SKILL.md",
+          "content_hash": "cab67e733121e0cf661dad25816e3ce5c3eccaa2"
+        },
+        {
+          "name": "godot-tilemap",
+          "path": "skills/godot/godot-tilemap/SKILL.md",
+          "content_hash": "7505fc21d7a1f166f5972516b159a49ec1e5bc3a"
+        },
+        {
+          "name": "godot-ui-control",
+          "path": "skills/godot/godot-ui-control/SKILL.md",
+          "content_hash": "e049092b1d7b6a68b12c8a4b49ca923dfd412530"
+        },
+        {
+          "name": "input-systems",
+          "path": "skills/disciplines/input-systems/SKILL.md",
+          "content_hash": "a3cad5e41f9de7fcfee96789302f4256219861fd"
+        },
+        {
+          "name": "itch-publish",
+          "path": "skills/workflows/itch-publish/SKILL.md",
+          "content_hash": "08057e032460a7019b3a50d0b87965551d419b81"
+        },
+        {
+          "name": "level-design",
+          "path": "skills/disciplines/level-design/SKILL.md",
+          "content_hash": "f0d89b9f6df84b2e17a3d08b5d4a80e0e8e83d06"
+        },
+        {
+          "name": "love2d-core",
+          "path": "skills/other-engines/love2d-core/SKILL.md",
+          "content_hash": "1da67c16cb961e1f7cd11c785cfcdcfb7bf0daa2"
+        },
+        {
+          "name": "performance-optimization",
+          "path": "skills/disciplines/performance-optimization/SKILL.md",
+          "content_hash": "61c0e1f2005ce9d1b2839bb0b8577f504ecb0a1d"
+        },
+        {
+          "name": "phaser-arcade-physics",
+          "path": "skills/web-engines/phaser-arcade-physics/SKILL.md",
+          "content_hash": "72bcf1c54431de0c30998dc797be10e11eef5750"
+        },
+        {
+          "name": "phaser-core",
+          "path": "skills/web-engines/phaser-core/SKILL.md",
+          "content_hash": "1f1ad628778262c0118f172d5f884e0190733de5"
+        },
+        {
+          "name": "physics-tuning",
+          "path": "skills/disciplines/physics-tuning/SKILL.md",
+          "content_hash": "9a2db0086380c38e7fa3405140df00bbb474c309"
+        },
+        {
+          "name": "pixijs-rendering",
+          "path": "skills/web-engines/pixijs-rendering/SKILL.md",
+          "content_hash": "6e397b188da317066dee47263a404aa7dc314d7b"
+        },
+        {
+          "name": "platformer",
+          "path": "skills/genres/platformer/SKILL.md",
+          "content_hash": "638a348e5a21c603f2cffa477ba4f4f57d9dd09b"
+        },
+        {
+          "name": "procedural-gen",
+          "path": "skills/disciplines/procedural-gen/SKILL.md",
+          "content_hash": "ff68b7488563d2be6cab6ffc8ee74cbec6b79394"
+        },
+        {
+          "name": "prototype-fast",
+          "path": "skills/workflows/prototype-fast/SKILL.md",
+          "content_hash": "743c454ad66439105154d50606d94aa460a5ae3b"
+        },
+        {
+          "name": "puzzle",
+          "path": "skills/genres/puzzle/SKILL.md",
+          "content_hash": "386ed8e88f63ad538d6758fbfd1765dca6d61b80"
+        },
+        {
+          "name": "pygame-core",
+          "path": "skills/other-engines/pygame-core/SKILL.md",
+          "content_hash": "73eb0b4c407f2b209d821a3b1cdffdee60cc5bc2"
+        },
+        {
+          "name": "roblox-characters",
+          "path": "skills/other-engines/roblox-characters/SKILL.md",
+          "content_hash": "66bfa87c4e7ab20ab3cee213fa2b4a5d98c7d8d9"
+        },
+        {
+          "name": "roblox-datastores",
+          "path": "skills/other-engines/roblox-datastores/SKILL.md",
+          "content_hash": "8da2d3d5d3b82f2d4ea0b5661ec3ad3b8ab134d8"
+        },
+        {
+          "name": "roblox-luau",
+          "path": "skills/other-engines/roblox-luau/SKILL.md",
+          "content_hash": "eb9abcf747ea940328ad05051e57723957726ad6"
+        },
+        {
+          "name": "roblox-networking",
+          "path": "skills/other-engines/roblox-networking/SKILL.md",
+          "content_hash": "b77bdfce140eff6adaac958ebc27bbc346d0507b"
+        },
+        {
+          "name": "roblox-physics",
+          "path": "skills/other-engines/roblox-physics/SKILL.md",
+          "content_hash": "624c5f3aa142df2fa047f3e65b49250a3c6bf36e"
+        },
+        {
+          "name": "roblox-studio-workflow",
+          "path": "skills/other-engines/roblox-studio-workflow/SKILL.md",
+          "content_hash": "e5c4b0269ace00fd911ab4153c483403323c38e6"
+        },
+        {
+          "name": "roblox-ui",
+          "path": "skills/other-engines/roblox-ui/SKILL.md",
+          "content_hash": "e96939ff9fb747d02080966de236b5df5b3aec2a"
+        },
+        {
+          "name": "roguelike",
+          "path": "skills/genres/roguelike/SKILL.md",
+          "content_hash": "9ac1dca42ec4e154edca5ce3c1290babcff809e6"
+        },
+        {
+          "name": "router",
+          "path": "router/SKILL.md",
+          "content_hash": "2404f0e0c9d2812e115c9bddc7f80d5fbe447f34"
+        },
+        {
+          "name": "rpg",
+          "path": "skills/genres/rpg/SKILL.md",
+          "content_hash": "1988f1420738f0460546142fe631b32195eeb80a"
+        },
+        {
+          "name": "save-systems",
+          "path": "skills/disciplines/save-systems/SKILL.md",
+          "content_hash": "46cac963bf1074c6e865e655d8b93d4d065eb1d0"
+        },
+        {
+          "name": "shader-programming",
+          "path": "skills/disciplines/shader-programming/SKILL.md",
+          "content_hash": "2be558cbd5293a78007b69cd22dc830bba75ba22"
+        },
+        {
+          "name": "steam-publish",
+          "path": "skills/workflows/steam-publish/SKILL.md",
+          "content_hash": "a2749572a9097c46c555fba0f975987a94087dd8"
+        },
+        {
+          "name": "survival-crafting",
+          "path": "skills/genres/survival-crafting/SKILL.md",
+          "content_hash": "190a8c2a173f5d50d43d0c84e73838b2af9344c7"
+        },
+        {
+          "name": "threejs-gltf-loading",
+          "path": "skills/web-engines/threejs-gltf-loading/SKILL.md",
+          "content_hash": "9c8b7b9f5ff158f83cbbb20aa5dc93c5bddac66c"
+        },
+        {
+          "name": "threejs-materials-lighting",
+          "path": "skills/web-engines/threejs-materials-lighting/SKILL.md",
+          "content_hash": "611f3439f82d0cacf7742fa85f2d68fa3f8f03c1"
+        },
+        {
+          "name": "threejs-scene-setup",
+          "path": "skills/web-engines/threejs-scene-setup/SKILL.md",
+          "content_hash": "a66930fc7b16e84e278430cc9c1525d77d2e4712"
+        },
+        {
+          "name": "tower-defense",
+          "path": "skills/genres/tower-defense/SKILL.md",
+          "content_hash": "b8eae1468d3ce28e898f44f38d3c7d9f1b111983"
+        },
+        {
+          "name": "unity-animation",
+          "path": "skills/unity/unity-animation/SKILL.md",
+          "content_hash": "9d989d42d5434a2a4f71c45b93e4eb1ee11adafe"
+        },
+        {
+          "name": "unity-build-pipeline",
+          "path": "skills/unity/unity-build-pipeline/SKILL.md",
+          "content_hash": "a201ef3efd76c2af02450bcfffde647c0b9133d2"
+        },
+        {
+          "name": "unity-csharp-scripting",
+          "path": "skills/unity/unity-csharp-scripting/SKILL.md",
+          "content_hash": "4ef8970d3b2c79ec4a5a69389d469679c1a8b399"
+        },
+        {
+          "name": "unity-input-system",
+          "path": "skills/unity/unity-input-system/SKILL.md",
+          "content_hash": "c5d9b9169cdd3c0eb6f914ea59c6a4bbb475d102"
+        },
+        {
+          "name": "unity-navmesh",
+          "path": "skills/unity/unity-navmesh/SKILL.md",
+          "content_hash": "841e1af862fc1820e6e8971cb692c93d587d03cf"
+        },
+        {
+          "name": "unity-physics",
+          "path": "skills/unity/unity-physics/SKILL.md",
+          "content_hash": "b530f2016b151099a871cc7f18321f7dcd11ce0b"
+        },
+        {
+          "name": "unity-scriptableobjects",
+          "path": "skills/unity/unity-scriptableobjects/SKILL.md",
+          "content_hash": "1fd11f49c0530253678c16807d1633a1dd5c05e1"
+        },
+        {
+          "name": "unity-tilemap-2d",
+          "path": "skills/unity/unity-tilemap-2d/SKILL.md",
+          "content_hash": "fdeca27029e6a7e3fdab8c79f877ca3847f972ea"
+        },
+        {
+          "name": "unreal-behavior-trees",
+          "path": "skills/unreal/unreal-behavior-trees/SKILL.md",
+          "content_hash": "272266859aeb502f5cb98bc49b1ae1bcdf9b33a0"
+        },
+        {
+          "name": "unreal-blueprints",
+          "path": "skills/unreal/unreal-blueprints/SKILL.md",
+          "content_hash": "7e85960d6c84f192b76f00b4b6d81bc4746ad8aa"
+        },
+        {
+          "name": "unreal-cpp-gameplay",
+          "path": "skills/unreal/unreal-cpp-gameplay/SKILL.md",
+          "content_hash": "7de24a1e6f4931be0d3646d2ea575e8f8e1cf234"
+        },
+        {
+          "name": "unreal-enhanced-input",
+          "path": "skills/unreal/unreal-enhanced-input/SKILL.md",
+          "content_hash": "a8f09c6cba9cb3e4888fddb27b06443b592944dd"
+        },
+        {
+          "name": "unreal-niagara",
+          "path": "skills/unreal/unreal-niagara/SKILL.md",
+          "content_hash": "202a5837edaf7c2aaebc1d9fc966bb3c36374e95"
+        },
+        {
+          "name": "unreal-packaging",
+          "path": "skills/unreal/unreal-packaging/SKILL.md",
+          "content_hash": "737a5fa53539b6ae47f6511230f797cc07c93fad"
+        },
+        {
+          "name": "visual-novel",
+          "path": "skills/genres/visual-novel/SKILL.md",
+          "content_hash": "bd41c59f5cc7dd1da3ca7255fb639e61f9e7512d"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/gencraft-labs/skills.git",
+      "skills": [
+        {
+          "name": "ace-step",
+          "path": "ace-step/SKILL.md",
+          "content_hash": "46e12faacb6a01ad2b848cacf59ab6bf98223056"
+        },
+        {
+          "name": "ai-music",
+          "path": "ai-music/SKILL.md",
+          "content_hash": "77bbd12f3989d97807f975a114ad0ed117bb9f45"
+        },
+        {
+          "name": "codex-pet",
+          "path": "codex-pet/SKILL.md",
+          "content_hash": "e386f8b257176e892b085d14d32fe376d5b9c6ea"
+        },
+        {
+          "name": "controlnet-pose",
+          "path": "controlnet-pose/SKILL.md",
+          "content_hash": "e7846ddee58ffbf8f3cf4bf4e5213c402cad9dc6"
+        },
+        {
+          "name": "elevenlabs-music-generation",
+          "path": "elevenlabs-music-generation/SKILL.md",
+          "content_hash": "196f017ef02b6f950e7a449a6d17d132f43a6534"
+        },
+        {
+          "name": "face-swap",
+          "path": "face-swap/SKILL.md",
+          "content_hash": "fab202fe2626dba3e239809fdf0599391271b990"
+        },
+        {
+          "name": "flux-2-klein",
+          "path": "flux-2-klein/SKILL.md",
+          "content_hash": "ef668e70e490af7ba3bd20305ccd282f093368c5"
+        },
+        {
+          "name": "flux-kontext",
+          "path": "flux-kontext/SKILL.md",
+          "content_hash": "d88d6edd511374d4c4ecd2ac62453b1655915fd8"
+        },
+        {
+          "name": "gpt-image-2",
+          "path": "gpt-image-2/SKILL.md",
+          "content_hash": "cbdccfcf01bb33e911e7e776df0877dba737e756"
+        },
+        {
+          "name": "gpt-image-edit",
+          "path": "gpt-image-edit/SKILL.md",
+          "content_hash": "fe87d9eacea71a977e564d084701e5d9c791d1e1"
+        },
+        {
+          "name": "happyhorse-1-0",
+          "path": "happyhorse-1-0/SKILL.md",
+          "content_hash": "a2c60b466d99c0d0974f0a0ec8a3b2dfb5bc76d4"
+        },
+        {
+          "name": "image-edit",
+          "path": "image-edit/SKILL.md",
+          "content_hash": "df5c31134aa773e66c3649c4642f93caa01ac6b5"
+        },
+        {
+          "name": "image-inpainting",
+          "path": "image-inpainting/SKILL.md",
+          "content_hash": "2197d992ddd466c094593c3a1517992727d50457"
+        },
+        {
+          "name": "image-outpainting",
+          "path": "image-outpainting/SKILL.md",
+          "content_hash": "b7fd17d600b5c07868778c95de78d5faad372edc"
+        },
+        {
+          "name": "kling-3-0",
+          "path": "kling-3-0/SKILL.md",
+          "content_hash": "d41e6f25425f78d0afb9cc9f3351e1b837717c6e"
+        },
+        {
+          "name": "lipsync",
+          "path": "lipsync/SKILL.md",
+          "content_hash": "4cb0769b9f6fbbe062f03e785dafdf4bf7dab47a"
+        },
+        {
+          "name": "nano-banana-edit",
+          "path": "nano-banana-edit/SKILL.md",
+          "content_hash": "f65a519ac56067b0f6b8c4f4972b62642f83a996"
+        },
+        {
+          "name": "relight",
+          "path": "relight/SKILL.md",
+          "content_hash": "8a0ed6faa83ad28f655d18252a529e2098ab2d9c"
+        },
+        {
+          "name": "runcomfy-cli",
+          "path": "runcomfy-cli/SKILL.md",
+          "content_hash": "722c2bddbd3e25d906ec3c3d3d890c3ff7c0510d"
+        },
+        {
+          "name": "seedance-2-5-image-to-video",
+          "path": "seedance-2-5-image-to-video/SKILL.md",
+          "content_hash": "62441a8aa25489f9be6ca4efeb506fad7141d31e"
+        },
+        {
+          "name": "seedance-2-5-reference-to-video",
+          "path": "seedance-2-5-reference-to-video/SKILL.md",
+          "content_hash": "48942d3d22de155cb330dd1b783f827d3294cf4b"
+        },
+        {
+          "name": "seedance-v2",
+          "path": "seedance-v2/SKILL.md",
+          "content_hash": "03cd7b5ef7120dd159fbd179ef4e9d47d379f357"
+        },
+        {
+          "name": "video-edit",
+          "path": "video-edit/SKILL.md",
+          "content_hash": "80afe0b2d89afd4c14e49d712d7d5cc83cc096a8"
+        },
+        {
+          "name": "video-extend",
+          "path": "video-extend/SKILL.md",
+          "content_hash": "2250d95e4f694cd316ef7a0d477ceed1868d3149"
+        },
+        {
+          "name": "video-inpainting",
+          "path": "video-inpainting/SKILL.md",
+          "content_hash": "8af365f09939aefab425926412972625bf4e6c1f"
+        },
+        {
+          "name": "video-outpainting",
+          "path": "video-outpainting/SKILL.md",
+          "content_hash": "0f6240a415acbf2b2da3f3fd73c9acd7dacb28ad"
+        },
+        {
+          "name": "wan-2-7",
+          "path": "wan-2-7/SKILL.md",
+          "content_hash": "cdf70ec2639b7d66189a21e1c8ab6669653dbe8d"
+        },
+        {
+          "name": "wan-3-0-prime-reference-to-video",
+          "path": "wan-3-0-prime-reference-to-video/SKILL.md",
+          "content_hash": "66b0f6fbb4192219c749fbc7abcc98cbbc4d22dd"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/higgsfield-ai/skills.git",
+      "skills": [
+        {
+          "name": "higgsfield-generate",
+          "path": "higgsfield-generate/SKILL.md",
+          "content_hash": "97cee7b0253d96a1b8f0b9057e2b38f8c87d5ed5"
+        },
+        {
+          "name": "higgsfield-marketplace-cards",
+          "path": "higgsfield-marketplace-cards/SKILL.md",
+          "content_hash": "3a6198773dc67933ec32c3c37a4ec862358ee3dd"
+        },
+        {
+          "name": "higgsfield-product-photoshoot",
+          "path": "higgsfield-product-photoshoot/SKILL.md",
+          "content_hash": "7e7b7804228239580d00d6bf210e734940d97b44"
+        },
+        {
+          "name": "higgsfield-soul-id",
+          "path": "higgsfield-soul-id/SKILL.md",
+          "content_hash": "69657b523779a7cac2702c14a96c44f5b989c52e"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/iannuttall/seo.git",
+      "skills": [
+        {
+          "name": "seo",
+          "path": "skills/seo/SKILL.md",
+          "content_hash": "61317b234c2f9d831e74e60afacdd3cba2affd1a"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/ibelick/ui-skills.git",
+      "skills": [
+        {
+          "name": "fixing-accessibility",
+          "path": "skills/fixing-accessibility/SKILL.md",
+          "content_hash": "e825388bce62e4456ed3b2b899c9bc58f5873c5b"
+        },
+        {
+          "name": "ui-skills-root",
+          "path": "skills/ui-skills-root/SKILL.md",
+          "content_hash": "c69abe581f52417464d79446834e348adffb14fb"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/jakubkrehel/skills.git",
+      "skills": [
+        {
+          "name": "better-interface",
+          "path": "skills/better-interface/SKILL.md",
+          "content_hash": "c2aa3269f78969b8f51e721f5f873401916ace9a"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/jalaalrd/anti-ai-slop-writing.git",
+      "skills": [
+        {
+          "name": "anti-ai-slop-writing",
+          "path": "skills/anti-ai-slop-writing/SKILL.md",
+          "content_hash": "0c70a606a1297e7def22423f39f180fef61c947d"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/liarjsdev/liarjs-skills.git",
+      "skills": [
+        {
+          "name": "browser-fingerprint-audit",
+          "path": "skills/browser-fingerprint-audit/SKILL.md",
+          "content_hash": "feb3a22b6a1b6827c7b8d23853f9e9a5caa49725"
+        },
+        {
+          "name": "fingerprint-ci-gate",
+          "path": "skills/fingerprint-ci-gate/SKILL.md",
+          "content_hash": "b98c10046279bee68df37bcc8a4c3f039d8585f0"
+        },
+        {
+          "name": "fingerprint-failure-triage",
+          "path": "skills/fingerprint-failure-triage/SKILL.md",
+          "content_hash": "d8b930a13eac1be043407eee0a534343dd76e36c"
+        },
+        {
+          "name": "playwright-stealth-verify",
+          "path": "skills/playwright-stealth-verify/SKILL.md",
+          "content_hash": "1108c8fc17fd30b32674a78a4f3029d8f15b5bbb"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mattpocock/skills.git",
+      "skills": [
+        {
+          "name": "ask-matt",
+          "path": "skills/engineering/ask-matt/SKILL.md",
+          "content_hash": "d6a0d9bf3cdc78cbfcbd6466ac5fd3deffb52877"
+        },
+        {
+          "name": "chief-of-staff",
+          "path": "skills/in-progress/chief-of-staff/SKILL.md",
+          "content_hash": "dbdf91354f95b560386d5bf25b624567dd9dadb1"
+        },
+        {
+          "name": "claude-handoff",
+          "path": "skills/in-progress/claude-handoff/SKILL.md",
+          "content_hash": "57d198aca08eddccb113632d52c6c13f1f3066ac"
+        },
+        {
+          "name": "code-review",
+          "path": "skills/engineering/code-review/SKILL.md",
+          "content_hash": "fee7bb5fdddc069d58cbea09b2c36b5a859eac05"
+        },
+        {
+          "name": "codebase-design",
+          "path": "skills/engineering/codebase-design/SKILL.md",
+          "content_hash": "07ba1cd60efc12d0d3a083005c1d9651cf15e39a"
+        },
+        {
+          "name": "diagnosing-bugs",
+          "path": "skills/engineering/diagnosing-bugs/SKILL.md",
+          "content_hash": "5fdd6cc53385395441910b026c72d71768e993d4"
+        },
+        {
+          "name": "domain-modeling",
+          "path": "skills/engineering/domain-modeling/SKILL.md",
+          "content_hash": "ea30ee454ba264543dbe40737973b1a5afb9f0e6"
+        },
+        {
+          "name": "git-guardrails-claude-code",
+          "path": "skills/misc/git-guardrails-claude-code/SKILL.md",
+          "content_hash": "ceed97af09633b300826d0ca0b1464c527ec9a35"
+        },
+        {
+          "name": "grill-me",
+          "path": "skills/productivity/grill-me/SKILL.md",
+          "content_hash": "3df14e2d3a89459bf300614be9247e3ce74798f8"
+        },
+        {
+          "name": "grill-with-docs",
+          "path": "skills/engineering/grill-with-docs/SKILL.md",
+          "content_hash": "eedaf2562c83155115e9c649fa3ecaac2e10e81d"
+        },
+        {
+          "name": "grilling",
+          "path": "skills/productivity/grilling/SKILL.md",
+          "content_hash": "28aceb4c9567b985cb47f7db88cf23c9f33af8b8"
+        },
+        {
+          "name": "handoff",
+          "path": "skills/productivity/handoff/SKILL.md",
+          "content_hash": "ce24892bd2d4b9e7fd5ac9b95c03175e18bef388"
+        },
+        {
+          "name": "implement",
+          "path": "skills/engineering/implement/SKILL.md",
+          "content_hash": "4804b466ab26c9b9d8d42917547db133d1f20a9f"
+        },
+        {
+          "name": "implement-spec",
+          "path": "skills/engineering/implement-spec/SKILL.md",
+          "content_hash": "0cfefc751d0cb64f0c948ffcb17e13b94e778f08"
+        },
+        {
+          "name": "improve-codebase-architecture",
+          "path": "skills/engineering/improve-codebase-architecture/SKILL.md",
+          "content_hash": "39bd9cc130f7dfcc4e3ea0b3613f6ebed0d0ad2b"
+        },
+        {
+          "name": "loop-me",
+          "path": "skills/in-progress/loop-me/SKILL.md",
+          "content_hash": "a0dfdc3562686d920900973b50289b36e2f7eafe"
+        },
+        {
+          "name": "migrate-to-shoehorn",
+          "path": "skills/misc/migrate-to-shoehorn/SKILL.md",
+          "content_hash": "0aea91a3599a4bf7aeec17e3262d4cbcfcbeec23"
+        },
+        {
+          "name": "pr",
+          "path": "skills/engineering/pr/SKILL.md",
+          "content_hash": "00b896d811adffad747c7ca30078d909d60c7f93"
+        },
+        {
+          "name": "prototype",
+          "path": "skills/engineering/prototype/SKILL.md",
+          "content_hash": "e41d92e171f074a2b6887d8f6faca4a15c83d1ca"
+        },
+        {
+          "name": "retro",
+          "path": "skills/engineering/retro/SKILL.md",
+          "content_hash": "335c1862a43da9d629abafdb79ca0c0de118be08"
+        },
+        {
+          "name": "scaffold-exercises",
+          "path": "skills/misc/scaffold-exercises/SKILL.md",
+          "content_hash": "44a0ee332b9d67ebbd59389c7eb4e5aff1ce845c"
+        },
+        {
+          "name": "setup-matt-pocock-skills",
+          "path": "skills/engineering/setup-matt-pocock-skills/SKILL.md",
+          "content_hash": "aafaabf96fa3945d8a4069317a7a6d36b7169670"
+        },
+        {
+          "name": "setup-pre-commit",
+          "path": "skills/misc/setup-pre-commit/SKILL.md",
+          "content_hash": "5b63f9f665bacc9be04cae51982e9ef1469d6699"
+        },
+        {
+          "name": "setup-ts-deep-modules",
+          "path": "skills/in-progress/setup-ts-deep-modules/SKILL.md",
+          "content_hash": "b32508a8a7d62c07d32d7c5cff84d357719def7f"
+        },
+        {
+          "name": "tdd",
+          "path": "skills/engineering/tdd/SKILL.md",
+          "content_hash": "667dbdd00c09d0e2189e082986e6a4d61a67c2a6"
+        },
+        {
+          "name": "teach",
+          "path": "skills/productivity/teach/SKILL.md",
+          "content_hash": "3fd617b610e59acbb99644de1ef37e394ff53cd1"
+        },
+        {
+          "name": "to-questionnaire",
+          "path": "skills/productivity/to-questionnaire/SKILL.md",
+          "content_hash": "46dfbeeba12a9e52eef446676f42e7551023d9a9"
+        },
+        {
+          "name": "to-spec",
+          "path": "skills/engineering/to-spec/SKILL.md",
+          "content_hash": "136b9651747cfccbfbb7c50a6b0dfb757e7547d2"
+        },
+        {
+          "name": "to-tickets",
+          "path": "skills/engineering/to-tickets/SKILL.md",
+          "content_hash": "2dee20ad722a31c04ededf9f2d83842473573045"
+        },
+        {
+          "name": "triage",
+          "path": "skills/engineering/triage/SKILL.md",
+          "content_hash": "4cb951d62ecccaed601cdc5f9a1b7b3d8a799635"
+        },
+        {
+          "name": "wait-what",
+          "path": "skills/productivity/wait-what/SKILL.md",
+          "content_hash": "c8b050e6b8c711be1a9008ceacb2126914f0763e"
+        },
+        {
+          "name": "wayfinder",
+          "path": "skills/engineering/wayfinder/SKILL.md",
+          "content_hash": "32b0ce970b1394ede47116e1d3e07f9ccc87591f"
+        },
+        {
+          "name": "wizard",
+          "path": "skills/engineering/wizard/SKILL.md",
+          "content_hash": "e396d3ba97c723a78ffd350fb14a3c409137b306"
+        },
+        {
+          "name": "writing-beats",
+          "path": "skills/in-progress/writing-beats/SKILL.md",
+          "content_hash": "3a28fb076fdaaec0927080718abb98fc0f340011"
+        },
+        {
+          "name": "writing-for-agents",
+          "path": "skills/productivity/writing-for-agents/SKILL.md",
+          "content_hash": "ad2925850efb8973a72d2e666f7a975f9a2d4a9b"
+        },
+        {
+          "name": "writing-fragments",
+          "path": "skills/in-progress/writing-fragments/SKILL.md",
+          "content_hash": "98e500e0097ec80f52f6a024c5a2ff6d15235bdb"
+        },
+        {
+          "name": "writing-shape",
+          "path": "skills/in-progress/writing-shape/SKILL.md",
+          "content_hash": "ac92229646fccf7315ae139c37b479b3790617f2"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mbfinotti/revops-skills.git",
+      "skills": [
+        {
+          "name": "crm-data-governance",
+          "path": "skills/crm-data-governance/SKILL.md",
+          "content_hash": "b81b5ba1023c560710addb3066a362309853234d"
+        },
+        {
+          "name": "customer-churn-signals",
+          "path": "skills/customer-churn-signals/SKILL.md",
+          "content_hash": "b1aad3771930c594bb8057c167bba24af07e6e4c"
+        },
+        {
+          "name": "customer-health-score",
+          "path": "skills/customer-health-score/SKILL.md",
+          "content_hash": "b855875da53a5fd6263f2aff338dea47758248f0"
+        },
+        {
+          "name": "deal-desk-approval",
+          "path": "skills/deal-desk-approval/SKILL.md",
+          "content_hash": "ac6982d3de3b3fa63a43d68db41e89aeae4470de"
+        },
+        {
+          "name": "lead-routing",
+          "path": "skills/lead-routing/SKILL.md",
+          "content_hash": "1d5d54c270d135455f1b597de90b608e3412b24a"
+        },
+        {
+          "name": "lead-scoring",
+          "path": "skills/lead-scoring/SKILL.md",
+          "content_hash": "5c58d3b2c3f9e89cd066e34cf0ea66d269e2c160"
+        },
+        {
+          "name": "pipeline-stage-definition-audit",
+          "path": "skills/pipeline-stage-definition-audit/SKILL.md",
+          "content_hash": "376f8c1bc4a40761868b7aa8db877e36c10e6fa9"
+        },
+        {
+          "name": "revenue-data-governance-strategy",
+          "path": "skills/revenue-data-governance-strategy/SKILL.md",
+          "content_hash": "ea1b07b6dad8f0158213da33be93c5b00e1159fb"
+        },
+        {
+          "name": "revenue-funnel",
+          "path": "skills/revenue-funnel/SKILL.md",
+          "content_hash": "faeced1f110e968248206c1d5c2b1cdc952f1dec"
+        },
+        {
+          "name": "revenue-kpi-framework",
+          "path": "skills/revenue-kpi-framework/SKILL.md",
+          "content_hash": "172cd82b4ba81c899b70efc969fae3d82565f915"
+        },
+        {
+          "name": "revenue-leakage",
+          "path": "skills/revenue-leakage/SKILL.md",
+          "content_hash": "7a2cae086c30c3f4ad61ce0cb40d628bdc1b1f1a"
+        },
+        {
+          "name": "revenue-reporting",
+          "path": "skills/revenue-reporting/SKILL.md",
+          "content_hash": "7b009b8ba94ffecdd4e15d05706142d7eb40c5d8"
+        },
+        {
+          "name": "revops-career",
+          "path": "skills/revops-career/SKILL.md",
+          "content_hash": "fba31a93f15caa79697e852b09631d4a1b0a6b0f"
+        },
+        {
+          "name": "revops-hiring",
+          "path": "skills/revops-hiring/SKILL.md",
+          "content_hash": "5a4e2b9379d82b8ac087278b88297aa661f5ca13"
+        },
+        {
+          "name": "revops-kickoff",
+          "path": "skills/revops-kickoff/SKILL.md",
+          "content_hash": "c3c1defd940c594f74e23092165cae4837c8aaf5"
+        },
+        {
+          "name": "revops-radar",
+          "path": "skills/revops-radar/SKILL.md",
+          "content_hash": "347c51afd65415f5df95eece54849705b22b58f2"
+        },
+        {
+          "name": "revops-stack-rationalization",
+          "path": "skills/revops-stack-rationalization/SKILL.md",
+          "content_hash": "7b1558bb33c9cd94c0495985cc3e951b1e1c89b5"
+        },
+        {
+          "name": "sales-forecast-diagnostic",
+          "path": "skills/sales-forecast-diagnostic/SKILL.md",
+          "content_hash": "1606d31afaf34cacf2a4e62813c1dc0a4dcb86da"
+        },
+        {
+          "name": "sales-pipeline-hygiene",
+          "path": "skills/sales-pipeline-hygiene/SKILL.md",
+          "content_hash": "2e2d4ac06796243f0b6acf35995a3a7e965e4727"
+        },
+        {
+          "name": "sales-to-cs-handoff",
+          "path": "skills/sales-to-cs-handoff/SKILL.md",
+          "content_hash": "7dedffad3e599fa193a4eba06a58cd2a524b8d2e"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/microsoft/azure-skills.git",
+      "skills": [
+        {
+          "name": "microsoft-foundry",
+          "path": ".github/plugins/azure-skills/skills/microsoft-foundry/SKILL.md",
+          "content_hash": "a426dddbab9a048b624441b2963cbda47dbc5caa"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git",
+      "skills": [
+        {
+          "name": "ui-ux-pro-max",
+          "path": ".claude/skills/ui-ux-pro-max/SKILL.md",
+          "content_hash": "0b6619c11598d7ce32041044cb2e6fc6adea1efc"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/openai/skills.git",
+      "skills": [
+        {
+          "name": "define-goal",
+          "path": "skills/.curated/define-goal/SKILL.md",
+          "content_hash": "eac32ae7b2ef0061267e908c316c29ec18f87a33"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/pbakaus/impeccable.git",
+      "skills": [
+        {
+          "name": "impeccable",
+          "path": ".agents/skills/impeccable/SKILL.md",
+          "content_hash": "91c5e484720fc3740c59580094a4f52a6b545ef5"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/qodo-ai/qodo-skills.git",
+      "skills": [
+        {
+          "name": "qodo-codebase-wisdom",
+          "path": "skills/qodo-codebase-wisdom/SKILL.md",
+          "content_hash": "cbaef249026152704128e6d2f583fc693b1d61a8"
+        },
+        {
+          "name": "qodo-get-rules",
+          "path": "skills/qodo-get-rules/SKILL.md",
+          "content_hash": "f589c55093f57541fe0d29d614fa19704c73ecd2"
+        },
+        {
+          "name": "qodo-manage-standards",
+          "path": "skills/qodo-manage-standards/SKILL.md",
+          "content_hash": "24b490d24323757ad84b5a39506cb258c51c3379"
+        },
+        {
+          "name": "qodo-review",
+          "path": "skills/qodo-review/SKILL.md",
+          "content_hash": "55dc4ff9c4392123dc64a816fe59c4482ca613bd"
+        },
+        {
+          "name": "qodo-review-notes",
+          "path": "skills/qodo-review-notes/SKILL.md",
+          "content_hash": "5502fa9c0c62898cae7af515ffd9ecb1b0af84ed"
+        },
+        {
+          "name": "qodo-review-resolver",
+          "path": "skills/qodo-review-resolver/SKILL.md",
+          "content_hash": "8c13f622ff55ebe132e655a35bb7c8aa3173a1bb"
+        },
+        {
+          "name": "qodo-setup",
+          "path": "skills/qodo-setup/SKILL.md",
+          "content_hash": "3771bde6c363d208e0af83b8b35922452657016f"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/qu-skills/superpowers.git",
+      "skills": [
+        {
+          "name": "affirmations",
+          "path": "guides/agent/affirmations/SKILL.md",
+          "content_hash": "3d8b1619b107a788d746251535bbe30e11231db3"
+        },
+        {
+          "name": "agent-browser",
+          "path": "tools/utilities/agent-browser/SKILL.md",
+          "content_hash": "bc1456f3a349356cd9c11457678001f6885839a8"
+        },
+        {
+          "name": "agent-tools",
+          "path": "tools/agent-tools/SKILL.md",
+          "content_hash": "03bc58f29559049d8238fc614405537d9dd2e25c"
+        },
+        {
+          "name": "agent-ui",
+          "path": "ui/agent-ui/SKILL.md",
+          "content_hash": "efe9654736df3e0aebd60df9c0c64b6d0ee4adf2"
+        },
+        {
+          "name": "ai-automation-workflows",
+          "path": "guides/content/ai-automation-workflows/SKILL.md",
+          "content_hash": "3cde94ed1e90ec503ebdccdfc70c7f7a5653eaed"
+        },
+        {
+          "name": "ai-avatar-video",
+          "path": "tools/video/ai-avatar-video/SKILL.md",
+          "content_hash": "1c0d94dfb94e5492d1490a2bede267df8fbc6774"
+        },
+        {
+          "name": "ai-content-pipeline",
+          "path": "guides/content/ai-content-pipeline/SKILL.md",
+          "content_hash": "a977119b5aa84b073f1f14666fda750cc756afc2"
+        },
+        {
+          "name": "ai-image-generation",
+          "path": "tools/image/ai-image-generation/SKILL.md",
+          "content_hash": "6ebdf0c4cbf5c3502fc30136980835173f69ce88"
+        },
+        {
+          "name": "ai-marketing-videos",
+          "path": "guides/video/ai-marketing-videos/SKILL.md",
+          "content_hash": "9320b7b094e3899eef4a2c075ee27acd4cb2b607"
+        },
+        {
+          "name": "ai-music-generation",
+          "path": "tools/audio/ai-music-generation/SKILL.md",
+          "content_hash": "41a1ed9b852d0602667b21447417a6ad1647656a"
+        },
+        {
+          "name": "ai-podcast",
+          "path": "guides/content/ai-podcast/SKILL.md",
+          "content_hash": "3cbf1c5d5183addfdd5fbcc19a25477624e3bc04"
+        },
+        {
+          "name": "ai-podcast-creation",
+          "path": "guides/content/ai-podcast-creation/SKILL.md",
+          "content_hash": "327f3bbf7ead5820283acaef45eef7e7bdd8994c"
+        },
+        {
+          "name": "ai-product-photography",
+          "path": "guides/photo/ai-product-photography/SKILL.md",
+          "content_hash": "ca48ff7244f274660cb43853a345b9aed5f62fbb"
+        },
+        {
+          "name": "ai-rag-pipeline",
+          "path": "tools/llm/ai-rag-pipeline/SKILL.md",
+          "content_hash": "4e0a04d514e16d03835c70f400e673d43ac97705"
+        },
+        {
+          "name": "ai-social-media-content",
+          "path": "guides/social/ai-social-media-content/SKILL.md",
+          "content_hash": "efea996793e7fdf3cc56aacfc07aa1cba5e9186d"
+        },
+        {
+          "name": "ai-video-generation",
+          "path": "tools/video/ai-video-generation/SKILL.md",
+          "content_hash": "d896bd88ceddfe360a2f25409f222294c951f45f"
+        },
+        {
+          "name": "ai-voice-cloning",
+          "path": "tools/audio/ai-voice-cloning/SKILL.md",
+          "content_hash": "6131b9d76c1874076fa91e5c7ca1edc7c1f761ca"
+        },
+        {
+          "name": "app-store-screenshots",
+          "path": "guides/design/app-store-screenshots/SKILL.md",
+          "content_hash": "e61b48af6abbd892b5883a1307e3fe1fcd2936f1"
+        },
+        {
+          "name": "background-removal",
+          "path": "tools/image/background-removal/SKILL.md",
+          "content_hash": "2b7486f34cfb99ca39efce9a17ec20d647ddd48e"
+        },
+        {
+          "name": "book-cover-design",
+          "path": "guides/design/book-cover-design/SKILL.md",
+          "content_hash": "3d7ca444c38340340ba14a9d791dd6ef36a7e8f8"
+        },
+        {
+          "name": "building-inferencesh-apps",
+          "path": "sdk/building-apps/SKILL.md",
+          "content_hash": "3ec1b1ca85084aa90b72433cf153750e761ce772"
+        },
+        {
+          "name": "case-study-writing",
+          "path": "guides/writing/case-study-writing/SKILL.md",
+          "content_hash": "57df575e58cb35b55d1178bc769d675c44072c5c"
+        },
+        {
+          "name": "character-design-sheet",
+          "path": "guides/design/character-design-sheet/SKILL.md",
+          "content_hash": "d662ca63c7ee11d2bbd6dbd048ec4fd823267b4d"
+        },
+        {
+          "name": "chat-ui",
+          "path": "ui/chat-ui/SKILL.md",
+          "content_hash": "4544539d17b0bc7fc5e51317fa1d48ac398f79c8"
+        },
+        {
+          "name": "competitor-teardown",
+          "path": "guides/product/competitor-teardown/SKILL.md",
+          "content_hash": "e72b74a3f7d3408eb15b82046acdd6e080da4dd2"
+        },
+        {
+          "name": "content-repurposing",
+          "path": "guides/content/content-repurposing/SKILL.md",
+          "content_hash": "b7bf829c6de1bae82f7f165e4ff00b5d6288fa62"
+        },
+        {
+          "name": "customer-persona",
+          "path": "guides/product/customer-persona/SKILL.md",
+          "content_hash": "05d049235ad6ae06d978e656a7e91fdc19b92b36"
+        },
+        {
+          "name": "data-visualization",
+          "path": "guides/design/data-visualization/SKILL.md",
+          "content_hash": "089d34578142d48aca00496d164ee073624816da"
+        },
+        {
+          "name": "dialogue-audio",
+          "path": "tools/audio/dialogue-audio/SKILL.md",
+          "content_hash": "33afa4e3efbf084a7c59abdada5b0c20b9197be6"
+        },
+        {
+          "name": "elevenlabs-dialogue",
+          "path": "tools/audio/elevenlabs-dialogue/SKILL.md",
+          "content_hash": "3be5661b59c902f710ee1afc5ecb74ab866c0bbc"
+        },
+        {
+          "name": "elevenlabs-dubbing",
+          "path": "tools/audio/elevenlabs-dubbing/SKILL.md",
+          "content_hash": "808ac38900adc4ede99a61413139224405526582"
+        },
+        {
+          "name": "elevenlabs-music",
+          "path": "tools/audio/elevenlabs-music/SKILL.md",
+          "content_hash": "332067b1025763a98232ed8ffa61706c7bc9ceb7"
+        },
+        {
+          "name": "elevenlabs-sound-effects",
+          "path": "tools/audio/elevenlabs-sound-effects/SKILL.md",
+          "content_hash": "0e69480cd0488fcbe1c26ef0303d8cd6e55c1068"
+        },
+        {
+          "name": "elevenlabs-stt",
+          "path": "tools/audio/elevenlabs-stt/SKILL.md",
+          "content_hash": "aa3108d64aa24e47c583f84608fe06c251ac9861"
+        },
+        {
+          "name": "elevenlabs-tts",
+          "path": "tools/audio/elevenlabs-tts/SKILL.md",
+          "content_hash": "df495d8e926fd67a7e2c2457e013bfe8dcf418d5"
+        },
+        {
+          "name": "elevenlabs-voice-changer",
+          "path": "tools/audio/elevenlabs-voice-changer/SKILL.md",
+          "content_hash": "2164cb8a4001a3f1f6d4359b2ab232827c0c4e7e"
+        },
+        {
+          "name": "elevenlabs-voice-isolator",
+          "path": "tools/audio/elevenlabs-voice-isolator/SKILL.md",
+          "content_hash": "839b3be5ef04612854b205c383256024314b9a97"
+        },
+        {
+          "name": "email-design",
+          "path": "guides/design/email-design/SKILL.md",
+          "content_hash": "1704b2beadcb8ca5321c690d4547dbf213453438"
+        },
+        {
+          "name": "explainer-video-guide",
+          "path": "guides/video/explainer-video-guide/SKILL.md",
+          "content_hash": "3be9b4be9f07853ad6d4b94c1999d908f218ecdb"
+        },
+        {
+          "name": "flux-image",
+          "path": "tools/image/flux-image/SKILL.md",
+          "content_hash": "e6a49cb6c34fcaa45596745be159e5b853239a91"
+        },
+        {
+          "name": "google-veo",
+          "path": "tools/video/google-veo/SKILL.md",
+          "content_hash": "a84eaf7aa6f804f7b1c87b775388f384108778c8"
+        },
+        {
+          "name": "gpt-image",
+          "path": "tools/image/gpt-image/SKILL.md",
+          "content_hash": "c8aaa1c919905b4adfe4ae803bf34b2a4aca5ec8"
+        },
+        {
+          "name": "happyhorse",
+          "path": "tools/video/happyhorse/SKILL.md",
+          "content_hash": "d060e1f960da3b9d0d14583e4db42e29a062afb1"
+        },
+        {
+          "name": "image-to-video",
+          "path": "tools/video/image-to-video/SKILL.md",
+          "content_hash": "d8369500a2e6f35262ad84ec85c41c17be045a2c"
+        },
+        {
+          "name": "image-upscaling",
+          "path": "tools/image/image-upscaling/SKILL.md",
+          "content_hash": "5034cff7144d93c4372cb8017a44b278137514fe"
+        },
+        {
+          "name": "infsh-cli",
+          "path": "tools/infsh-cli/SKILL.md",
+          "content_hash": "2e26130dfbc1fd92f9a00e01fdb062860a82ff37"
+        },
+        {
+          "name": "javascript-sdk",
+          "path": "sdk/javascript-sdk/SKILL.md",
+          "content_hash": "d3b54e129f6ad5078141494ebdd0d33233e9f0de"
+        },
+        {
+          "name": "landing-page-design",
+          "path": "guides/design/landing-page-design/SKILL.md",
+          "content_hash": "ea182dd7c830a131622bad236605ee1621a8f3e8"
+        },
+        {
+          "name": "linkedin-content",
+          "path": "guides/social/linkedin-content/SKILL.md",
+          "content_hash": "a06385f59e7166796cdd2dcbd40c2eae63f41399"
+        },
+        {
+          "name": "llm-models",
+          "path": "tools/llm/llm-models/SKILL.md",
+          "content_hash": "badbdd4717743b479dff933f478b11ce3b639691"
+        },
+        {
+          "name": "logo-design-guide",
+          "path": "guides/design/logo-design-guide/SKILL.md",
+          "content_hash": "d8429d4ac5bac09cabc96830cbc879de91701ff7"
+        },
+        {
+          "name": "nano-banana",
+          "path": "tools/image/nano-banana/SKILL.md",
+          "content_hash": "f859109cac9e792c887c200f3b24c9cdeca28da1"
+        },
+        {
+          "name": "nano-banana-2",
+          "path": "tools/image/nano-banana-2/SKILL.md",
+          "content_hash": "915c28c24bc31a2cdb682c21ae62b23b3085924a"
+        },
+        {
+          "name": "newsletter-curation",
+          "path": "guides/writing/newsletter-curation/SKILL.md",
+          "content_hash": "4441a1036a614730133ce918ab2599793247ada5"
+        },
+        {
+          "name": "og-image-design",
+          "path": "guides/design/og-image-design/SKILL.md",
+          "content_hash": "0ae2892a15161485223a7b3902bb6821642b54e7"
+        },
+        {
+          "name": "p-image",
+          "path": "tools/image/p-image/SKILL.md",
+          "content_hash": "b4155364585bf47283b01b829c74f6a7168bc945"
+        },
+        {
+          "name": "p-video",
+          "path": "tools/video/p-video/SKILL.md",
+          "content_hash": "360e0654e9a6a6074015103b36fb367ce8367181"
+        },
+        {
+          "name": "p-video-avatar",
+          "path": "tools/video/p-video-avatar/SKILL.md",
+          "content_hash": "d297891dd40bfa587f264b0eeb0ecd5c4e763139"
+        },
+        {
+          "name": "pitch-deck-visuals",
+          "path": "guides/design/pitch-deck-visuals/SKILL.md",
+          "content_hash": "bc93f79e1a2405d011d00304c5b5ef2b059b9af3"
+        },
+        {
+          "name": "press-release-writing",
+          "path": "guides/writing/press-release-writing/SKILL.md",
+          "content_hash": "20b6a0e376783e741c072625f2b0ad96abbb5628"
+        },
+        {
+          "name": "product-changelog",
+          "path": "guides/product/product-changelog/SKILL.md",
+          "content_hash": "f23b698056423c6de06332b7dbef1a233ba3b0a4"
+        },
+        {
+          "name": "product-hunt-launch",
+          "path": "guides/product/product-hunt-launch/SKILL.md",
+          "content_hash": "bf988f43585aeaeba938fb4251d0b10ae0c9de43"
+        },
+        {
+          "name": "product-photography",
+          "path": "guides/photo/product-photography/SKILL.md",
+          "content_hash": "c8ea4d50ba7d1619e85d7dae58a5893e354570bb"
+        },
+        {
+          "name": "prompt-engineering",
+          "path": "guides/prompting/prompt-engineering/SKILL.md",
+          "content_hash": "f3e5d24dca5bddaf2a19f0caf768c7c39aaf4b31"
+        },
+        {
+          "name": "python-executor",
+          "path": "tools/utilities/python-executor/SKILL.md",
+          "content_hash": "3dfb3df9f47f83acb80d706e591c3ea143ec78e0"
+        },
+        {
+          "name": "python-sdk",
+          "path": "sdk/python-sdk/SKILL.md",
+          "content_hash": "5f9f94898f9667c34d85f0b53e9483c717f89f1b"
+        },
+        {
+          "name": "qwen-image-2",
+          "path": "tools/image/qwen-image-2/SKILL.md",
+          "content_hash": "91d3f446a4fee95463f0226cdba247210a56f9b9"
+        },
+        {
+          "name": "qwen-image-2-pro",
+          "path": "tools/image/qwen-image-2-pro/SKILL.md",
+          "content_hash": "0c65187cb131fff6993c150db5f95ab87495d43f"
+        },
+        {
+          "name": "related-skill",
+          "path": "tools/utilities/related-skill/SKILL.md",
+          "content_hash": "ab0965cae44d6366af7a315c2ea0ca05797ea971"
+        },
+        {
+          "name": "remotion-render",
+          "path": "tools/video/remotion-render/SKILL.md",
+          "content_hash": "7c7d866e1b2a2624a978007a465d255982c85421"
+        },
+        {
+          "name": "seedance",
+          "path": "tools/video/seedance/SKILL.md",
+          "content_hash": "1f20717f62a3aa164dde26d69d1e2ff0827c4827"
+        },
+        {
+          "name": "seo-content-brief",
+          "path": "guides/writing/seo-content-brief/SKILL.md",
+          "content_hash": "f2d9a089e8277562a1ef5c7c329c4c492657e520"
+        },
+        {
+          "name": "social-media-carousel",
+          "path": "guides/social/social-media-carousel/SKILL.md",
+          "content_hash": "9c8e88436577c20d1e94aec567e3edba37e04649"
+        },
+        {
+          "name": "speech-to-text",
+          "path": "tools/audio/speech-to-text/SKILL.md",
+          "content_hash": "5fa05cd896de37be3b78b5d826ea00563ab8aee8"
+        },
+        {
+          "name": "storyboard-creation",
+          "path": "guides/video/storyboard-creation/SKILL.md",
+          "content_hash": "2a36b6b9dabb40af6b9a0429160c616f2660a105"
+        },
+        {
+          "name": "talking-head-production",
+          "path": "guides/video/talking-head-production/SKILL.md",
+          "content_hash": "39667f8038dcb01bd03103764339651c176cc0cb"
+        },
+        {
+          "name": "technical-blog-writing",
+          "path": "guides/writing/technical-blog-writing/SKILL.md",
+          "content_hash": "eaf23810cae4a632ddeb14c9879e1ceaba4ad88f"
+        },
+        {
+          "name": "text-to-speech",
+          "path": "tools/audio/text-to-speech/SKILL.md",
+          "content_hash": "27d327e0cf3f15aa6927f889b6ff4cf63dd76c42"
+        },
+        {
+          "name": "tools-ui",
+          "path": "ui/tools-ui/SKILL.md",
+          "content_hash": "5bcc1afb89253d1033c209cffe5ef55fc4458813"
+        },
+        {
+          "name": "twitter-automation",
+          "path": "tools/social/twitter-automation/SKILL.md",
+          "content_hash": "fb8d0125db9ce6b59922ec6c7d7abd7bbf955914"
+        },
+        {
+          "name": "twitter-thread-creation",
+          "path": "guides/social/twitter-thread-creation/SKILL.md",
+          "content_hash": "a8b7ca68dc6b062ded37124caf94b5d1143af2db"
+        },
+        {
+          "name": "video-ad-specs",
+          "path": "guides/video/video-ad-specs/SKILL.md",
+          "content_hash": "13954947241fe9796ea701674e50d7d144a1eef2"
+        },
+        {
+          "name": "video-prompting-guide",
+          "path": "guides/prompting/video-prompting-guide/SKILL.md",
+          "content_hash": "691483a8c2538901e8f86df757a8e4f7ea71365a"
+        },
+        {
+          "name": "web-search",
+          "path": "tools/llm/web-search/SKILL.md",
+          "content_hash": "18974bcf21b72c8f1252c8b2027742f5f3e28489"
+        },
+        {
+          "name": "widgets-ui",
+          "path": "ui/widgets-ui/SKILL.md",
+          "content_hash": "e87471db2bfe522f74dda2b9b65acb627e96f18f"
+        },
+        {
+          "name": "youtube-thumbnail-design",
+          "path": "guides/design/youtube-thumbnail-design/SKILL.md",
+          "content_hash": "743a13c5161be6205ca065cb01c45e953f7efc67"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/shadcn-ui/ui.git",
+      "skills": [
+        {
+          "name": "shadcn",
+          "path": "skills/shadcn/SKILL.md",
+          "content_hash": "900e3dff4bc1b341db90a147bee6dbed4c2add3c"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/vercel-labs/skills.git",
+      "skills": [
+        {
+          "name": "find-skills",
+          "path": "skills/find-skills/SKILL.md",
+          "content_hash": "3013fdeb8a11b10b1eb795ec3ae8bfca38f7c26d"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/warpdotdev/common-skills.git",
+      "skills": [
+        {
+          "name": "brandalf",
+          "path": ".agents/skills/brandalf/SKILL.md",
+          "content_hash": "747d800f2667eb12946af1431cecbd796f040e8d"
+        },
+        {
+          "name": "check-impl-against-spec",
+          "path": ".agents/skills/check-impl-against-spec/SKILL.md",
+          "content_hash": "860e4811c61d9bbaea7228083acf6fbba3a0310e"
+        },
+        {
+          "name": "complain",
+          "path": ".agents/skills/complain/SKILL.md",
+          "content_hash": "76a68a88b9a3c4ec60fd3dedd44193c39f93b8b3"
+        },
+        {
+          "name": "council",
+          "path": ".agents/skills/council/SKILL.md",
+          "content_hash": "b0d73477a8a540d765e57a2440b05485b12a0cda"
+        },
+        {
+          "name": "create-pr",
+          "path": ".agents/skills/create-pr/SKILL.md",
+          "content_hash": "2da7e09e545a77e18237fc5165d9ef48c87e344d"
+        },
+        {
+          "name": "cross-critique",
+          "path": ".agents/skills/cross-critique/SKILL.md",
+          "content_hash": "e6b304505f788cd12b7174938ee2b5ccd4e7afec"
+        },
+        {
+          "name": "diagnose-ci-failures",
+          "path": ".agents/skills/diagnose-ci-failures/SKILL.md",
+          "content_hash": "bcea6d2791a949c4ee98fd126cb22c55a512d77a"
+        },
+        {
+          "name": "fix-errors",
+          "path": ".agents/skills/fix-errors/SKILL.md",
+          "content_hash": "6c8c6f7e07a2d99809c40cb52747d8af30d3cf6d"
+        },
+        {
+          "name": "implement-specs",
+          "path": ".agents/skills/implement-specs/SKILL.md",
+          "content_hash": "20b6815171d349fc4b05ee3a55e960c609faaeef"
+        },
+        {
+          "name": "merge-risk",
+          "path": ".agents/skills/merge-risk/SKILL.md",
+          "content_hash": "5c76f952405b020e9a1c9acfa86bcee99645c953"
+        },
+        {
+          "name": "migrate-to-factory",
+          "path": ".agents/skills/migrate-to-factory/SKILL.md",
+          "content_hash": "0a1f848bf9ffdcc47045c6e5215d8084c12cf279"
+        },
+        {
+          "name": "pr-walkthrough",
+          "path": ".agents/skills/pr-walkthrough/SKILL.md",
+          "content_hash": "6c3e2d7fbfe568f5278ce595dac933c8fff97329"
+        },
+        {
+          "name": "readout",
+          "path": ".agents/skills/readout/SKILL.md",
+          "content_hash": "586f0dc1033199b6ca01e39c52aaf83a62c606dd"
+        },
+        {
+          "name": "reproduce-bug-report",
+          "path": ".agents/skills/reproduce-bug-report/SKILL.md",
+          "content_hash": "3857228de929fa3ed232cefd942eae3dc292c5fd"
+        },
+        {
+          "name": "research",
+          "path": ".agents/skills/research/SKILL.md",
+          "content_hash": "0be8ba1eaef77f8a824a08dc1a84ccbe074176e1"
+        },
+        {
+          "name": "resolve-merge-conflicts",
+          "path": ".agents/skills/resolve-merge-conflicts/SKILL.md",
+          "content_hash": "f62fff286d3ba22ae59e8c99c3ad0b5c96a5a8e8"
+        },
+        {
+          "name": "respond-to-pr-comments-in-blocklist",
+          "path": ".agents/skills/respond-to-pr-comments-in-blocklist/SKILL.md",
+          "content_hash": "2064d298296ff9a893690124ab6df0e223e988bf"
+        },
+        {
+          "name": "review-pr",
+          "path": ".agents/skills/review-pr/SKILL.md",
+          "content_hash": "ee744db4e23be67660abd81db265632ca67479b5"
+        },
+        {
+          "name": "saga",
+          "path": ".agents/skills/saga/SKILL.md",
+          "content_hash": "9798e16682592cd9d435a37812c262e3bb4719ae"
+        },
+        {
+          "name": "scan-new-specs",
+          "path": ".agents/skills/scan-new-specs/SKILL.md",
+          "content_hash": "c2cffdfccd0cf1c25880ee609033e754cf5567d3"
+        },
+        {
+          "name": "skill-doctor",
+          "path": ".agents/skills/skill-doctor/SKILL.md",
+          "content_hash": "1a47ec1e7760ecdc287839b0a96e8c30d84b6c1e"
+        },
+        {
+          "name": "spec-driven-implementation",
+          "path": ".agents/skills/spec-driven-implementation/SKILL.md",
+          "content_hash": "9fbd02664e40ca597519fd54b88c9cb82fd70fd2"
+        },
+        {
+          "name": "suggestion-box",
+          "path": ".agents/skills/suggestion-box/SKILL.md",
+          "content_hash": "b63c39b7ca78c370f7a4405f3dff6f554a4fc375"
+        },
+        {
+          "name": "update-skill",
+          "path": ".agents/skills/update-skill/SKILL.md",
+          "content_hash": "84f703bb1c52d3fb9697f3a570c54b5103a3fbf0"
+        },
+        {
+          "name": "validate-changes-match-specs",
+          "path": ".agents/skills/validate-changes-match-specs/SKILL.md",
+          "content_hash": "56a6c8187c1472a98e312912b7017d20efa974cd"
+        },
+        {
+          "name": "write-feature-docs",
+          "path": ".agents/skills/write-feature-docs/SKILL.md",
+          "content_hash": "adc49d7bb3a4189e143c0cc16c8674c611c27482"
+        },
+        {
+          "name": "write-pr-description",
+          "path": ".agents/skills/write-pr-description/SKILL.md",
+          "content_hash": "a13f8ec1e8f0697fe7836746e6b3b88b998b988a"
+        },
+        {
+          "name": "write-product-spec",
+          "path": ".agents/skills/write-product-spec/SKILL.md",
+          "content_hash": "73e93a06b7ea2a98a0418cfab7592f617f9c5074"
+        },
+        {
+          "name": "write-tech-spec",
+          "path": ".agents/skills/write-tech-spec/SKILL.md",
+          "content_hash": "69530fc10b5441eeb178532084fa7a047e28fd3f"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/wondelai/skills.git",
+      "skills": [
+        {
+          "name": "37signals-way",
+          "path": "37signals-way/SKILL.md",
+          "content_hash": "77e00d2457b1291bbf96e56fbf869c0a005e9bcd"
+        },
+        {
+          "name": "architecture-optimization",
+          "path": "architecture-optimization/SKILL.md",
+          "content_hash": "0a72fcc1c2f75b377740f17dabaf0397079a122b"
+        },
+        {
+          "name": "blue-ocean-strategy",
+          "path": "blue-ocean-strategy/SKILL.md",
+          "content_hash": "499f10e7cf1a169cbeb4e517f85ed32f03df695b"
+        },
+        {
+          "name": "clean-architecture",
+          "path": "clean-architecture/SKILL.md",
+          "content_hash": "7d11fcd7f275d7d4d14170f31821266f48912c0b"
+        },
+        {
+          "name": "clean-code",
+          "path": "clean-code/SKILL.md",
+          "content_hash": "fb3d04908e209a8b757922f050001e5a4622fb2d"
+        },
+        {
+          "name": "cold-start-problem",
+          "path": "cold-start-problem/SKILL.md",
+          "content_hash": "6c082a9ad955360888fc641f07ed775beb5ee24d"
+        },
+        {
+          "name": "contagious",
+          "path": "contagious/SKILL.md",
+          "content_hash": "0f2459d8d1f85b8a48e6f9d8aabf3ac25b2e5277"
+        },
+        {
+          "name": "continuous-discovery",
+          "path": "continuous-discovery/SKILL.md",
+          "content_hash": "08922bafe3de439fea289fb5061336cca302adc0"
+        },
+        {
+          "name": "conversion-optimization",
+          "path": "conversion-optimization/SKILL.md",
+          "content_hash": "3e8630be64fef677173d17a9f014411f232ad3a0"
+        },
+        {
+          "name": "create-app",
+          "path": "create-app/SKILL.md",
+          "content_hash": "4da8cf8d46b4a21126db29aa5eb63db6908d288a"
+        },
+        {
+          "name": "create-business",
+          "path": "create-business/SKILL.md",
+          "content_hash": "82abdd7a2bab5af09e71efc2a79eea33e11efd05"
+        },
+        {
+          "name": "create-website",
+          "path": "create-website/SKILL.md",
+          "content_hash": "d528a88b748f48390ea820c0c091a949a7a6e83b"
+        },
+        {
+          "name": "cro-methodology",
+          "path": "cro-methodology/SKILL.md",
+          "content_hash": "afe9ce61542111b316aeda5e60027f37e5682b43"
+        },
+        {
+          "name": "crossing-the-chasm",
+          "path": "crossing-the-chasm/SKILL.md",
+          "content_hash": "69a8662c280d8e2e1af713bf24667668cc607360"
+        },
+        {
+          "name": "ddia-systems",
+          "path": "ddia-systems/SKILL.md",
+          "content_hash": "169361ab257515ba1e68df5208972e9176f4f22d"
+        },
+        {
+          "name": "design-code-architecture",
+          "path": "design-code-architecture/SKILL.md",
+          "content_hash": "6c61441bdafcc369c3b227c589cefdedad5a0c18"
+        },
+        {
+          "name": "design-everyday-things",
+          "path": "design-everyday-things/SKILL.md",
+          "content_hash": "d57a6443e73786fb35b4d169e964773c0686e0d4"
+        },
+        {
+          "name": "design-sprint",
+          "path": "design-sprint/SKILL.md",
+          "content_hash": "06bfa7afb84b99add9f0927db5f1d45f758a515f"
+        },
+        {
+          "name": "domain-driven-design",
+          "path": "domain-driven-design/SKILL.md",
+          "content_hash": "43223c11b7c0a325f0c6160b5f6760037b2532a7"
+        },
+        {
+          "name": "drive-motivation",
+          "path": "drive-motivation/SKILL.md",
+          "content_hash": "6dbc6ed74d79a39237ef5e0616a2fbebbe1a705e"
+        },
+        {
+          "name": "good-strategy-bad-strategy",
+          "path": "good-strategy-bad-strategy/SKILL.md",
+          "content_hash": "b7f17b17662f65cb1677b221724f4f1faa627522"
+        },
+        {
+          "name": "grow-app",
+          "path": "grow-app/SKILL.md",
+          "content_hash": "0ad99e4984cae603ca3d9210581d0b89b93e70f2"
+        },
+        {
+          "name": "grow-business",
+          "path": "grow-business/SKILL.md",
+          "content_hash": "56441b5380341cfd9102c47d789aeb4cb601dbb2"
+        },
+        {
+          "name": "grow-website",
+          "path": "grow-website/SKILL.md",
+          "content_hash": "4f07b422549cc023389985f066541a81987ea752"
+        },
+        {
+          "name": "high-output-management",
+          "path": "high-output-management/SKILL.md",
+          "content_hash": "87e471f341e4f7aa7ead5e4fc95dcbf18073609f"
+        },
+        {
+          "name": "high-perf-browser",
+          "path": "high-perf-browser/SKILL.md",
+          "content_hash": "47d7dfde415eb2c9cb999a02aa3cace3f3bfa04f"
+        },
+        {
+          "name": "hooked-ux",
+          "path": "hooked-ux/SKILL.md",
+          "content_hash": "94c2dc33aad2cb5d1c76d72cfda0dcce19e92828"
+        },
+        {
+          "name": "hundred-million-offers",
+          "path": "hundred-million-offers/SKILL.md",
+          "content_hash": "70b78b52d4c5da700cd21f5df9fce28c1a377565"
+        },
+        {
+          "name": "improve-app",
+          "path": "improve-app/SKILL.md",
+          "content_hash": "a4da41c6185f147eeca45498e28e73ed02413f50"
+        },
+        {
+          "name": "improve-business",
+          "path": "improve-business/SKILL.md",
+          "content_hash": "bdda975918ee60ed04e0f7fcb5cc23f452dd494a"
+        },
+        {
+          "name": "improve-code-quality",
+          "path": "improve-code-quality/SKILL.md",
+          "content_hash": "3fcd13dfaae4661682f4e0a78bf2e1a2505ce6c3"
+        },
+        {
+          "name": "improve-retention",
+          "path": "improve-retention/SKILL.md",
+          "content_hash": "b359bf543d8e56982e27a59193d35ec868e37be9"
+        },
+        {
+          "name": "improve-website",
+          "path": "improve-website/SKILL.md",
+          "content_hash": "0c6997fecdfa7f65a1de7c94b70fca8e9fd96f18"
+        },
+        {
+          "name": "influence-psychology",
+          "path": "influence-psychology/SKILL.md",
+          "content_hash": "8aaa601a99d7ad3fad7e6613417fe545194752d9"
+        },
+        {
+          "name": "inspired-product",
+          "path": "inspired-product/SKILL.md",
+          "content_hash": "02b29895d4b56ae42e2aa32e32bafa7fadf62377"
+        },
+        {
+          "name": "ios-hig-design",
+          "path": "ios-hig-design/SKILL.md",
+          "content_hash": "39343498e16d8000c9992a9489482c94fad2786c"
+        },
+        {
+          "name": "jobs-to-be-done",
+          "path": "jobs-to-be-done/SKILL.md",
+          "content_hash": "bb5f5b44a82e3f80d180573908d9c34879b4eca1"
+        },
+        {
+          "name": "lean-analytics",
+          "path": "lean-analytics/SKILL.md",
+          "content_hash": "24cfa8bc042eb653d35f3eb6bcaafb7e4d1147b3"
+        },
+        {
+          "name": "lean-startup",
+          "path": "lean-startup/SKILL.md",
+          "content_hash": "623fad8d298b2654f0b4d510526705b71347ce22"
+        },
+        {
+          "name": "lean-ux",
+          "path": "lean-ux/SKILL.md",
+          "content_hash": "fe8126263679a103f7ecbb768088d009bfee4731"
+        },
+        {
+          "name": "made-to-stick",
+          "path": "made-to-stick/SKILL.md",
+          "content_hash": "bb337c4977012a6abd47be8d7d92c51f2b97bebf"
+        },
+        {
+          "name": "microinteractions",
+          "path": "microinteractions/SKILL.md",
+          "content_hash": "f58aeca8f61c767d57562361bb12526236fd7024"
+        },
+        {
+          "name": "mom-test",
+          "path": "mom-test/SKILL.md",
+          "content_hash": "99fc8b988a466f1fcf5f7d3dc42d4aac97b11732"
+        },
+        {
+          "name": "monetizing-innovation",
+          "path": "monetizing-innovation/SKILL.md",
+          "content_hash": "44c9b77db5b0c8df8806cacefd5aac489b13e017"
+        },
+        {
+          "name": "negotiation",
+          "path": "negotiation/SKILL.md",
+          "content_hash": "938cf4bbf517d326fe37eda2b1854143ba988c23"
+        },
+        {
+          "name": "obviously-awesome",
+          "path": "obviously-awesome/SKILL.md",
+          "content_hash": "a1c97e4fea7688a9811be2c95cf438324d63aa6e"
+        },
+        {
+          "name": "one-page-marketing",
+          "path": "one-page-marketing/SKILL.md",
+          "content_hash": "236dedbccb12da941c476ba2399b8f3297eec891"
+        },
+        {
+          "name": "pragmatic-programmer",
+          "path": "pragmatic-programmer/SKILL.md",
+          "content_hash": "bab4f127dea006b273cb2e1d32140844cbb3617e"
+        },
+        {
+          "name": "predictable-revenue",
+          "path": "predictable-revenue/SKILL.md",
+          "content_hash": "8f57c37ec25f3607e05d391436db8d24bfe4bc91"
+        },
+        {
+          "name": "refactoring-patterns",
+          "path": "refactoring-patterns/SKILL.md",
+          "content_hash": "f9090342058a1cb5dbd41d2856f39e2109346ca3"
+        },
+        {
+          "name": "refactoring-ui",
+          "path": "refactoring-ui/SKILL.md",
+          "content_hash": "55e561c9693156491e53bd93c5392188ba310a5d"
+        },
+        {
+          "name": "release-it",
+          "path": "release-it/SKILL.md",
+          "content_hash": "eb5ecfaf9aacf32f32a885eb3e6eda7b870af8ae"
+        },
+        {
+          "name": "remove-technical-debt",
+          "path": "remove-technical-debt/SKILL.md",
+          "content_hash": "cf4e8456fd2693d641ec5b04615bc2d827da0de8"
+        },
+        {
+          "name": "scorecard-marketing",
+          "path": "scorecard-marketing/SKILL.md",
+          "content_hash": "e77fbf741d1648ca2aeb26ce207a2de8d7d1f5e3"
+        },
+        {
+          "name": "software-design-philosophy",
+          "path": "software-design-philosophy/SKILL.md",
+          "content_hash": "3349b3fb656edba4f4f4692e80f60abd6a492ff2"
+        },
+        {
+          "name": "steve-jobs-design-review",
+          "path": "steve-jobs-design-review/SKILL.md",
+          "content_hash": "ef7579a0632962c9b8cec91939b8bcb46173f680"
+        },
+        {
+          "name": "storybrand-messaging",
+          "path": "storybrand-messaging/SKILL.md",
+          "content_hash": "e3df072a454f648aae0a45abd234ac32cb4f7bca"
+        },
+        {
+          "name": "system-design",
+          "path": "system-design/SKILL.md",
+          "content_hash": "43cc5bcf3f4ae5413e31287b493b528300770b36"
+        },
+        {
+          "name": "team-topologies",
+          "path": "team-topologies/SKILL.md",
+          "content_hash": "22e9fe881df2db2d531673c80209b9db2ace4daa"
+        },
+        {
+          "name": "technical-documentation",
+          "path": "technical-documentation/SKILL.md",
+          "content_hash": "805147787c403254d0b78af680494a4d4da283b3"
+        },
+        {
+          "name": "top-design",
+          "path": "top-design/SKILL.md",
+          "content_hash": "b668e768493b47f106fce3097668f137461aebda"
+        },
+        {
+          "name": "traction-eos",
+          "path": "traction-eos/SKILL.md",
+          "content_hash": "1d055649fc38f88bc1e25015521881f7e28629ab"
+        },
+        {
+          "name": "ux-heuristics",
+          "path": "ux-heuristics/SKILL.md",
+          "content_hash": "34ff01b4ba04bf3e25abbaad5482ad46978c1447"
+        },
+        {
+          "name": "web-typography",
+          "path": "web-typography/SKILL.md",
+          "content_hash": "89dd9939015883169f0a9701a340265ba5f17267"
+        },
+        {
+          "name": "working-with-legacy-code",
+          "path": "working-with-legacy-code/SKILL.md",
+          "content_hash": "12440e73fdb8987e31389dbf0baf8a8780b32a0b"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/yaklang/hack-skills.git",
+      "skills": [
+        {
+          "name": "401-403-bypass-techniques",
+          "path": "skills/401-403-bypass-techniques/SKILL.md",
+          "content_hash": "93745262a9104b00ecedb0d84c859bf208dd4fb6"
+        },
+        {
+          "name": "active-directory-acl-abuse",
+          "path": "skills/active-directory-acl-abuse/SKILL.md",
+          "content_hash": "8c2652dbeb9a06232662b831c4eb69f5e778237c"
+        },
+        {
+          "name": "active-directory-certificate-services",
+          "path": "skills/active-directory-certificate-services/SKILL.md",
+          "content_hash": "a69d53187ca13f0bbd790e505afed640fb5662a8"
+        },
+        {
+          "name": "active-directory-kerberos-attacks",
+          "path": "skills/active-directory-kerberos-attacks/SKILL.md",
+          "content_hash": "8088ed0abc86c05a8d347261c15deadb93ba9246"
+        },
+        {
+          "name": "ai-ml-security",
+          "path": "skills/ai-ml-security/SKILL.md",
+          "content_hash": "0c761fb9384b4781874873d7f7b168cc87d42a09"
+        },
+        {
+          "name": "android-pentesting-tricks",
+          "path": "skills/android-pentesting-tricks/SKILL.md",
+          "content_hash": "daba487ea38364c86357d5e7118b565406b5c490"
+        },
+        {
+          "name": "anti-debugging-techniques",
+          "path": "skills/anti-debugging-techniques/SKILL.md",
+          "content_hash": "f32b71517ad8cf5ed067b5e21b850ea09e8e9c6d"
+        },
+        {
+          "name": "api-auth-and-jwt-abuse",
+          "path": "skills/api-auth-and-jwt-abuse/SKILL.md",
+          "content_hash": "06ca4a6bd6f7c27ffaded82cec91a0fac3448010"
+        },
+        {
+          "name": "api-authorization-and-bola",
+          "path": "skills/api-authorization-and-bola/SKILL.md",
+          "content_hash": "e793d3b137da5820f5e26fffaf5586594a9bc2aa"
+        },
+        {
+          "name": "api-recon-and-docs",
+          "path": "skills/api-recon-and-docs/SKILL.md",
+          "content_hash": "5e472d0c36fcd9a65b5c1914697b3fa6aba36222"
+        },
+        {
+          "name": "api-sec",
+          "path": "skills/api-sec/SKILL.md",
+          "content_hash": "b16ca8b33fb5be05870fa714304e9b7fb1bee410"
+        },
+        {
+          "name": "arbitrary-write-to-rce",
+          "path": "skills/arbitrary-write-to-rce/SKILL.md",
+          "content_hash": "adfc3773cff247ceab589db3e6f1732d29808c48"
+        },
+        {
+          "name": "attack-surface-mapping",
+          "path": "skills/attack-surface-mapping/SKILL.md",
+          "content_hash": "841915664be30abac3210e995ab3d7a4581836e5"
+        },
+        {
+          "name": "auth-sec",
+          "path": "skills/auth-sec/SKILL.md",
+          "content_hash": "3df7218f5aa65bf3797fe46cb99ba59409e1e748"
+        },
+        {
+          "name": "authbypass-authentication-flaws",
+          "path": "skills/authbypass-authentication-flaws/SKILL.md",
+          "content_hash": "a59af74be0b9159d8f1b469ad3a53c187a7a09df"
+        },
+        {
+          "name": "binary-protection-bypass",
+          "path": "skills/binary-protection-bypass/SKILL.md",
+          "content_hash": "e78872c874ae25a2885813e6a7cda46542d6de1c"
+        },
+        {
+          "name": "browser-exploitation-v8",
+          "path": "skills/browser-exploitation-v8/SKILL.md",
+          "content_hash": "2f80f99325426187783e3dd2385ec3b6d22e60b8"
+        },
+        {
+          "name": "business-logic-vuln",
+          "path": "skills/business-logic-vuln/SKILL.md",
+          "content_hash": "997d179f330cf1298d373d3f8630d6f79084643f"
+        },
+        {
+          "name": "business-logic-vulnerabilities",
+          "path": "skills/business-logic-vulnerabilities/SKILL.md",
+          "content_hash": "5c8f575a142399ec26abffc4dc6c991300095891"
+        },
+        {
+          "name": "classical-cipher-analysis",
+          "path": "skills/classical-cipher-analysis/SKILL.md",
+          "content_hash": "f0f3aa0c55ab0966d0df7b88ccad36b2c0cd3294"
+        },
+        {
+          "name": "clickjacking",
+          "path": "skills/clickjacking/SKILL.md",
+          "content_hash": "4f7af1977ec25267b6180abb53c66bc6c5f6e206"
+        },
+        {
+          "name": "cmdi-command-injection",
+          "path": "skills/cmdi-command-injection/SKILL.md",
+          "content_hash": "40aba7ad63cb16af7f44207d9364745d6fa8dd58"
+        },
+        {
+          "name": "code-obfuscation-deobfuscation",
+          "path": "skills/code-obfuscation-deobfuscation/SKILL.md",
+          "content_hash": "ca7ac1921cc79715c7d340aabfe7a76c8bfae186"
+        },
+        {
+          "name": "container-escape-techniques",
+          "path": "skills/container-escape-techniques/SKILL.md",
+          "content_hash": "09e9e79cc606e3df2e00ba0901079424c1f3e9c2"
+        },
+        {
+          "name": "cors-cross-origin-misconfiguration",
+          "path": "skills/cors-cross-origin-misconfiguration/SKILL.md",
+          "content_hash": "096683a7fe01ff09ff0c23f364d780a842f10f13"
+        },
+        {
+          "name": "crlf-injection",
+          "path": "skills/crlf-injection/SKILL.md",
+          "content_hash": "c56bc7560e58de960fb39047f88918c0aa9bdd98"
+        },
+        {
+          "name": "csp-bypass-advanced",
+          "path": "skills/csp-bypass-advanced/SKILL.md",
+          "content_hash": "cdaca8a1f1deabaaaabea39674675df4a0b03992"
+        },
+        {
+          "name": "csrf-cross-site-request-forgery",
+          "path": "skills/csrf-cross-site-request-forgery/SKILL.md",
+          "content_hash": "c71b083cb87d68b33b11192ee6481916fd447c2c"
+        },
+        {
+          "name": "csv-formula-injection",
+          "path": "skills/csv-formula-injection/SKILL.md",
+          "content_hash": "a53351f8b2241def536580499554820c653dcb6a"
+        },
+        {
+          "name": "dangling-markup-injection",
+          "path": "skills/dangling-markup-injection/SKILL.md",
+          "content_hash": "e36368fa7b4ba3c9ce7b104e832d18f4290485d0"
+        },
+        {
+          "name": "defi-attack-patterns",
+          "path": "skills/defi-attack-patterns/SKILL.md",
+          "content_hash": "d96b4b35b665d52992cad1d8a6eaf8dbe54919a3"
+        },
+        {
+          "name": "dependency-confusion",
+          "path": "skills/dependency-confusion/SKILL.md",
+          "content_hash": "42768ad613d8e1092bc1baa0186aef7308b2e4c7"
+        },
+        {
+          "name": "deserialization-insecure",
+          "path": "skills/deserialization-insecure/SKILL.md",
+          "content_hash": "4ecd7df04adab7686d0a92d3bed8ae94ba65ecac"
+        },
+        {
+          "name": "dns-rebinding-attacks",
+          "path": "skills/dns-rebinding-attacks/SKILL.md",
+          "content_hash": "2fdb2678671a5a547f0c664d83f8dec59e6e725e"
+        },
+        {
+          "name": "email-header-injection",
+          "path": "skills/email-header-injection/SKILL.md",
+          "content_hash": "293f84664596d614b47fe7e80ec5dcbca62d8a9d"
+        },
+        {
+          "name": "expression-language-injection",
+          "path": "skills/expression-language-injection/SKILL.md",
+          "content_hash": "22fe01a6a5d6655590f2f5a64c00ad45ad4f1675"
+        },
+        {
+          "name": "file-access-vuln",
+          "path": "skills/file-access-vuln/SKILL.md",
+          "content_hash": "99d6e4ae5b8f2da30e9c8cb4c44e94d825571506"
+        },
+        {
+          "name": "format-string-exploitation",
+          "path": "skills/format-string-exploitation/SKILL.md",
+          "content_hash": "8776222fb724084ca986ec6c4e77f1a94e580569"
+        },
+        {
+          "name": "ghost-bits-cast-attack",
+          "path": "skills/ghost-bits-cast-attack/SKILL.md",
+          "content_hash": "c7feef7cbf2b5fcd6ad8de87cead062bddbb62c3"
+        },
+        {
+          "name": "graphql-and-hidden-parameters",
+          "path": "skills/graphql-and-hidden-parameters/SKILL.md",
+          "content_hash": "40dffb2e2bf7402221b7a83afb7c5d12e6e68dcb"
+        },
+        {
+          "name": "hack",
+          "path": "skills/hack/SKILL.md",
+          "content_hash": "ee7f9597845fc8994ab7e900610c7693757c81a9"
+        },
+        {
+          "name": "hash-attack-techniques",
+          "path": "skills/hash-attack-techniques/SKILL.md",
+          "content_hash": "3144699160fad45fb95bbde44f383b7523180396"
+        },
+        {
+          "name": "heap-exploitation",
+          "path": "skills/heap-exploitation/SKILL.md",
+          "content_hash": "fe2418dcf0d1a6bd5e2d6e442f67b339ff3abd79"
+        },
+        {
+          "name": "http-host-header-attacks",
+          "path": "skills/http-host-header-attacks/SKILL.md",
+          "content_hash": "95a4e1991d90690959f7e476cf83c9ee6fa7f6fe"
+        },
+        {
+          "name": "http-parameter-pollution",
+          "path": "skills/http-parameter-pollution/SKILL.md",
+          "content_hash": "98c9255a2daee31e980945e3ba43ed2cd419c628"
+        },
+        {
+          "name": "http2-specific-attacks",
+          "path": "skills/http2-specific-attacks/SKILL.md",
+          "content_hash": "e19ce43d7cb20a2768ed15b6ed1b4c27c8ffb8bc"
+        },
+        {
+          "name": "idor-broken-object-authorization",
+          "path": "skills/idor-broken-object-authorization/SKILL.md",
+          "content_hash": "cfe845bd6c477328e75ab76a00c93520fc998339"
+        },
+        {
+          "name": "injection-checking",
+          "path": "skills/injection-checking/SKILL.md",
+          "content_hash": "0a61b5d0567722c725f066d160fa9c5183d3431d"
+        },
+        {
+          "name": "insecure-source-code-management",
+          "path": "skills/insecure-source-code-management/SKILL.md",
+          "content_hash": "8569e4f02eb247cc5590cb8c2ad495226718286a"
+        },
+        {
+          "name": "ios-pentesting-tricks",
+          "path": "skills/ios-pentesting-tricks/SKILL.md",
+          "content_hash": "a3de32701edf550315b337e344ca078aa136a198"
+        },
+        {
+          "name": "jndi-injection",
+          "path": "skills/jndi-injection/SKILL.md",
+          "content_hash": "bde8d102f84bb129b2b3e79ccac419c3b709c1d4"
+        },
+        {
+          "name": "jwt-oauth-token-attacks",
+          "path": "skills/jwt-oauth-token-attacks/SKILL.md",
+          "content_hash": "dd07da38417a2b4fa550263fe7f54b2a12f15758"
+        },
+        {
+          "name": "kernel-exploitation",
+          "path": "skills/kernel-exploitation/SKILL.md",
+          "content_hash": "72e2107a26fd8408c99aa00a69bae3d83e800919"
+        },
+        {
+          "name": "kubernetes-pentesting",
+          "path": "skills/kubernetes-pentesting/SKILL.md",
+          "content_hash": "2083193e04707de9f5841ceaf2b34a98dab65775"
+        },
+        {
+          "name": "lattice-crypto-attacks",
+          "path": "skills/lattice-crypto-attacks/SKILL.md",
+          "content_hash": "347c4d7a1ca9e24f123a9ed534f45b10888a0673"
+        },
+        {
+          "name": "linux-lateral-movement",
+          "path": "skills/linux-lateral-movement/SKILL.md",
+          "content_hash": "4687185a9333b9742d442ee2de4515772be99e09"
+        },
+        {
+          "name": "linux-privilege-escalation",
+          "path": "skills/linux-privilege-escalation/SKILL.md",
+          "content_hash": "8ce1365acafa481041f63305a0c747a3c646e777"
+        },
+        {
+          "name": "linux-security-bypass",
+          "path": "skills/linux-security-bypass/SKILL.md",
+          "content_hash": "cf23f11da60d9037f602a90dd9c11756f5acc510"
+        },
+        {
+          "name": "llm-prompt-injection",
+          "path": "skills/llm-prompt-injection/SKILL.md",
+          "content_hash": "5fbca9f2a52808e660fb245161275503600e889a"
+        },
+        {
+          "name": "macos-process-injection",
+          "path": "skills/macos-process-injection/SKILL.md",
+          "content_hash": "61be1023ec93777161cb571c0dd30fdab6dc2598"
+        },
+        {
+          "name": "macos-security-bypass",
+          "path": "skills/macos-security-bypass/SKILL.md",
+          "content_hash": "62e7042446f221816456021c7f9c3e619668da93"
+        },
+        {
+          "name": "memory-forensics-volatility",
+          "path": "skills/memory-forensics-volatility/SKILL.md",
+          "content_hash": "8ea8e53ea49509724f672d636fb9a929ecc70f17"
+        },
+        {
+          "name": "mobile-ssl-pinning-bypass",
+          "path": "skills/mobile-ssl-pinning-bypass/SKILL.md",
+          "content_hash": "6364cd6df59ea6c7df6ae72fabe0836474ebafd9"
+        },
+        {
+          "name": "network-protocol-attacks",
+          "path": "skills/network-protocol-attacks/SKILL.md",
+          "content_hash": "62f7114b7823e7241fb3f02bd46fedc97485bba0"
+        },
+        {
+          "name": "nosql-injection",
+          "path": "skills/nosql-injection/SKILL.md",
+          "content_hash": "558f1cf4a5f7b78a808a0ed35a4e104ce431d55d"
+        },
+        {
+          "name": "ntlm-relay-coercion",
+          "path": "skills/ntlm-relay-coercion/SKILL.md",
+          "content_hash": "636d169efa9fef5451b68de4aee4b5c1807db016"
+        },
+        {
+          "name": "oauth-oidc-misconfiguration",
+          "path": "skills/oauth-oidc-misconfiguration/SKILL.md",
+          "content_hash": "cf4c0e85435ce459e7fa867bea21c8c96792fbf7"
+        },
+        {
+          "name": "open-redirect",
+          "path": "skills/open-redirect/SKILL.md",
+          "content_hash": "857ab701a8f0b2349f3e74080d65020e043dd6c1"
+        },
+        {
+          "name": "path-traversal-lfi",
+          "path": "skills/path-traversal-lfi/SKILL.md",
+          "content_hash": "a88e53ba6d9728f8d03c0806e789c7918332dd28"
+        },
+        {
+          "name": "prototype-pollution",
+          "path": "skills/prototype-pollution/SKILL.md",
+          "content_hash": "9d71e8ac34af9b6a32a0f6d1ad644464dc24d2ee"
+        },
+        {
+          "name": "prototype-pollution-advanced",
+          "path": "skills/prototype-pollution-advanced/SKILL.md",
+          "content_hash": "c6a78f055be7e24da3bc16741a73bee56f05b7fb"
+        },
+        {
+          "name": "race-condition",
+          "path": "skills/race-condition/SKILL.md",
+          "content_hash": "a4ba3ae3ce7a08973b0975cef0341934435d5486"
+        },
+        {
+          "name": "recon-and-methodology",
+          "path": "skills/recon-and-methodology/SKILL.md",
+          "content_hash": "e291b14045a4cfdcea89435486b633aea3a7ea8a"
+        },
+        {
+          "name": "recon-for-sec",
+          "path": "skills/recon-for-sec/SKILL.md",
+          "content_hash": "9c0e35cde05e16493d83737d1fd46a1cfceca4c7"
+        },
+        {
+          "name": "request-smuggling",
+          "path": "skills/request-smuggling/SKILL.md",
+          "content_hash": "3207a1f6f234160361a4357ec11aee3a3780cadc"
+        },
+        {
+          "name": "reverse-shell-techniques",
+          "path": "skills/reverse-shell-techniques/SKILL.md",
+          "content_hash": "18ada341044bfb25694a339c71c58603811a05ea"
+        },
+        {
+          "name": "rsa-attack-techniques",
+          "path": "skills/rsa-attack-techniques/SKILL.md",
+          "content_hash": "2b7663e8cd27313a8eaeac703dec8868237ebf33"
+        },
+        {
+          "name": "saml-sso-assertion-attacks",
+          "path": "skills/saml-sso-assertion-attacks/SKILL.md",
+          "content_hash": "8488ebaccbdddc71a9587e26eec862cbe6088924"
+        },
+        {
+          "name": "sandbox-escape-techniques",
+          "path": "skills/sandbox-escape-techniques/SKILL.md",
+          "content_hash": "f1f8a7644bac4821a0cd39a5aa99ca146aae5fbb"
+        },
+        {
+          "name": "smart-contract-vulnerabilities",
+          "path": "skills/smart-contract-vulnerabilities/SKILL.md",
+          "content_hash": "171af95f56aaceb1ceb33ac0f16eeb9cf501aff3"
+        },
+        {
+          "name": "sqli-sql-injection",
+          "path": "skills/sqli-sql-injection/SKILL.md",
+          "content_hash": "233df63eb88de1d767c54c1cd78e4957d7004c2e"
+        },
+        {
+          "name": "ssrf-server-side-request-forgery",
+          "path": "skills/ssrf-server-side-request-forgery/SKILL.md",
+          "content_hash": "316cb9be373354cb3d38c5917fc358c7fd7bf109"
+        },
+        {
+          "name": "ssti-server-side-template-injection",
+          "path": "skills/ssti-server-side-template-injection/SKILL.md",
+          "content_hash": "193825e5f503aae72777dc3e03af3939d6f8c19e"
+        },
+        {
+          "name": "stack-overflow-and-rop",
+          "path": "skills/stack-overflow-and-rop/SKILL.md",
+          "content_hash": "e325814f6c0c57adc16c35c985a82a30ce7a8a48"
+        },
+        {
+          "name": "steganography-techniques",
+          "path": "skills/steganography-techniques/SKILL.md",
+          "content_hash": "0d4a49b0a8bb6480797598bc0b8471b5b90cbd52"
+        },
+        {
+          "name": "subdomain-takeover",
+          "path": "skills/subdomain-takeover/SKILL.md",
+          "content_hash": "86775b5865eb48d6df81305780f5bd14f9de8c91"
+        },
+        {
+          "name": "symbolic-execution-tools",
+          "path": "skills/symbolic-execution-tools/SKILL.md",
+          "content_hash": "78b950214133f986df3a50d6cd0f73e3bc0c4c48"
+        },
+        {
+          "name": "symmetric-cipher-attacks",
+          "path": "skills/symmetric-cipher-attacks/SKILL.md",
+          "content_hash": "0660719d37a2a55f0aeca4d41a7e5d05a026ce53"
+        },
+        {
+          "name": "traffic-analysis-pcap",
+          "path": "skills/traffic-analysis-pcap/SKILL.md",
+          "content_hash": "f8d3ec5f2b319e37ce6e4df185eee79ad73fbb61"
+        },
+        {
+          "name": "tunneling-and-pivoting",
+          "path": "skills/tunneling-and-pivoting/SKILL.md",
+          "content_hash": "5f274462f869a39ec643f8f48ad9bb6a0cb7da25"
+        },
+        {
+          "name": "type-juggling",
+          "path": "skills/type-juggling/SKILL.md",
+          "content_hash": "50e3e30a9e73f636a638793222d047e5e9df4d04"
+        },
+        {
+          "name": "unauthorized-access-common-services",
+          "path": "skills/unauthorized-access-common-services/SKILL.md",
+          "content_hash": "5ee8c1950d7e5e68cb80597c3ceceaed7f7ab58b"
+        },
+        {
+          "name": "upload-insecure-files",
+          "path": "skills/upload-insecure-files/SKILL.md",
+          "content_hash": "9b3acf3ac9208ea2e8541a4c1bfcdcba2c32335f"
+        },
+        {
+          "name": "vm-and-bytecode-reverse",
+          "path": "skills/vm-and-bytecode-reverse/SKILL.md",
+          "content_hash": "5ac00a7f21c5396b1065482d333f06e94e1dad60"
+        },
+        {
+          "name": "waf-bypass-techniques",
+          "path": "skills/waf-bypass-techniques/SKILL.md",
+          "content_hash": "be1222aba9c2afffb990f33100d8e51949b82951"
+        },
+        {
+          "name": "web-cache-deception",
+          "path": "skills/web-cache-deception/SKILL.md",
+          "content_hash": "8fc572270760da564208e5403da0619faa5ff795"
+        },
+        {
+          "name": "websocket-security",
+          "path": "skills/websocket-security/SKILL.md",
+          "content_hash": "13e4992c6145a8622036f968a235b9053869ae69"
+        },
+        {
+          "name": "windows-av-evasion",
+          "path": "skills/windows-av-evasion/SKILL.md",
+          "content_hash": "87d9d2485edbd2bf1e373afde019788e35c29fed"
+        },
+        {
+          "name": "windows-lateral-movement",
+          "path": "skills/windows-lateral-movement/SKILL.md",
+          "content_hash": "57814ded6d3b1c3805287ab6202127db22902ff2"
+        },
+        {
+          "name": "windows-privilege-escalation",
+          "path": "skills/windows-privilege-escalation/SKILL.md",
+          "content_hash": "b75515f4f10a1cdf3fd0606c9feafafc9616e119"
+        },
+        {
+          "name": "xslt-injection",
+          "path": "skills/xslt-injection/SKILL.md",
+          "content_hash": "c03d9e121526c5034f5ac7f132ff740615c056f1"
+        },
+        {
+          "name": "xss-cross-site-scripting",
+          "path": "skills/xss-cross-site-scripting/SKILL.md",
+          "content_hash": "de23a12ea44eded7f16f7cbfa3c60f4326145cc6"
+        },
+        {
+          "name": "xxe-xml-external-entity",
+          "path": "skills/xxe-xml-external-entity/SKILL.md",
+          "content_hash": "4889a975016b7956fd8f9031ebff1418dd9cee8d"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/yuan1z0825/nature-skills.git",
+      "skills": [
+        {
+          "name": "nature-academic-search",
+          "path": "skills/nature-academic-search/SKILL.md",
+          "content_hash": "483eb6a561d6af08684b717bb42c61a1ca341c8f"
+        },
+        {
+          "name": "nature-citation",
+          "path": "skills/nature-citation/SKILL.md",
+          "content_hash": "632699a003eb25bbc8362b31dda58b94989b45c1"
+        },
+        {
+          "name": "nature-data",
+          "path": "skills/nature-data/SKILL.md",
+          "content_hash": "68ec0a065ec861dcd146880a22e1413fd1315906"
+        },
+        {
+          "name": "nature-downloader",
+          "path": "skills/nature-downloader/SKILL.md",
+          "content_hash": "8c5ab4c3c5ed26633ab9afd51982f32e7f2b2335"
+        },
+        {
+          "name": "nature-experiment-log",
+          "path": "skills/nature-experiment-log/SKILL.md",
+          "content_hash": "0f33f75d289819c28b0b1e4ba88f9d143da23e9d"
+        },
+        {
+          "name": "nature-figure",
+          "path": "skills/nature-figure/SKILL.md",
+          "content_hash": "7f2f4a38825fd7e047bc2122fd11f332053f9c7d"
+        },
+        {
+          "name": "nature-image2ppt",
+          "path": "skills/nature-image2ppt/SKILL.md",
+          "content_hash": "6f605d9039fb7af225dc1153c3b3005f713c2e7b"
+        },
+        {
+          "name": "nature-literature-pipeline",
+          "path": "skills/nature-literature-pipeline/SKILL.md",
+          "content_hash": "8daac5e475a456919c24b301453b5c997132eb21"
+        },
+        {
+          "name": "nature-paper-card",
+          "path": "skills/nature-paper-card/SKILL.md",
+          "content_hash": "4541938ecb4df9ae5523fc8ab1a8d40c183b7778"
+        },
+        {
+          "name": "nature-paper-to-patent",
+          "path": "skills/nature-paper-to-patent/SKILL.md",
+          "content_hash": "c563dcf7368f31d01be1803503e3ba83869137b2"
+        },
+        {
+          "name": "nature-paper-trans",
+          "path": "skills/nature-paper-trans/SKILL.md",
+          "content_hash": "45ce50d008b5b2e953a7eca8af17ff9b3362527d"
+        },
+        {
+          "name": "nature-paper-xray",
+          "path": "skills/nature-paper-xray/SKILL.md",
+          "content_hash": "431ec9be3c844a5e18d2fd77b7afb0e0024862f9"
+        },
+        {
+          "name": "nature-paper2ppt",
+          "path": "skills/nature-paper2ppt/SKILL.md",
+          "content_hash": "8a961682b32aabef60be68e8bbfdf993a90f7043"
+        },
+        {
+          "name": "nature-polishing",
+          "path": "skills/nature-polishing/SKILL.md",
+          "content_hash": "8fa324de5b88ade25f016357e7fb72212ab6f4e5"
+        },
+        {
+          "name": "nature-reader",
+          "path": "skills/nature-reader/SKILL.md",
+          "content_hash": "547cd103d79b18f7976379513892323f78810021"
+        },
+        {
+          "name": "nature-ref-verifier",
+          "path": "skills/nature-ref-verifier/SKILL.md",
+          "content_hash": "eb66dd3ffe619ef2d3c9c32af87b44d8a54b897b"
+        },
+        {
+          "name": "nature-response",
+          "path": "skills/nature-response/SKILL.md",
+          "content_hash": "ffabbd3f039451231a6da7758bcd1d6e387b6b5e"
+        },
+        {
+          "name": "nature-reviewer",
+          "path": "skills/nature-reviewer/SKILL.md",
+          "content_hash": "7b9057c8ba0a112088923f5cdcfaf4d1fbb239cd"
+        },
+        {
+          "name": "nature-shared",
+          "path": "skills/nature-shared/SKILL.md",
+          "content_hash": "3d42a198b72809a026e1460ce7155f10a149cc53"
+        },
+        {
+          "name": "nature-social-science",
+          "path": "skills/nature-social-science/SKILL.md",
+          "content_hash": "4185e2a587fa66faa8810bebaefce6c2dc206326"
+        },
+        {
+          "name": "nature-statistics",
+          "path": "skills/nature-statistics/SKILL.md",
+          "content_hash": "a06c4450e7ee90d5a74915fc733c632433358867"
+        },
+        {
+          "name": "nature-writing",
+          "path": "skills/nature-writing/SKILL.md",
+          "content_hash": "ac10ae2ef28db950ecff18f690653540860ec4ab"
+        },
+        {
+          "name": "researchwrite",
+          "path": "skills/nature-proposal-writer/SKILL.md",
+          "content_hash": "a52fbe70392790a205c06dd9503892bd582b2102"
+        }
+      ]
+    }
+  ]
+}

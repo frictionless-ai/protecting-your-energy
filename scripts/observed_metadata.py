@@ -15,7 +15,7 @@ import time
 import types
 
 sys.dont_write_bytecode = True
-HELPER_SHA = 'cdb1595f5e9e439c0f95bf6c8d28d6004bea83a32734a3a1320cd638ea8d766f'
+HELPER_SHA = json.loads((Path(__file__).resolve().parents[1] / 'assets/module-integrity.json').read_text())['scripts/archive_access.py']
 SOURCE_LIMIT = 128 * 1024 * 1024
 PARENT_LIMIT = 64
 MESSAGE_LIMIT = 500000
@@ -102,11 +102,12 @@ def read_regular(path, helper, deadline, limit, offset=0, count=None):
     path = Path(path).expanduser()
     require(path.is_absolute() and '..' not in path.parts and not helper.guarded(path),
             'observation-path-guarded-or-invalid')
-    # All permitted apparent roots are SSD/NVMe locations. Component traversal
-    # also refuses a home alias redirecting the read to a removable HDD.
-    require(path.is_relative_to(Path.home()) or
-            path.is_relative_to(Path('/run/media/brunner56/WorkspaceSSD')),
-            'observation-source-outside-ssd-roots')
+    # Keep the installed home/SSD defaults while permitting explicit source roots.
+    default_roots = [Path.home(), Path('/run/media') / Path.home().name / 'WorkspaceSSD']
+    configured_roots = os.environ.get('PYE_OBSERVED_SOURCE_ROOTS')
+    roots = [Path(value).expanduser() for value in configured_roots.split(os.pathsep) if value] if configured_roots else default_roots
+    require(any(path.is_relative_to(root) for root in roots),
+            'observation-source-outside-configured-roots')
     checkpoint(deadline)
     directory = os.open('/', os.O_RDONLY | os.O_DIRECTORY)
     try:

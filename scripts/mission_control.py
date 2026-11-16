@@ -95,7 +95,7 @@ def group_members(ident, exclude=None):
 class Store:
     def __init__(self, root=None):
         os.umask(0o077)
-        self.root = Path(root or Path(os.environ.get("XDG_STATE_HOME", Path.home() / ".local/state")) / "protect-your-energy/missions").expanduser().absolute()
+        self.root = Path(root or Path(os.environ.get("XDG_STATE_HOME") or Path.home() / ".local/state") / "protect-your-energy/missions").expanduser().absolute()
         if self.root.resolve().is_relative_to(Path(__file__).resolve().parents[1]):
             raise ValueError("Runtime state must be outside the plugin repository")
         if self.root.is_symlink():

@@ -37,9 +37,9 @@ Use only the responsibilities the current request needs:
 |---|---|---|
 | Implicit goals, recurring concepts or reusable reasoning | [reasoning-map](../reasoning-map/SKILL.md) | Applicable method and useful artifact |
 | A plain-language design idea that may connect to established terminology | [sustain-momentum](../sustain-momentum/SKILL.md) with reasoning-map as needed | Brief, qualified concept mapping followed by the requested action |
-| Pieces of an earlier idea | `reclaim` / Thought Reconstruction | Developed idea and concrete continuation |
-| Rough or repetitive explanation | `make-coherent` / Semantic Expression | Meaning-preserving draft for its audience |
-| Earlier reasoning needed in a live conversation | `contextual-reply` / Semantic Expression | Relevant next message, ready to use |
+| Pieces of an earlier idea | [thought-reconstruction](../thought-reconstruction/SKILL.md) and [reclaim](../reclaim/SKILL.md) | Recovered account in the user's words and concrete continuation |
+| Rough or repetitive explanation | [make-coherent](../make-coherent/SKILL.md) | Meaning-preserving draft for its audience |
+| Earlier reasoning needed in a live conversation | [contextual-reply](../contextual-reply/SKILL.md) | Relevant next message, ready to use |
 | Decide today's effort | [choose-next](../choose-next/SKILL.md) | One useful next action and completion point |
 | Work keeps expanding | [finish-loop](../finish-loop/SKILL.md) | Reassessed remaining work and preserved resumption |
 | The same obstacle repeatedly consumes effort | [recurring-friction](../recurring-friction/SKILL.md) | Implemented reusable intervention |
@@ -129,7 +129,7 @@ source-led journey before loading a prior personal model. Preserve source-shaped
 accounts, unresolved references and competing readings. Current reasoning models
 remain candidates; the owner's corrections determine what needs revisiting.
 Use [archive access](../../references/archive-access.md) to carry the actual
-read and retrieval routes into each delegated task. The default shared query now executes the configured local dense model.
+read and retrieval routes into each delegated task. With its local model and index configured, the shared query can execute dense retrieval.
 Check its actual generation scope and retrieve complete parent metadata when
 a packed lead is clipped. Use exact-name/lexical routes as labeled supplements.
 A filesystem path alone does not establish semantic retrieval. Give investigators source access and
