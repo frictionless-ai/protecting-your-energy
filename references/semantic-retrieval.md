@@ -1,17 +1,17 @@
 # Retrieve by meaning, then hydrate the originals
 
-Use `scripts/semantic_retrieve.py` as the local dense route. It encodes original conversation text with a transformer. It does not rename keyword retrieval as semantic retrieval or send archive text to a hosted model.
+Use `scripts/semantic_retrieve_portable.py` for a configured local dense route. It encodes original conversation text with a transformer and keeps inference local.
 
 ## Run the route
 
-The current interpreter is `/home/brunner56/brain-data/upar-dip/derived/protect-your-energy/2026-10-11/deeper-pass/semantic/runtime-ssd/bin/python`. It uses the NVMe system Python 3.14.8 with private copies of `onnxruntime`, `numpy`, `tokenizers` and their required packages. Runtime, model, index, working directory and eligible source originals now reside on NVMe. Historical HDD generations are retained without use by the current route.
+Choose a local Python environment with the configured retrieval backend's dependencies installed. Configure the model, index and source locations for your machine. Keep the model and generated index outside the source archive.
 
 The private model and new index live outside the archive:
 
 ```bash
-PYE_PY=/home/brunner56/brain-data/upar-dip/derived/protect-your-energy/2026-10-11/deeper-pass/semantic/runtime-ssd/bin/python
-PYE_SCRIPT=/home/brunner56/plugins/protecting-your-energy/scripts/semantic_retrieve.py
-PYE_INDEX=/home/brunner56/brain-data/upar-dip/derived/protect-your-energy/2026-10-11/deeper-pass/semantic
+PYE_PY=python3
+PYE_SCRIPT="${PYE_PLUGIN_ROOT}/scripts/semantic_retrieve_portable.py"
+PYE_INDEX="${PYE_INDEX_ROOT}"
 "$PYE_PY" "$PYE_SCRIPT" status --index "$PYE_INDEX"
 "$PYE_PY" "$PYE_SCRIPT" query 'Describe the competing aims behind a disputed technical design.' --index "$PYE_INDEX" --role self --limit 8 --json
 ```

@@ -1,0 +1,13 @@
+{
+  "name": "speculative-generality",
+  "version": "0.1.0",
+  "description": "Role-based collaboration for deliberately implementing and testing hypothetical future software capabilities.",
+  "license": "MIT",
+  "keywords": [
+    "speculative-generality",
+    "multi-agent",
+    "architecture",
+    "future-capabilities",
+    "testing"
+  ]
+}

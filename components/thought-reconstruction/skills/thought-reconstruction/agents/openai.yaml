@@ -1,0 +1,6 @@
+interface:
+  display_name: "Thought Reconstruction"
+  short_description: "Recover intent and context with source evidence"
+  default_prompt: "Use $thought-reconstruction to recover the intended idea and its constraints from relevant history, then continue the task."
+policy:
+  allow_implicit_invocation: true

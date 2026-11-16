@@ -1,0 +1,12 @@
+.firecrawl/
+__pycache__/
+*.pyc
+.remember/
+.venv/
+.pytest_cache/
+.local/
+evals/live-runs/*.json
+evals/local-runs/*
+evals/workspaces/*/iteration-*/
+.mission/
+agentdecompile_projects/

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "intent-runtime",
+  "description": "Intent compiler: natural language in, expert execution out",
+  "owner": {
+    "name": "Boden Crouch"
+  },
+  "plugins": [
+    {
+      "name": "intent-runtime",
+      "description": "Intent compiler: say what you want in ordinary language. Recovers the job, supplies the expert workflow, and does the work.",
+      "author": {
+        "name": "Boden Crouch"
+      },
+      "source": "./",
+      "category": "development",
+      "tags": [
+        "intent",
+        "compiler",
+        "execution"
+      ]
+    }
+  ]
+}

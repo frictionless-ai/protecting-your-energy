@@ -22,12 +22,12 @@ sys.dont_write_bytecode = True
 
 DEFAULT_ROOT = Path.home() / 'brain-data/upar-dip/derived/protect-your-energy'
 CONFIG = DEFAULT_ROOT / 'config.json'
-RECLAIM = Path.home() / 'brain-data/upar-dip/tooling/thought-reconstruction/bin/thought-reconstruction'
-DISPLAY_SHA = '1b255b77c5e5c5043f04e73753abf5516e717633a7cb6d172d3d0a092e6706f5'
-NATIVE_CONTEXT_SHA = '224064965aed00cb6dec46aa3ba177a0f9a2b07986894075c9236a3b509576b8'
-NATIVE_REFRESH_SHA = '266b269dc1e2114f89141cfb8e86d33df5b57f506b7dee06cd9aeed9ae4f901a'
-CHAT_PROPOSAL_SHA = '0430f17e6ee0926111fda04f040a6f04b164d88f55a591877dcde66064cd0128'
-EXECUTION_CONTEXT_SHA = '60040287a36429b06d693a7df52bf7023f516311a31307f0a752221fe7c12f25'
+RECLAIM = Path(__file__).resolve().with_name('thought_reconstruction.py')
+DISPLAY_SHA = json.loads((Path(__file__).resolve().parents[1] / 'assets/module-integrity.json').read_text())['scripts/archive_display.py']
+NATIVE_CONTEXT_SHA = json.loads((Path(__file__).resolve().parents[1] / 'assets/module-integrity.json').read_text())['scripts/native_context.py']
+NATIVE_REFRESH_SHA = json.loads((Path(__file__).resolve().parents[1] / 'assets/module-integrity.json').read_text())['scripts/refresh_native_bookmarks.py']
+CHAT_PROPOSAL_SHA = json.loads((Path(__file__).resolve().parents[1] / 'assets/module-integrity.json').read_text())['scripts/chat_proposal.py']
+EXECUTION_CONTEXT_SHA = json.loads((Path(__file__).resolve().parents[1] / 'assets/module-integrity.json').read_text())['scripts/execution_context.py']
 BLOCKED = ('.sealed', '.sanitized', '.seal-', 'request-only', 'request_only',
            '.request-only', 'quarantine', 'credentials', '.staging')
 MARKERS = ('.sealing-in-progress', '.request-only', 'REQUEST_ONLY', '.sealed')

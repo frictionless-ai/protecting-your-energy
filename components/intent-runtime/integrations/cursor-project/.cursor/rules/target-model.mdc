@@ -1,0 +1,13 @@
+---
+description: Optional target_model is never inferred
+---
+
+`target_model` is optional. Use it only when the caller named a snapshot.
+
+If it is empty, render the portable base. Do not infer a model from the
+session, the executor, or a default family. Do not open adapters.md. Do
+not mention other model families or their knobs. Omit `target_model`,
+`effort`, and `verbosity` from execution hints.
+
+An explicit but unknown snapshot stays portable. Do not guess a family
+from a name prefix.

@@ -1,0 +1,15 @@
+{
+  "description": "Goal Loop stop hook — shell check decides when the work is done",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/goal-stop-claude.sh\""
+          }
+        ]
+      }
+    ]
+  }
+}

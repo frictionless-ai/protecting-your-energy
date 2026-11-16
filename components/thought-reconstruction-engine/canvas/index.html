@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Thought Reconstruction</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <h1>Thought Reconstruction</h1>
+  <p>Recover a thought. Follow its evidence. Decide what comes next.</p>
+  <p class="masthead-meta" id="meta"></p>
+  <details id="coverage"><summary>Sources and coverage</summary><div id="coverage-body"></div></details>
+</header>
+
+<main>
+  <section class="controls" aria-label="Controls">
+    <div class="control"><label for="review">Collection</label><select id="review"><option value="reviewed">Reviewed reconstructions</option><option value="semantic">AI reconstructions (unreviewed)</option><option value="candidate">Unreviewed candidates</option><option value="all">Everything</option></select></div>
+    <div class="control"><label for="project">Project</label><select id="project"><option value="all">All projects</option></select></div>
+    <div class="control"><label for="implementation">Implementation</label><select id="implementation"><option value="all">All evidence states</option><option value="unknown">Unknown</option><option value="evidence-found">Related code found</option><option value="partial">Partial implementation evidence</option><option value="implemented">Verified implementation</option></select></div>
+    <div class="control">
+      <label for="sort">Sort</label>
+      <select id="sort">
+        <option value="recent">Most recent evidence</option>
+        <option value="recurrence">Most evidence</option>
+        <option value="composite">Mean of score estimates</option>
+        <option value="coherence">Coherence</option>
+        <option value="evidence">Evidence</option>
+        <option value="originality">Originality</option>
+        <option value="usefulness">Usefulness</option>
+        <option value="feasibility">Feasibility</option>
+        <option value="significance">Significance</option>
+        <option value="maturity">Maturity</option>
+        <option value="research_confidence">Research confidence</option>
+      </select>
+    </div>
+    <div class="control">
+      <label for="type">Type</label>
+      <select id="type">
+        <option value="all">All types</option>
+        <option value="idea">Idea</option>
+        <option value="observation">Observation</option>
+        <option value="hypothesis">Hypothesis</option>
+        <option value="belief">Belief</option>
+        <option value="question">Question</option>
+        <option value="problem">Problem</option>
+        <option value="solution">Solution</option>
+        <option value="concept">Concept</option>
+        <option value="prediction">Prediction</option>
+        <option value="discovery">Discovery</option>
+        <option value="preference">Preference</option>
+        <option value="goal">Goal</option>
+      </select>
+    </div>
+    <div class="control">
+      <label for="status">Status</label>
+      <select id="status">
+        <option value="all">All statuses</option>
+        <option value="active">Active</option>
+        <option value="weak">Weak</option>
+        <option value="refuted">Refuted</option>
+        <option value="abandoned">Abandoned</option>
+      </select>
+    </div>
+    <div class="control control-search">
+      <label for="search">Search</label>
+      <input id="search" type="search" placeholder="Search thoughts" autocomplete="off">
+    </div>
+  </section>
+
+  <p class="count" id="count" aria-live="polite"></p>
+
+  <section class="cards" id="cards" aria-label="Thoughts"></section>
+  <button id="more" type="button" hidden>Show 30 more</button>
+</main>
+
+<footer class="page-foot">
+  <p>Press / to search. Press Esc to collapse.</p>
+</footer>
+
+<script src="data.js"></script>
+<script src="canvas.js"></script>
+</body>
+</html>

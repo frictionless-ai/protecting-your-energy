@@ -1,0 +1,18 @@
+{
+  "name": "intent-runtime",
+  "displayName": "intent-runtime",
+  "version": "1.0.0",
+  "description": "Intent compiler: say what you want in ordinary language. Recovers the job, supplies the expert workflow, compiles an execution contract, and does the work.",
+  "author": {
+    "name": "Boden Crouch"
+  },
+  "license": "MIT",
+  "keywords": [
+    "intent",
+    "compiler",
+    "execution"
+  ],
+  "category": "developer-tools",
+  "skills": "./skills/",
+  "agents": "./agents/"
+}

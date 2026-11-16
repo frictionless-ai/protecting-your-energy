@@ -1,0 +1,6 @@
+node_modules/
+coverage/
+.cursor/goal/active.json
+.cursor/goal/draft.json
+.cursor/goal/runs/
+.DS_Store

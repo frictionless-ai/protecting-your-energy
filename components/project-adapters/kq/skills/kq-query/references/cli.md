@@ -1,0 +1,49 @@
+# kq CLI reference
+
+Confirm live flags with `kq --help` and `kq <command> --help`. This file
+matches kq 0.3.5.
+
+## Source kinds (`-s`)
+
+`override`, `module-mod`, `module-rim`, `lips`, `texturepack`, `rims`,
+`stream`, `chitin`, `talktable`, `loose`.
+
+Resolve order (lower precedence number wins): Override, module `.mod`,
+module rim trio, lips, texture packs, `rims/`, streams, chitin BIFs,
+`dialog.tlk`. Standalone targets are all `loose`.
+
+## Recipes
+
+```bash
+kq -i "$KQ_INSTALL" info --json
+kq -i "$KQ_INSTALL" which appearance.2da
+kq -i "$KQ_INSTALL" ls -t utc -m danm13 --loaded
+kq -i "$KQ_INSTALL" cat n_bastila.utc --json
+kq -i "$KQ_INSTALL" cat appearance.2da --from 'data/2da.bif' -f gron
+kq -i "$KQ_INSTALL" grep Bastila -t dlg -n 10 --json
+kq -i "$KQ_INSTALL" grep --ignore-case GetObjectByTag -t ncs
+kq -i ./modules/danm13.mod ls -t git
+kq -i "$KQ_INSTALL" graph
+kq -i "$KQ_INSTALL" graph --format summary
+kq -i "$KQ_INSTALL" graph --format lists
+kq -i "$KQ_INSTALL" graph --json | jq '.unused.count, .overshadowed.count'
+kq -i "$KQ_INSTALL" graph end_m01aa
+kq -i "$KQ_INSTALL" delta appearance.2da --shadow
+kq -i "$KQ_INSTALL" --text delta n_bastila.utc --from Override --against templates.bif
+kq patch n_bastila.utc change.json -o patched.json
+kq merge stock.json mine.json theirs.json
+```
+
+## Environment
+
+| Variable | Role |
+|----------|------|
+| `KQ_INSTALL` | default `--install` |
+| `KQ_CACHE_DIR` | index cache directory |
+
+`--refresh` rebuilds and **writes** the cache. `--no-cache` neither reads nor writes.
+Standalone file/folder/capsule targets skip the cache.
+
+## Broken pipes
+
+`kq ls | head` is success, not an error.

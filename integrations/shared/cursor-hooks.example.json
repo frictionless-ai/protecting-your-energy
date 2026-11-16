@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      {
+        "command": "sh \"${PYE_PLUGIN_ROOT}/integrations/shared/turn-digest.sh\" json cursor"
+      }
+    ]
+  }
+}

@@ -1,88 +1,110 @@
 # Protect Your Energy
 
-Turn accumulated thinking into the useful next result.
+Keep the energy to explain an idea, develop it and get it done.
 
-Say what you are trying to do, paste a rough thought, or ask what to work on next.
-The agent recovers the context that changes its meaning, completes the relevant
-artifact and keeps a clear place to resume.
+This project grew out of repeatedly having to explain the same thing to an AI,
+recover context it could have found, connect the dots, request follow-ups and
+remind it to check its work. Each correction takes effort away from the thing
+you wanted to do. Sometimes the explanation gets longer while the result gets
+further from what you meant.
+
+Protect Your Energy brings together the skills and tools for reducing that
+burden. The agent should investigate what you mean, use what you have already
+explained, carry forward your corrections and keep working on the result you
+asked for. It should leave room for the creative decisions and involvement you
+enjoy.
+
+## What it should help with
+
+- Recover an idea spread across conversations, notes and project material.
+- Combine your words into a coherent account while preserving your meaning,
+  examples, uncertainty and voice.
+- Recognize when an example illustrates a larger request and recover that
+  request from its context.
+- Find terminology that helps you explain or investigate an idea.
+- Ask a concrete question when it helps you develop an idea, while continuing
+  independent work.
+- Follow through on investigation, implementation, iteration and checking.
+- Continue useful independent work while an operation runs or an answer is pending.
+- Resume interrupted work with its goals, corrections and unfinished steps intact.
+- Notice recurring obstacles and improve the workflow that keeps producing them.
+- Check whether the result actually addresses what you asked for.
+
+## Thought reconstruction
+
+Thought reconstruction recovers the thought behind scattered explanations. It
+starts with your words and follows the relevant conversations, examples and
+corrections. When you ask for a project account, it produces a cohesive Markdown
+document with source references and the details already expressed about the idea.
+It can discover project candidates from available context and derive a
+descriptive name from the recovered account.
+
+Your original explanations determine the substance. AI responses can complete a
+reference or preserve an idea you explicitly adopted. Additional design work
+belongs where you ask for it. A request to reconstruct an idea should preserve
+what you meant without making you correct a newly invented architecture.
+
+The local tooling supports candidate discovery, Roust-assisted retrieval,
+contextual source inspection and evidence-linked document generation. The
+active agent interprets the source material and reviews the account. Read its
+skill and command guide for the supported formats, bounds and continuation
+behavior. [Thought reconstruction](skills/thought-reconstruction/SKILL.md) ·
+[Command guide](scripts/thought-reconstruction/USAGE.md)
+
+## Keeping work moving
+
+Install with Claude Code's GitHub marketplace command.
+
+```text
+/plugin install protecting-your-energy --marketplace frictionless-ai/protecting-your-energy
+```
+
+The included skills cover context recovery, clear expression, useful next
+actions, recurring friction, sustained momentum and evaluation. They work
+together through the main entry point.
 
 ```text
 $protect-your-energy <what you are trying to do>
 ```
 
-Ordinary requests work too. You do not need to choose a skill or prepare keywords.
+The main skill selects the relevant procedure from the request and available
+context. Host support determines implicit selection and hook execution.
+Background work needs an actual running execution mechanism. Progress reports
+should reflect what has run, what has been checked and what remains.
 
-This is the `protecting-your-energy` plugin (displayed as Protect Your Energy).
-A marketplace is the catalog that distributes plugins. `$workflow-orchestration`
-selects installed expert capabilities for the current project phase and continues
-through remaining authorized work. [Policy placement](references/policy-placement.md)
-explains rules, hooks, memory and skills. Portable skills are included here; host
-hook installation is a separate, explicit integration.
+The project also includes helpers for retaining task state, preparing
+continuations and coordinating authorized background work. The component
+documentation describes their individual setup and dependencies.
+[Main skill](skills/protecting-your-energy/SKILL.md) ·
+[Workflow orchestration](skills/workflow-orchestration/SKILL.md) ·
+[Momentum](skills/sustain-momentum/SKILL.md) ·
+[Evaluation](skills/self-evaluation/SKILL.md)
 
-## Capabilities
+## Working with personal context
 
-- `workflow-orchestration`: select authoritative workflows and keep the authorized execution loop active.
-- `background-missions`: retain authorized background work with owned execution and independent review.
-- `sustain-momentum`: preserve active goals and useful progress across waits and corrections; briefly ground plain-language ideas in accurate established concepts, then continue the requested work.
-- `reasoning-map`: recover implicit goals, causal connections and reusable methods, including distinctive meaning a familiar concept may not capture.
-- `choose-next`: select a useful action from goals, readiness and remaining effort.
-- `finish-loop`: reassess expanding work and preserve the requested result.
-- `recurring-friction`: implement reusable relief for evidenced repeated obstacles.
-- `opportunity-radar`: connect verified developments to earlier ideas and readiness.
-- `self-evaluation`: assess actual outcomes against the specific problem.
+Source conversations and private working state stay in your configured local
+locations. The plugin contains reusable procedures and tooling. Source access,
+external providers and host hooks need configuration appropriate to your
+environment.
 
-The short `protect-your-energy` adapter and `protecting-your-energy` router share
-one implementation. Idea reconstruction uses the separate Thought Reconstruction
-plugin. Coherent expression and timely replies use Semantic Expression's
-`make-coherent` and `contextual-reply`. The existing archive investigator and
-remote I/O capability remain available for their relevant work.
+Preserving energy includes keeping your choices, corrections and ability to
+pause. The agent should recover information already available and ask when an
+unresolved answer materially changes the work. The result should remain easy
+to correct.
 
-[Infer and draft](references/continuation-infer.md) can turn a sparse cue into a
-provisional brief, retrieve qualified context when useful, and produce a draft
-through the existing Claude client. Clear requests can skip planning and implicit
-retrieval. Source use and inferred choices remain reviewable proposals; the route
-does not establish better output quality or automatic discovery by another client.
+## Development
 
-## Continuity
+The intended behavior comes from the problems described above. Each capability
+needs evaluation against real tasks, including cases where the agent has
+misunderstood the scope or overlooked a correction. Source correspondence,
+working integrations and a result the user finds representative each require
+their own evidence.
 
-The optional `scripts/energy_state.py` retains private method, idea, task,
-decision, correction, opportunity and run records. Updates preserve previous
-versions and use locked atomic replacement. The current agent uses available
-archive tools and original-source checks; examples and personal evidence stay
-outside plugin source. Distinct returns and revisions preserve what mattered,
-why it mattered and how the thinking changed. Broad rediscovery follows original
-source contexts before loading a prior personal model, with unresolved links
-retained for later work.
+The component inventory records the bundled skills, agents, commands and hook
+adapters, alongside configuration and external dependencies.
+[Included components](COMPONENTS.md)
 
-[Archive access](references/archive-access.md) provides shared source and retrieval
-routes for delegated tasks. Access receipts distinguish model-based semantic
-search, lexical discovery and unavailable indexes. Source context remains
-available even when an optional index is guarded or slow.
-
-Requested reversible assistance proceeds within its scope. A newly inferred
-policy outside that request remains a scoped proposal. Publication, sending,
-external changes and project-specific constraints retain their own boundaries.
-
-## Evidence
-
-The general procedure draws on personal-example retrieval, discourse grounding,
-source faithfulness, observable critique, interruption timing and remaining-effort
-reassessment. See [methods](references/methods.md). Their component evidence does
-not establish complete personal understanding or future success.
-
-Structural validation, performed source cases, installed discovery, recurring
-execution and owner acceptance are separate results. Private evaluation and
-source receipts retain those distinctions. Public-facing artifacts contain the
-context needed for their purpose and preserve material limitations.
-
-The original WXYZ work remains in `research/`: observed signal, interaction cost,
-protected method and useful result. The broader workflow now acts on the user's
-requested outcome, while preserving privacy and easy correction.
-
-## Execution adapters
-
-[Unified routing](references/unified-route.md) describes the optional `pye_route.py`
-adapter over the existing continuation drafter; lexical routing hints remain
-provisional. [Mission runtime](references/mission-runtime.md) documents the local
-mission queue and its actual scheduling requirements. Neither a skill invocation
-nor an accepted queue item establishes running background execution.
+Some retained workflows have their own project-scoped hooks or host setup.
+Their source and instructions are included with the component. The main workflow
+can consult those instructions directly and use the tools available in the active
+host. Component-specific execution requirements are described in the inventory.

@@ -1,0 +1,15 @@
+---
+description: When to pass a turn through unmarked
+---
+
+Pass through: bare slash commands (`/help`, `/lfg`, `/ce-plan`), raw
+paths, command-like shell lines (including destructive `rm -rf`),
+sticky opt-out, and autonomy-grant-only turns. A slash command plus
+an English job is a task, not pass-through.
+
+Casual register is not a rewrite reason. `json` / `be concise` alone is
+a channel annotation, not an uplift gap. When routing is uncertain, pass
+through.
+
+Quoted or interrogative “stop rewriting…” must not sticky-opt-out.
+Unbound “continue” with nothing to bind must not invent a pending task.

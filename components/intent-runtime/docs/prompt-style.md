@@ -1,0 +1,343 @@
+# Prompt style guide
+
+How to write instruction files in this repository: skills (`SKILL.md`),
+reference docs, agent definitions, `CLAUDE.md`, and the manifests'
+descriptions. Rewrites and reviews check against this document. Every rule
+carries a source tag; the key is at the end. Rules that are house judgment
+rather than sourced guidance say so.
+
+## Contents
+
+- [The one test](#the-one-test)
+- [Framing](#framing)
+- [Altitude](#altitude)
+- [Model portability](#model-portability)
+- [Register](#register)
+- [Model-agnostic emission](#model-agnostic-emission)
+- [Structure](#structure)
+- [Examples](#examples)
+- [Skills](#skills)
+- [Agents](#agents)
+- [Commissions](#commissions)
+- [CLAUDE.md and user-facing docs](#claudemd-and-user-facing-docs)
+- [Checking a prompt change](#checking-a-prompt-change)
+- [Sources](#sources)
+
+## The one test
+
+Every sentence must survive: *would removing this cause a mistake?* If not,
+cut it. Bloated instruction files cause the model to miss the rules that
+matter. [CCBP] Minimal means fully specifying, not short. [CE] Assume the
+reader model is already smart: add only what it cannot know — this
+project's contracts, schemas, and boundaries — never general engineering
+wisdom or self-evident practice. [SBP][CCBP]
+
+The product test sits above that: if a competent human collaborator
+could infer what the user is trying to accomplish, the runtime infers
+it too, supplies the missing professional workflow, and does the work.
+
+## Framing
+
+State the desired behavior affirmatively, and give the reason. The model
+generalizes from rationale; a bare rule invites literal, brittle
+compliance. "Append to the ledger as events happen, so a dead session
+loses minutes of state, not hours" beats "Don't defer ledger updates."
+[C4BP][F5]
+
+Reserve blunt prohibitions for the narrow bridges — actions that are
+irreversible, fragile, or integrity-critical. There, a prohibition with its
+rationale is the correct tool; keep it blunt and do not soften it for
+style. [SBP][C4BP] This repository's narrow bridges:
+
+- The recorder exits 0 on every path; recording never blocks a session.
+- Telemetry never leaves the machine.
+- Read-only agents do not write; the `tools:` list enforces it, prose
+  explains it.
+- `.mission/` stays out of version control via `.git/info/exclude`, never
+  the project's `.gitignore`.
+- No dependencies beyond the Python 3 standard library.
+- No hand-written telemetry records while hooks are live.
+- Host transcript files are never parsed.
+
+Where a guarantee can be enforced mechanically — a tool list, a hook, a
+test — enforce it there and let the prose explain the mechanism. Prose is
+advisory; mechanisms are deterministic. [CCBP][SA]
+
+Numbers and thresholds carry a stated basis. An unexplained constant is one
+the model cannot apply well or adapt correctly. [SBP]
+
+## Altitude
+
+Write heuristics with a boundary example, not case enumerations. Current
+models degrade under over-prescription: a short principle steers better
+than a list that tries to name every case. [F5][CE]
+
+Calibrate specificity to fragility ("degrees of freedom") [SBP]:
+
+| Freedom | Use for (this repo) | Form |
+|---|---|---|
+| High | prioritization, replanning, intent reconstruction | principles + one example |
+| Medium | commissions, the operating contract | template with slots |
+| Low | ledger schemas, telemetry record shape, test and doctor commands | exact template, exact command |
+
+## Model portability
+
+The runtime runs on whatever model and host the user already has, and its
+promise is that the user's prompt needs no adjustment per model. Prompt
+surfaces therefore specify the destination and the evidence of arrival, never
+the route: name outcomes, invariants, authority, and evidence standards, and
+leave search order, decomposition, tool sequence, and reasoning depth to the
+executing model. [F5][CE] The sharpest live case is verification depth — one
+current model's guidance is to remove explicit verification instructions
+because they cause over-verification at no quality gain, another's is to make
+self-verification explicit for long runs. An invariant ("a consequential
+change gets an independent, non-authoring check") holds on both; a procedure
+("use a subagent to verify") is wrong on one. [O5][F5]
+
+Three rules follow:
+
+- **No model names in instruction surfaces, no model-generation
+  compensations as permanent rules.** A procedure added because some model
+  needed it (forced planning phases, fixed agent counts, mandated search
+  sequences, continuation nagging) is a *repair*, not a default. A repair
+  is recorded with the observed failure it corrects, so it can be retested
+  and retired when it stops being load-bearing. Scaffolding whose reason
+  nobody can name is debt. [F5][CE] Model names are allowed in
+  `references/models/` only — that directory is data the optimizer loads
+  for a named downstream target, not a capability assumption baked into a
+  skill. The conformance hazard grep exempts it.
+- **Host capabilities are referenced conditionally.** "Where the host
+  provides a session task list / worktree isolation / a scheduler / a
+  per-agent effort control, use it" — always with the ledger-based
+  fallback stated, because the ledgers are the only capability the runtime
+  requires. Depth-of-reasoning is host configuration, never prompt prose;
+  intensity rituals are already banned under Register. [F5]
+- **Discovery and reporting are separate policies.** An instruction that
+  limits what is *reported* (severity thresholds, "only material findings")
+  must never be phrased so it limits what is *searched for* — a model that
+  follows instructions well will faithfully suppress real findings. State
+  the search breadth and the reporting bar as two clauses. [F5]
+
+## Register
+
+Normal prose register. Emphasis capitals ("IMPORTANT", "YOU MUST",
+"ALWAYS") are not house style; on current models they cause overtriggering,
+and official tooling calls all-caps rules a yellow flag. Escalate emphasis
+only as a recorded repair for an observed miss. [F5][SC]
+
+Never write anti-laziness prompting ("if in doubt, do X", "proactively",
+"aggressively") — written for older models, it now causes overtriggering.
+[C4BP]
+
+Never instruct a model to echo, transcribe, or explain its internal
+reasoning; ask for evidence and conclusions instead. Reasoning-echo
+instructions can trigger refusals on current models. [F5]
+
+## Model-agnostic emission
+
+Two audiences read what this repository produces: the model running the
+runtime, and the models the runtime dispatches. Neither is known when the
+files are written, so no runtime surface names a model or model family,
+asserts what "current models" need, or tunes its scaffolding to a capability
+level. A capability claim frozen into a prompt file cannot be observed, cannot
+be retired, and is wrong the moment the host changes its default. Sourced
+findings about specific model behavior belong here, in this guide, as a rule
+with a tag; the runtime surfaces carry only the behavior. (House rule; the
+conformance suite greps skills, agents, and references for model names.)
+
+The corollary for authors: name the failure any new scaffolding repairs.
+Scaffolding whose failure cannot be named is scaffolding the next model will
+not need, and prescription that a model has outgrown lowers output quality
+rather than protecting it. At run time the same principle is a mechanism —
+the ratchet in `skills/intent-runtime/references/calibration.md` adds commission
+detail only against an observed miss and retires it when the returns stop
+showing one. [F5][CE]
+
+## Structure
+
+Markdown headers delineate sections; sibling files keep the same section
+shape so a reader (human or model) knows where to look. XML tags appear
+only to delimit examples or variable content inside a prompt. [C4BP][CE]
+
+Numbered lists only where order or completeness matters; otherwise prose or
+bullets. [C4BP] In commissions and long prompts, bulk context comes first and
+the ask comes last. [C4BP]
+
+One term per concept, everywhere:
+
+| Concept | The term |
+|---|---|
+| Outcome-shaped job | mission |
+| Bounded work item | task |
+| `.mission/mission.md` | the contract / operating contract |
+| Compile IR | ExecutionContract |
+| `.mission/` files | ledgers |
+| `.mission/state.md` | the resume capsule |
+| A delegation's role and brief, one artifact | the commission |
+| A blocking ask, with default and silence behavior | the question packet |
+| The opening exchange that recovers an underspecified ask | brief |
+| One decision offered with pre-filled options and a default | answer card |
+| The card option that waives further questions | hands-off mode |
+| Outcome, boundary, situation, criteria | decision inputs |
+| An agent's returned output | report |
+| configured private telemetry directory | the store |
+| Loop stages | interpret, inspect, model, queue, commission, execute, verify, update memory, generate follow-ups, replan |
+
+("Learn" is not a stage name; use "update memory" and "generate
+follow-ups".) [SBP: consistent terminology]
+
+## Examples
+
+One canonical worked example of an artifact (a filled commission, a queue
+entry, a decision record) teaches more than a paragraph of schema prose.
+Use 3–5 diverse, canonical examples at most; never accumulate edge-case
+laundry lists. [C4BP][CE][SBP]
+
+## Skills
+
+**Description (frontmatter).** The trigger surface. Follow
+https://agentskills.io/skill-creation/optimizing-descriptions. Start
+with "Use this skill when...". User intent, not implementation. Be
+pushy: name cases where the user never says the skill's name. Include a
+Skip / do-not boundary so near-misses stay out. At most 1,024
+characters; no XML tags. Quoted trigger phrases help; do not paste
+validation-query keywords to game the set. Undertriggering is the
+default failure mode. Trigger queries live in `evals/trigger-queries.json`
+with a fixed 60/40 train/validation split and a fresh holdout. [SBP][SC][CCS]
+
+**Body.** Under 500 lines; ~2,000-word target. Imperative, verb-first
+instructions (skill bodies speak to the runtime; second person is for
+agents). The body is a table of contents that carries the standing rules
+and points to references for depth — information lives in the body or a
+reference, never both. Put the standing rules near the top, ahead of the
+detail they govern, because long-context recall degrades with depth. (House
+rule. This carried an invented ~5,000-token compaction figure under three
+source tags until a 2026-08-12 audit found it in none of them.)
+
+**References.** One level deep. Every reference is linked from SKILL.md
+exactly once, with when-to-read guidance ("Read `references/stopping.md`
+after each deliverable"). A reference over 100 lines opens with a table of
+contents. References do not link to each other — they name concepts, and
+SKILL.md owns the map. [SBP]
+
+**Paths.** Follow https://agentskills.io/specification. SKILL.md links
+its own files as paths from the skill root, one level deep
+(`references/<file>.md`). Other skills name the sibling skill; they do
+not use `../` or `${CLAUDE_PLUGIN_ROOT}/skills/...`. Plugin-root scripts
+and the model index stay host paths. `CLAUDE.md` uses repo-relative
+paths.
+
+## Agents
+
+**Description.** Plain prose, current official style — not transcript
+`<example>` blocks: state the capability, 2–4 trigger scenarios, a
+proactive cue, and when *not* to invoke. Descriptions for all agents load
+whenever the plugin is registered, so brevity here is paid for once per
+agent. [SA][PD]
+
+The proactive cue is a deliberate exception to Register, recorded because
+two current sources disagree: the sub-agents docs recommend "use
+proactively" in this field, while the prompting page warns that cues added
+to fix undertriggering now overtrigger. [SA][C4BP] The reconciliation both
+permit: push on *coverage* — concrete trigger phrases, breadth of matching
+situations — and stay restrained in *language*. A two-word cue in the
+description field is coverage; emphasis capitals in a body are language.
+Four agent descriptions carry the cue today. Retest when a model generation
+changes, and drop it if delegation starts firing where it should not.
+
+**Body.** Second person. Shape: role → method → quality bar → required
+report format, ending on the report format. 500–3,000 characters works
+best. A short "When to invoke" bullet list in the body carries the worked
+scenarios that used to live in `<example>` blocks. [SA][PD]
+
+**Frontmatter.** `tools:` is always declared, least privilege — omitting
+it grants everything. Leave `Agent` out of the list so specialists cannot
+sub-delegate. `hooks`, `mcpServers`, and `permissionMode` are ignored for
+plugin agents; never rely on them. `model: inherit` unless a measured
+reason says otherwise. Colors come from: red, blue, green, yellow, purple,
+orange, pink, cyan. [SA]
+
+**CLAUDE.md awareness.** Subagents load the project's CLAUDE.md. An agent
+body that restates a CLAUDE.md rule in different words creates a live
+conflict inside the agent's context — reference the rule or trust it, and
+never restate it divergently. [SA][CCS]
+
+**Shared boilerplate.** A sentence that must appear in many agent files
+(report-delivery protocol, read-only note) has one canonical wording,
+recorded here or in the delegation reference, and is copied exactly.
+(House rule; nine-way copy-paste drift was observed.) Current canonical
+sentence for reviewer agents, whose home is the verification reference:
+"Search broadly, then report every finding that affects <the commission's
+stated requirements> and no others — the reporting bar filters the report,
+never the search." — only the angle-bracketed object varies per agent.
+
+## Commissions
+
+**Identity.** One sentence, naming domain and scope, no superlatives, no claim
+of infallibility. The evidence for role prompting supports tone and behavior,
+not accuracy — a stronger claim than one sentence buys nothing and reads as
+padding. [O5]
+
+**Self-containment.** The only thing that reaches a subagent is the prompt
+string; it holds no memory of the dispatching conversation. State the
+objective, the deliverable shape, the tools and sources to use, and the task
+boundaries every time, in the commission itself — no referent points outside
+it. [SA][MARS] The discovery-vs-reporting split under Model portability
+governs a reviewing commission's bar the same way it governs any other.
+
+## CLAUDE.md and user-facing docs
+
+`CLAUDE.md` holds facts and conventions — what is true about this repo and
+what its tests enforce. Procedure belongs to the skills; when a CLAUDE.md
+section grows into a procedure, it moves into a skill or reference and
+leaves a pointer. It obeys the same removal test as everything else.
+[CCS][CCBP]
+
+`README.md` and all user-facing text: plain language. Short sentences, one
+idea per sentence, no metaphors, no buzzwords, verb-first headings — clear
+to a smart fifteen-year-old. (House rule.)
+
+The manifests duplicate the plugin description on purpose; a description
+change lands in `.claude-plugin/plugin.json` and
+`.claude-plugin/marketplace.json` together. [CCP]
+
+## Checking a prompt change
+
+1. `python3 -m unittest discover -s tests` — exactly this command; the
+   suite guards hook invariants and manifest structure, and
+   `test_runtime_conformance.py` mechanically enforces most rules in this
+   guide (frontmatter shape, tool boundaries, link counts, hazard greps).
+2. `claude plugin validate . --strict` where the CLI is available. [CCP]
+3. Grep the changed files for the five hazards: reasoning-echo phrasing,
+   emphasis capitals, anti-laziness prompts, "think hard" rituals, and model
+   or model-family names in a runtime surface (skills, agents,
+   skill-local references, README). `references/models/` is the
+   sanctioned home for model names and is exempt. All five counts on
+   instruction surfaces were zero at baseline (2026-08-07) and stay zero.
+4. Cross-references resolve; the terminology table is respected; every
+   skill description keeps or strengthens its concrete trigger phrases.
+5. For consequential rewrites: a fresh-context adversarial review, told to
+   search broadly but report only gaps that affect correctness or the stated
+   requirements — reviewers prompted merely to "find gaps" will invent some,
+   and a reporting bar phrased as a search limit suppresses real ones. [F5][CCBP]
+
+## Sources
+
+Checked 2026-08-12. The per-technique prompt-engineering pages were
+consolidated: `claude-4-best-practices`, `system-prompts`, and
+`be-clear-and-direct` now redirect to one page, so `C4BP` points there.
+
+| Tag | Source |
+|---|---|
+| C4BP | platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices |
+| O5 | platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5 |
+| MARS | anthropic.com/engineering/multi-agent-research-system |
+| F5 | platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5 |
+| SBP | platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices |
+| CE | anthropic.com/engineering/effective-context-engineering-for-ai-agents |
+| CCBP | code.claude.com/docs/en/best-practices |
+| CCS | code.claude.com/docs/en/skills |
+| SA | code.claude.com/docs/en/sub-agents |
+| CCP | code.claude.com/docs/en/plugins-reference |
+| SC | skill-creator (Anthropic official plugin tooling) |
+| PD | plugin-dev (Anthropic official plugin tooling) |

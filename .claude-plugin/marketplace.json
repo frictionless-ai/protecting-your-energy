@@ -1,0 +1,13 @@
+{
+  "name": "frictionless-ai",
+  "owner": {"name": "frictionless-ai"},
+  "metadata": {"description": "Skills and tooling for preserving meaning and momentum."},
+  "plugins": [
+    {
+      "name": "protecting-your-energy",
+      "source": "./",
+      "version": "0.4.0",
+      "description": "Preserve meaning and momentum through context recovery, clear expression and follow-through."
+    }
+  ]
+}

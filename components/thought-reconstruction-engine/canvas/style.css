@@ -1,0 +1,434 @@
+/* Thought Reconstruction — ranked canvas.
+   Warm paper palette from SPEC.md. No webfonts, no network. */
+
+:root {
+  --canvas: #F3EFE7;
+  --surface: #FDFCF8;
+  --ink: #23211C;
+  --ink-muted: #5C574C;
+  --ink-faint: #7A7466;
+  --accent: #8A4B2A;
+  --accent-tint: #EBDBCF;
+  --evidence: #DCE8DE;
+  --caution: #EFE0BC;
+  --info: #D7E2F0;
+  --belief: #DFD9EF;
+  --weak: #EFD9DE;
+  --line: #E2DCCF;
+  --line-strong: #C9C2B2;
+
+  --serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --sans: system-ui, "Segoe UI", Ubuntu, Cantarell, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+summary { cursor: pointer; padding: 8px 0; }
+button, select, summary { min-height: 36px; }
+#coverage { margin-bottom: 18px; }
+#coverage-body { max-height: 350px; overflow: auto; }
+.research-quote { white-space: pre-wrap; overflow-wrap: anywhere; padding: 12px; background: var(--info); }
+.related-link { display: block; padding: 5px 0; }
+table { border-collapse: collapse; width: 100%; }
+th, td { text-align: left; padding: 4px 8px; border-bottom: 1px solid var(--line); }
+.evidence-source, .evidence-quote { overflow-wrap: anywhere; }
+#more { margin-bottom: 30px; padding: 10px 18px; }
+@media (max-width: 440px) { .cards { grid-template-columns: minmax(0,1fr) !important; } main, .masthead, .page-foot { padding-left: 12px; padding-right: 12px; } }
+
+body {
+  margin: 0;
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+main, .masthead, .page-foot {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+a { color: var(--accent); }
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Masthead */
+
+.masthead {
+  padding-top: 40px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line-strong);
+  margin-bottom: 20px;
+}
+
+.masthead h1 {
+  font-family: var(--serif);
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  margin: 0 0 4px;
+}
+
+.masthead-meta {
+  margin: 0 0 14px;
+  color: var(--ink-faint);
+  font-size: 13px;
+}
+
+/* Controls */
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-end;
+  margin-bottom: 8px;
+}
+
+.control {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.control label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-muted);
+}
+
+.control select,
+.control input[type="search"] {
+  font: inherit;
+  font-size: 14px;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: 6px;
+  padding: 6px 10px;
+}
+
+.control-search { flex: 1 1 220px; }
+.control-search input { width: 100%; }
+
+.count {
+  color: var(--ink-faint);
+  font-size: 13px;
+  margin: 6px 0 18px;
+}
+
+/* Card grid */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 18px;
+  align-items: start;
+  padding-bottom: 60px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 18px 20px 16px;
+}
+
+.card.is-expanded {
+  grid-column: 1 / -1;
+  border-color: var(--line-strong);
+}
+
+/* Reduced emphasis for weak / refuted / abandoned. Never hidden. */
+.card.is-faded {
+  border-left: 4px solid var(--weak);
+}
+.card.is-faded .card-title,
+.card.is-faded .card-reconstruction { color: var(--ink-muted); }
+.card.is-faded .score-fill { background: var(--ink-faint); }
+
+.card-head {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.badge {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  padding: 2px 8px;
+  border-radius: 999px;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.badge-belief   { background: var(--belief); }
+.badge-evidence { background: var(--evidence); }
+.badge-info     { background: var(--info); }
+.badge-caution  { background: var(--caution); }
+.badge-accent   { background: var(--accent-tint); }
+.badge-status   { background: var(--weak); }
+
+.composite {
+  margin-left: auto;
+  font-family: var(--serif);
+  font-size: 15px;
+  color: var(--ink-faint);
+}
+
+.card-title {
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0 0 6px;
+}
+
+.card-reconstruction {
+  margin: 0 0 12px;
+  color: var(--ink-muted);
+  font-size: 14px;
+}
+
+.card:not(.is-expanded) .card-reconstruction {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Score bars — thin, muted, labeled, numbers right-aligned */
+
+.scores {
+  display: grid;
+  grid-template-columns: 110px 1fr 28px;
+  column-gap: 10px;
+  row-gap: 5px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.score-label {
+  font-size: 11px;
+  color: var(--ink-faint);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.score-track {
+  height: 3px;
+  background: var(--line);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.score-fill {
+  display: block;
+  height: 100%;
+  background: var(--ink-muted);
+  border-radius: 2px;
+}
+
+.score-num {
+  font-size: 11px;
+  color: var(--ink-muted);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Card footer */
+
+.card-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.fragment-count {
+  font-size: 12px;
+  color: var(--ink-faint);
+}
+
+.toggle {
+  font: inherit;
+  font-size: 13px;
+  color: var(--accent);
+  background: none;
+  border: 1px solid var(--line-strong);
+  border-radius: 6px;
+  padding: 4px 12px;
+  cursor: pointer;
+}
+
+.toggle:hover { background: var(--accent-tint); }
+
+/* Expanded detail */
+
+.detail {
+  margin-top: 16px;
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+}
+
+.detail h3 {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-muted);
+  margin: 18px 0 8px;
+}
+
+.detail h3:first-child { margin-top: 0; }
+
+/* Evidence — quotes are ground truth, visually primary */
+
+.evidence-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.evidence-item {
+  background: var(--canvas);
+  border-left: 3px solid var(--evidence);
+  border-radius: 0 6px 6px 0;
+  padding: 10px 14px;
+}
+
+.evidence-quote {
+  font-family: var(--serif);
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0 0 4px;
+  quotes: "\201C" "\201D";
+}
+.evidence-quote::before { content: open-quote; }
+.evidence-quote::after { content: close-quote; }
+
+.evidence-source {
+  font-size: 12px;
+  color: var(--ink-faint);
+}
+
+/* Evolution timeline */
+
+.evolution-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.evolution-item {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.evolution-date {
+  color: var(--ink-faint);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.kind {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: var(--line);
+  white-space: nowrap;
+}
+
+.kind-negative {
+  background: var(--weak);
+  font-weight: 600;
+}
+
+.evolution-note { color: var(--ink-muted); }
+
+/* Critique */
+
+.critique-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.critique-item {
+  font-size: 13px;
+  color: var(--ink-muted);
+  border-left: 3px solid var(--caution);
+  padding-left: 10px;
+}
+
+.critique-date {
+  color: var(--ink-faint);
+  font-variant-numeric: tabular-nums;
+  margin-right: 8px;
+}
+
+/* Outlet */
+
+.outlet-line {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  font-size: 13px;
+  margin: 0;
+}
+
+.outlet-name {
+  background: var(--accent-tint);
+  color: var(--ink);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 1px 8px;
+  border-radius: 999px;
+}
+
+.outlet-note { color: var(--ink-muted); }
+
+/* Empty state */
+
+.empty {
+  grid-column: 1 / -1;
+  color: var(--ink-faint);
+  font-size: 14px;
+  padding: 40px 0;
+  text-align: center;
+}
+
+/* Footer */
+
+.page-foot {
+  padding-bottom: 30px;
+  color: var(--ink-faint);
+  font-size: 12px;
+}
+
+/* Context turns from other speakers: visibly apart from his quotes. */
+.context-note { font-size: .8rem; margin: .25rem 0 0; opacity: .8; }
+.context-block { border-left: 3px dashed currentColor; margin: .25rem 0 1rem; padding-left: .75rem; opacity: .85; }
+.context-turn { margin: .25rem 0; }
+.context-text { font-style: italic; margin: .15rem 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+.exchange { margin: .5rem 0 1rem; }

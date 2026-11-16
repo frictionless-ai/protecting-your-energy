@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "BeforeAgent": [
+      {
+        "hooks": [
+          {
+            "name": "protecting-your-energy-continuation",
+            "type": "command",
+            "command": "sh \"${PYE_PLUGIN_ROOT}/integrations/shared/turn-digest.sh\" json gemini",
+            "timeout": 5000
+          }
+        ]
+      }
+    ]
+  }
+}
