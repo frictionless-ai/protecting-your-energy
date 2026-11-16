@@ -238,7 +238,7 @@ authorship, adoption or complete semantic coverage of the raw export.
 
 For a separate metadata-only recovery, resolve an exact
 alternate version with
-`~/brain-data/upar-dip/tooling/retrieval/discord_capture_resolver.py`.
+`components/archive-retrieval/discord_capture_resolver.py`.
 Its `resolve_original_parents(settings, verified_provenance)` API takes the
 output of the shared helper's `settings(config_path)` and the complete
 `provenance` returned by `parents`, not the whole configuration document.
@@ -257,7 +257,7 @@ Candidate or deadline exhaustion does not establish absence. Its optional
 cutoff excludes observed later creation/edits and reports uncertain edit
 history; it never proves the current body was available at a historical time.
 The shared full-unit route carries this supplement through Thought
-Reconstruction and the continuation writer's source bundle. Other readers are
+reconstruction. Other readers are
 not automatically changed. Standalone resolver calls after a helper update
 must supply the independently checked helper SHA via
 `expected_helper_sha256=...` or `--helper-sha256`; injected helper IO is

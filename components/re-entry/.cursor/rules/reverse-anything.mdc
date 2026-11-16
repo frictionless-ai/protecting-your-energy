@@ -1,6 +1,0 @@
----
-description: Reverse-engineering rules for this repo
-alwaysApply: true
----
-
-Read AGENTS.md before any reverse-engineering work in this repository.

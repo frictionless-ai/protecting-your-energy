@@ -1,8 +1,0 @@
----
-name: "evaluator-standard"
-description: "Standard PGE evaluator. Tests sprint implementations against contracts using Playwright. Pass threshold: 3/5 per criterion."
-tools: Glob, Grep, Read, WebFetch, WebSearch, Bash, mcp__playwright__browser_click, mcp__playwright__browser_close, mcp__playwright__browser_console_messages, mcp__playwright__browser_drag, mcp__playwright__browser_evaluate, mcp__playwright__browser_file_upload, mcp__playwright__browser_fill_form, mcp__playwright__browser_handle_dialog, mcp__playwright__browser_hover, mcp__playwright__browser_navigate, mcp__playwright__browser_navigate_back, mcp__playwright__browser_network_requests, mcp__playwright__browser_press_key, mcp__playwright__browser_resize, mcp__playwright__browser_run_code, mcp__playwright__browser_select_option, mcp__playwright__browser_snapshot, mcp__playwright__browser_tabs, mcp__playwright__browser_take_screenshot, mcp__playwright__browser_type, mcp__playwright__browser_wait_for
-model: sonnet
----
-
-Read and follow the [evaluator-standard role](../integrations/agents/claude/evaluator-standard.md). Resolve its bundled helpers relative to that source and honor the active host's configuration and authorization.

@@ -1,6 +1,6 @@
 ---
 name: protect-your-energy
-description: Recover what you mean, express it clearly, choose the next useful action and notice when effort or timing should change the plan. A short entry point for Protect Your Energy.
+description: Recover meaning, compile intent and prepare an executor prompt when needed. A short entry point for Protect Your Energy.
 ---
 
 Read [Protect Your Energy](../protecting-your-energy/SKILL.md) and complete its

@@ -52,7 +52,7 @@ echo '{"session_id":"s1","prompt":"/help"}' | python3 hooks/prompt_uplift_hook.p
 
 To opt out for a session, say something like "stop rewriting my prompts".
 The hook writes an empty flag file under `$XDG_RUNTIME_DIR/prompt-uplift/`
-(or `/tmp/prompt-uplift/`; override with `PROMPT_UPLIFT_STATE_DIR`) and
+(or `~/.cache/prompt-uplift/`; override with `PROMPT_UPLIFT_STATE_DIR`) and
 stays silent for that session.
 
 You can also invoke the skill by hand. `target_model` is optional. If you
@@ -63,47 +63,17 @@ omit it, the skill does not infer a model and does not load adapter notes.
 /prompt-uplift target_model=gpt-5.6-sol
 ```
 
-## How to test
+## Bundled source
 
-From the repo root. These scripts use the Python stdlib and do not call a
-model:
+- `skills/prompt-uplift/` contains the skill, contract schema, routing guidance,
+  target-model adapters and optional prompt-engineer renderer.
+- `hooks/` contains the optional candidate-marker hook and registration example.
+- `SKILLS.md` and `IMPLEMENTATION-NOTES.md` retain design rationale and limitations.
 
-```bash
-python3 -m unittest evals.test_subagent_dispatch -v
-python3 evals/run_trace.py reddit-tiktok-ideas
-python3 evals/run_trace.py --all
-```
-
-`run_trace.py` also accepts a raw message:
-
-```bash
-python3 evals/run_trace.py --message 'continue' --context 'finish the tests' --executor fork
-```
-
-Trigger-calibration and invariant grading need a live agent session. Those
-steps are in [the upstream evaluation guide](https://github.com/bodencrouch/prompt-uplift/blob/main/evals/README.md). This repo does not ship
-API clients or a live A/B runner.
-
-## Layout
-
-```
-skills/prompt-uplift/          the Agent Skill (install this)
-  SKILL.md                     trigger description + compilation pipeline
-  references/                  loaded on demand by the skill
-    routing.md                 routing reasons, gaps G1-G8, pass-through classes
-    execution-contract.md      the IR schema + invariants I1-I5
-    constraint-channels.md     constraint classification and channel owners
-    adapters.md                snapshot-keyed adapter registry + execution hints
-  agents/prompt-engineer.md    optional forked-context renderer subagent
-hooks/
-  prompt_uplift_hook.py        UserPromptSubmit interceptor (mark, don't rewrite)
-  settings.example.json        hook registration snippet
-evals/                         trigger corpus, invariant cases, A/B methodology
-  harness/                     CI-runnable dispatch tracer (no model calls)
-  reddit-pairs/                OP-lazy → rewrite-intersection gold pairs
-  test_subagent_dispatch.py    hook / isolation / gold-pair tests
-  run_trace.py                 print one case's subagent payloads
-```
+The parent plugin exposes the skill and an intent-runtime prompt-engineer role.
+The marker hook requires deliberate host configuration. Evaluation corpora and
+model-driven runs are maintained upstream.
+[Upstream evaluation guide](https://github.com/bodencrouch/prompt-uplift/blob/main/evals/README.md)
 
 ## Privacy
 

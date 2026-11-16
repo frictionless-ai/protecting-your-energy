@@ -1,0 +1,1 @@
+../components/intent-runtime/agents/commissioned-analyst.md

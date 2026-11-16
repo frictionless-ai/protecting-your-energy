@@ -1,0 +1,1 @@
+../components/intent-runtime/agents/adversarial-critic.md

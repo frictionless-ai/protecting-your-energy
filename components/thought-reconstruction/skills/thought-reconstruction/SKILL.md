@@ -153,7 +153,12 @@ When relevant sources show them, notice repeated repair costs, physical interact
 
 Treat “obviously” and enthusiasm as context cues. Determine what was already inferable and what was newly supplied. They are not automatic proof of a durable preference, correctness or a new skill requirement. If an existing energy skill addresses a demonstrated recurring failure, use it in scope. Deliver the present task before optional skill maintenance; retain a sourced deferred candidate when maintenance would interrupt progress.
 
-During substantial reconstruction, apply the available [sustain-momentum skill](../../../../skills/sustain-momentum/SKILL.md) alongside acquisition. Use source-supported interaction conditions to offer a concrete optional question when it could help an idea develop, while continuing independent work. Treat teaching, examples and apparent digressions as possible explanations of intent and resolve their referents from context. Keep predicted answers provisional; do not promote them into facts or authorization. A required answer remains required. Preserve the next action through I/O waits, success and session transitions; instruction loading alone does not establish automatic host activation or sustained benefit.
+During substantial reconstruction, preserve useful progress while acquiring
+sources. Offer a concrete optional question when source-supported interaction
+conditions could help the idea develop, and continue independent work. Resolve
+examples and apparent digressions from their context. Keep predicted answers
+provisional and required answers pending. Carry the next authorized action
+through I/O waits and session transitions.
 
 ## Finish with a usable handoff
 

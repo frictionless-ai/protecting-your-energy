@@ -1,9 +1,0 @@
-__pycache__/
-*.pyc
-.venv/
-.mission/
-.missionruntime/
-private/
-artifacts/
-.env
-*.bak-*
