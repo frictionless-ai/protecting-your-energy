@@ -1,110 +1,82 @@
 # Protect Your Energy
 
-Keep the energy to explain an idea, develop it and get it done.
+Recover what someone means and carry that meaning into the model doing the work.
 
-This project grew out of repeatedly having to explain the same thing to an AI,
-recover context it could have found, connect the dots, request follow-ups and
-remind it to check its work. Each correction takes effort away from the thing
-you wanted to do. Sometimes the explanation gets longer while the result gets
-further from what you meant.
+The project brings together four pieces.
 
-Protect Your Energy brings together the skills and tools for reducing that
-burden. The agent should investigate what you mean, use what you have already
-explained, carry forward your corrections and keep working on the result you
-asked for. It should leave room for the creative decisions and involvement you
-enjoy.
+| Piece | Purpose | Entry point |
+| --- | --- | --- |
+| Thought reconstruction | Recover ideas, reasons, constraints and corrections from conversations and documents, with original-source evidence | [Skill](skills/thought-reconstruction/SKILL.md) |
+| Intent runtime | Turn the recovered outcome into an execution contract and follow through on authorized work | [Skill](skills/intent-runtime/SKILL.md) |
+| Prompt uplift | Prepare a self-contained prompt when a target executor needs context carried across a handoff | [Skill](skills/prompt-uplift/SKILL.md) |
+| Prompt-submit hook | Supply context-recovery and meaning-preservation guidance before the assistant responds | [Hook](components/semantic-expression/hooks/intent_coach.py) |
 
-## What it should help with
+`intent-runtime` remains the component and skill name. Its documentation calls
+its operation an **intent compiler**.
 
-- Recover an idea spread across conversations, notes and project material.
-- Combine your words into a coherent account while preserving your meaning,
-  examples, uncertainty and voice.
-- Recognize when an example illustrates a larger request and recover that
-  request from its context.
-- Find terminology that helps you explain or investigate an idea.
-- Ask a concrete question when it helps you develop an idea, while continuing
-  independent work.
-- Follow through on investigation, implementation, iteration and checking.
-- Continue useful independent work while an operation runs or an answer is pending.
-- Resume interrupted work with its goals, corrections and unfinished steps intact.
-- Notice recurring obstacles and improve the workflow that keeps producing them.
-- Check whether the result actually addresses what you asked for.
+## How they work together
 
-## Thought reconstruction
+Start with the current conversation, named material and the user's corrections.
+Use thought reconstruction when missing history could change the work. Intent
+runtime organizes the recovered request into an execution contract. Prompt
+uplift makes that contract self-contained when another executor needs it.
+Preserve the user's methods, constraints, uncertainty, scope and requested format
+throughout the process.
 
-Thought reconstruction recovers the thought behind scattered explanations. It
-starts with your words and follows the relevant conversations, examples and
-corrections. When you ask for a project account, it produces a cohesive Markdown
-document with source references and the details already expressed about the idea.
-It can discover project candidates from available context and derive a
-descriptive name from the recovered account.
+The submit hook injects guidance into the assistant's context. Its implementation
+uses Python's standard library and makes no model calls. The host retains the
+original user message. Any interpretation or prompt compilation happens in the
+assistant's turn. A separate model-powered preprocessing turn would require
+additional implementation and host integration.
 
-Your original explanations determine the substance. AI responses can complete a
-reference or preserve an idea you explicitly adopted. Additional design work
-belongs where you ask for it. A request to reconstruct an idea should preserve
-what you meant without making you correct a newly invented architecture.
+## Use
 
-The local tooling supports candidate discovery, Roust-assisted retrieval,
-contextual source inspection and evidence-linked document generation. The
-active agent interprets the source material and reviews the account. Read its
-skill and command guide for the supported formats, bounds and continuation
-behavior. [Thought reconstruction](skills/thought-reconstruction/SKILL.md) ·
-[Command guide](scripts/thought-reconstruction/USAGE.md)
-
-## Keeping work moving
-
-Install with Claude Code's GitHub marketplace command.
+For Claude Code, add the marketplace and install the plugin.
 
 ```text
-/plugin install protecting-your-energy --marketplace frictionless-ai/protecting-your-energy
+/plugin marketplace add frictionless-ai/protecting-your-energy
+/plugin install protecting-your-energy@frictionless-ai
 ```
 
-The included skills cover context recovery, clear expression, useful next
-actions, recurring friction, sustained momentum and evaluation. They work
-together through the main entry point.
+Invoke the umbrella skill or select a core skill directly.
 
 ```text
-$protect-your-energy <what you are trying to do>
+/protecting-your-energy:protect-your-energy
+/protecting-your-energy:thought-reconstruction
+/protecting-your-energy:intent-runtime
+/protecting-your-energy:prompt-uplift
 ```
 
-The main skill selects the relevant procedure from the request and available
-context. Host support determines implicit selection and hook execution.
-Background work needs an actual running execution mechanism. Progress reports
-should reflect what has run, what has been checked and what remains.
+Claude documents marketplace installation and namespaced skill invocation in its
+[plugin guide](https://code.claude.com/docs/en/discover-plugins).
 
-The project also includes helpers for retaining task state, preparing
-continuations and coordinating authorized background work. The component
-documentation describes their individual setup and dependencies.
-[Main skill](skills/protecting-your-energy/SKILL.md) ·
-[Workflow orchestration](skills/workflow-orchestration/SKILL.md) ·
-[Momentum](skills/sustain-momentum/SKILL.md) ·
-[Evaluation](skills/self-evaluation/SKILL.md)
+Hosts that use dollar-prefixed skill invocation can use `$protect-your-energy`,
+`$thought-reconstruction`, `$intent-runtime` and `$prompt-uplift`.
 
-## Working with personal context
+The repository includes Claude and Codex plugin manifests. Hook discovery,
+activation and trust depend on the host. Each root hook configuration registers
+one `UserPromptSubmit` command. Reconcile an existing direct registration of
+`intent_coach.py` when enabling the plugin so the event runs once.
 
-Source conversations and private working state stay in your configured local
-locations. The plugin contains reusable procedures and tooling. Source access,
-external providers and host hooks need configuration appropriate to your
-environment.
+Prompt uplift also has an optional candidate-marker hook under its component.
+Its [setup guide](components/prompt-uplift/README.md) describes deliberate activation.
 
-Preserving energy includes keeping your choices, corrections and ability to
-pause. The agent should recover information already available and ask when an
-unresolved answer materially changes the work. The result should remain easy
-to correct.
+## Reconstruction commands
 
-## Development
+```sh
+python3 scripts/thought_reconstruction.py --help
+python3 scripts/thought_reconstruction.py acquire --help
+python3 scripts/thought_reconstruction.py inspect --help
+python3 scripts/thought_reconstruction.py reclaim --help
+```
 
-The intended behavior comes from the problems described above. Each capability
-needs evaluation against real tasks, including cases where the agent has
-misunderstood the scope or overlooked a correction. Source correspondence,
-working integrations and a result the user finds representative each require
-their own evidence.
+The acquisition adapter supports source discovery, contextual inspection and
+curated assembly. The indexed engine supports existing library workflows,
+including reclaim, rebuild, verify, query and task. The dispatcher keeps both
+interfaces available. [Command guide](scripts/thought-reconstruction/USAGE.md)
 
-The component inventory records the bundled skills, agents, commands and hook
-adapters, alongside configuration and external dependencies.
-[Included components](COMPONENTS.md)
-
-Some retained workflows have their own project-scoped hooks or host setup.
-Their source and instructions are included with the component. The main workflow
-can consult those instructions directly and use the tools available in the active
-host. Component-specific execution requirements are described in the inventory.
+Source archives, identity settings, provider credentials, generated indexes and
+working output belong in private external locations. Local acquisition uses
+Python's standard library. Roust is optional. Indexed retrieval and explicitly
+configured hosted processing have additional dependencies described in their
+guides. [Components and configuration](COMPONENTS.md)

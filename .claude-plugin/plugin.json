@@ -1,8 +1,10 @@
 {
   "name": "protecting-your-energy",
-  "version": "0.4.0",
-  "author": {"name": "frictionless-ai"},
-  "description": "Preserve meaning and momentum through context recovery, clear expression and follow-through.",
+  "version": "0.5.0",
+  "author": {
+    "name": "frictionless-ai"
+  },
+  "description": "Recover meaning with thought reconstruction, compile intent and prepare executor prompts.",
   "repository": "https://github.com/frictionless-ai/protecting-your-energy",
   "skills": "./skills/"
 }
